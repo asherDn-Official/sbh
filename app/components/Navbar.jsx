@@ -53,15 +53,15 @@ function Navbar() {
   return (
     <>
       {/* Top contact bar (only visible on md and above) */}
-      {isHome && (
+      
         <div
-          className={`bg-white w-screen hidden md:block transition-all duration-500 ease-out ${
+          className={`${isHome?"bg-white":"bg-black"} w-screen hidden md:block transition-all duration-500 ease-out ${
             atTop
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-3 pointer-events-none"
           }`}
         >
-          <div className="flex justify-center gap-10 py-3 text-sm">
+          <div className={`${isHome?"text-black":"text-white"} flex justify-center gap-10 py-3 text-sm`}>
             <div className="flex items-center gap-2">
               <BsTelephone />
               <span>+91 89656895632</span>
@@ -79,7 +79,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-      )}
+   
 
       {/* Main Navbar */}
       <div
