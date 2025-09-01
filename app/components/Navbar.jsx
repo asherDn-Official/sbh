@@ -5,12 +5,14 @@ import { BsTelephone } from "react-icons/bs";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [atTop, setAtTop] = useState(true); // Track if page is at the very top
   const [nearTop, setNearTop] = useState(false); // Cursor is near the top edge
-
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   // Listen for scroll and update 'atTop'
   useEffect(() => {
     const onScroll = () => {
@@ -51,59 +53,85 @@ function Navbar() {
   return (
     <>
       {/* Top contact bar (only visible on md and above) */}
-      <div className={`bg-white w-screen hidden md:block transition-all duration-500 ease-out ${atTop ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-3 pointer-events-none"}`}>
-        <div className="flex justify-center gap-10 py-3 text-sm">
-          <div className="flex items-center gap-2">
-            <BsTelephone />
-            <span>+91 89656895632</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <MdEmail />
-            <span>realbalaji999@gmail.com</span>
-          </div>
-          <div className="flex items-center gap-2 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-none">
-            <MdLocationOn className="flex-shrink-0" />
-            <span className="truncate md:whitespace-normal md:overflow-visible md:text-ellipsis-none">
-              A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam,
-              Chennai - 602 103.
-            </span>
+      {isHome && (
+        <div
+          className={`bg-white w-screen hidden md:block transition-all duration-500 ease-out ${
+            atTop
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-3 pointer-events-none"
+          }`}
+        >
+          <div className="flex justify-center gap-10 py-3 text-sm">
+            <div className="flex items-center gap-2">
+              <BsTelephone />
+              <span>+91 89656895632</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MdEmail />
+              <span>realbalaji999@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-none">
+              <MdLocationOn className="flex-shrink-0" />
+              <span className="truncate md:whitespace-normal md:overflow-visible md:text-ellipsis-none">
+                A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam,
+                Chennai - 602 103.
+              </span>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Main Navbar */}
       <div
-        className={`flex justify-between md:justify-center md:px-6 lg:px-6 pt-5 absolute w-screen items-center z-50 md:gap-5 lg:gap-20 xl:gap-50 2xl:gap-60 transition-all duration-500 ease-out
-        ${showNav ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-6 pointer-events-none"}
+        className={`flex justify-between md:justify-center px-2 md:px-6  lg:px-6 pt-5 absolute w-screen items-center z-50 md:gap-5 lg:gap-20 xl:gap-50 2xl:gap-60 transition-all duration-500 ease-out
+        ${
+          showNav
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-6 pointer-events-none"
+        }
         `}
       >
         {/* Logo */}
-   <div>
-  <Image
-    src="/assets/home/sbhwhitelogo1.png"
-    alt="Logo"
-    width={73}
-    height={53}
-    className="w-12 h-auto sm:w-[73px]" // 48px on mobile, original on sm+
-  />
-</div>
-
+        <div>
+          <Image
+            src={isHome?"/assets/home/sbhwhitelogo1.png":"/assets/home/sbhlogo.svg"}
+            alt="Logo"
+            width={73}
+            height={53}
+            className="w-12 h-auto sm:w-[73px]" // 48px on mobile, original on sm+
+          />
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex p-3 font-poppins text-white rounded-full bg-[#024b12]">
-          <Link href="/" className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg">
+          <Link
+            href="/"
+            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg"
+          >
             Home
           </Link>
-          <Link href="/about" className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg">
+          <Link
+            href="/about"
+            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg"
+          >
             About Us
           </Link>
-          <Link href="/properties" className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg">
+          <Link
+            href="/properties"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg"
+          >
             Properties
           </Link>
-          <Link href="/testimonial" className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg">
+          <Link
+            href="/testimonial"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg"
+          >
             Testimonial
           </Link>
-          <Link href="/contact" className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg">
+          <Link
+            href="/contact"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg"
+          >
             Contact Us
           </Link>
         </div>
@@ -112,7 +140,8 @@ function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="rounded-full border border-white bg-transparent md:px-3 md:py-2 md:text-sm xl:p-3 xl:px-8 2xl:text-md font-poppins text-white"
+           className={`rounded-full border-[1px] flex bg-transparent py-2 px-6 mt-3 
+  ${isHome ? "border-white text-white" : "border-black text-[#024b12]"}`}
           >
             Enquire Now
           </Link>
@@ -154,7 +183,9 @@ function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className="rounded-full border flex border-white bg-transparent py-2 px-6 mt-3"
+          className={`rounded-full border flex bg-transparent py-2 px-6 mt-3 
+  ${isHome ? "border-white text-white" : "border-white text-white"}`}
+
             onClick={() => setMenuOpen(false)}
           >
             Enquire Now

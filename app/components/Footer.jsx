@@ -20,8 +20,7 @@ function Footer() {
             className="mb-4"
           />
           <p className="text-sm leading-relaxed mb-4">
-            Looking to invest in a plot, move into a resale home, or buy a villa
-            in a gated community? We guide you every step of the way.
+            Looking to invest in a plot, move into a resale plots, We guide you every step of the way.
           </p>
           <div className="flex space-x-4">
             <Link href="#" className="hover:text-green-400">
