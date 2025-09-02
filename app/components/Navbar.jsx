@@ -16,10 +16,8 @@ function Navbar() {
   // Listen for scroll and update 'atTop'
   useEffect(() => {
     const onScroll = () => {
-      const top = window.scrollY <= 8; // small threshold for bounce
-      setAtTop(top);
+      setAtTop(window.scrollY === 0);
     };
-
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -55,11 +53,7 @@ function Navbar() {
       {/* Top contact bar (only visible on md and above) */}
       
         <div
-          className={`${isHome?"bg-white":"bg-[#f7f7f7]"} w-screen hidden md:block transition-all duration-500 ease-out ${
-            atTop
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 -translate-y-3 pointer-events-none"
-          }`}
+          className={`${isHome?"bg-white":"bg-[#f7f7f7]"} w-screen hidden md:block transition-all duration-500 ease-out `}
         >
           <div className={`${isHome?"text-black":"text-black"} flex justify-center gap-10 py-3 text-sm`}>
             <div className="flex items-center gap-2">
@@ -83,7 +77,7 @@ function Navbar() {
 
       {/* Main Navbar */}
       <div
-        className={`flex justify-between md:justify-center px-2 md:px-6  lg:px-6 pt-5 absolute w-screen items-center z-50 md:gap-5 lg:gap-20 xl:gap-50 2xl:gap-60 transition-all duration-500 ease-out
+        className={`flex justify-between md:justify-center px-2 md:px-6  lg:px-6 pt-5 fixed w-screen items-center z-50 md:gap-5 lg:gap-20 xl:gap-50 2xl:gap-60 transition-all duration-500 ease-out
         ${
           showNav
             ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -106,45 +100,58 @@ function Navbar() {
         <div className="hidden md:flex p-3 font-poppins text-white rounded-full bg-[#024b12]">
           <Link
             href="/"
-            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg"
+            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg relative group"
           >
             Home
+             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             href="/about"
-            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg"
+            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg relative group"
           >
             About Us
+                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             href="/properties"
-            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg  relative group"
           >
             Properties
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             href="/testimonial"
-            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg relative group"
           >
             Testimonial
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             href="/contact"
-            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg relative group"
           >
             Contact Us
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
         </div>
 
         {/* Enquire Now Button (Desktop only) */}
         <div className="hidden md:block">
-          <Link
-            href="/contact"
-           className={`rounded-full border-[1px] flex bg-transparent py-2 px-6 mt-3 
-  ${isHome ? "border-white text-white" : "border-black text-[#024b12]"}`}
-          >
-            Enquire Now
-          </Link>
+  <Link
+  href="/contact"
+  className={`
+    rounded-full border-[1px] flex bg-transparent py-2 px-6 mt-3 
+    transition-all duration-300 ease-in-out relative overflow-hidden
+    ${isHome ? "border-white text-white" : "border-black text-[#024b12]"}
+    before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:rounded-full
+    before:transition-all before:duration-500 before:ease-in-out before:-z-10
+    ${isHome ? 
+      "before:bg-white hover:text-[#024b12] hover:before:w-full" : 
+      "before:bg-[#024b12] hover:text-white hover:before:w-full"}
+  `}
+>
+  Enquire Now
+</Link>
         </div>
 
         {/* Mobile Hamburger Icon */}

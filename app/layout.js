@@ -30,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lora.className} ${poppins.variable} scrollbar-hide`}>
+      <body className={`${lora.className} ${poppins.variable}`}>
         <Navbar />
         <main >{children}</main>
         <Footer />
