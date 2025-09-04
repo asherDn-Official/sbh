@@ -1,0 +1,96 @@
+"use client";
+import { useParams } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import katrambakkam from "../../../public/assets/properties/katrambakkam.png";
+import plotKatrambakkam from "../../../public/assets/home/katrambakkamvilla1.png";
+const propertyData = {
+  katrambakkam: {
+    title: "Katrambakkam",
+    description:
+      "In Katrambakkam, Sri Balaji Homes offers DTCP and CMDA-approved plots in sizes of 1200, 1800, 2100, and 2400 sqft, with prices starting from just Rs.700/- to Rs.1000/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
+    plots: [
+      { id: 1, img: "/assets/properties/plot1.jpg", size: "1400 Sq. Feet" },
+      { id: 2, img: "/assets/properties/plot2.jpg", size: "1400 Sq. Feet" },
+      { id: 3, img: "/assets/properties/plot3.jpg", size: "1400 Sq. Feet" },
+      { id: 4, img: "/assets/properties/plot1.jpg", size: "1400 Sq. Feet" },
+      { id: 5, img: "/assets/properties/plot2.jpg", size: "1400 Sq. Feet" },
+      { id: 6, img: "/assets/properties/plot3.jpg", size: "1400 Sq. Feet" },
+    ],
+  },
+  thaiyur: {
+    title: "Thaiyur",
+    description:
+      "In Thaiyur, Sri Balaji Homes offers DTCP and CMDA-approved plots in sizes of 1200, 1800, 2100, and 2400 sqft, with prices starting from just Rs.700/- to Rs.1000/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
+    plots: [
+      { id: 1, img: "/assets/properties/plot1.jpg", size: "1400 Sq. Feet" },
+      { id: 2, img: "/assets/properties/plot2.jpg", size: "1400 Sq. Feet" },
+      { id: 3, img: "/assets/properties/plot3.jpg", size: "1400 Sq. Feet" },
+      { id: 4, img: "/assets/properties/plot1.jpg", size: "1400 Sq. Feet" },
+      { id: 5, img: "/assets/properties/plot2.jpg", size: "1400 Sq. Feet" },
+      { id: 6, img: "/assets/properties/plot3.jpg", size: "1400 Sq. Feet" },
+    ],
+  },
+};
+
+export default function PropertyPage() {
+  const { place } = useParams();
+  const data = propertyData[place];
+
+  if (!data) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-xl">
+        Property not found ❌
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <div className="relative w-full h-[400px] bg-black/60 flex items-end justify-start  text-white pb-5   lg:pb-15 lg:pl-15">
+        <Image
+          src={katrambakkam}
+          alt={data.title}
+          fill
+          className="object-cover -z-10"
+        />
+        <div className="max-w-2xl px-4">
+          <h1 className="text-4xl font-bold">{data.title}</h1>
+          <p className="mt-4">{data.description}</p>
+        </div>
+      </div>
+
+      {/* Properties Grid */}
+      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {data.plots.map((plot) => (
+          <div
+            key={plot.id}
+            className="bg-white shadow rounded-2xl overflow-hidden hover:shadow-lg transition"
+          >
+            {/* Image */}
+            <div className="relative h-44 lg:h-60 w-full">
+              <Image
+                src={plotKatrambakkam}
+                alt={`${data.title} Plot`}
+                fill
+                className="object-cover p-3 rounded-3xl"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="p-4">
+              <h3 className="text-lg font-medium">{data.title} Villa Plot</h3>
+              <p className="text-gray-500 text-sm mt-1">📐 {plot.size}</p>
+              <Link href="/contact">
+                <button className="mt-3 px-4 py-2 bg-green-800 text-white text-sm rounded-lg hover:bg-green-700 transition">
+                  Know More
+                </button>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

@@ -3,14 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { MdEmail, MdLocationOn } from "react-icons/md";
-import { HiMenu, HiX } from "react-icons/hi";
-import { useState, useEffect } from "react";
+import { HiMenu, HiX, HiChevronDown, HiChevronUp } from "react-icons/hi";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [atTop, setAtTop] = useState(true); // Track if page is at the very top
   const [nearTop, setNearTop] = useState(false); // Cursor is near the top edge
+    const [dropdownOpen, setDropdownOpen] = useState(false); // 👈 new state
+  const dropdownRef = useRef(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
   // Listen for scroll and update 'atTop'
@@ -45,35 +47,50 @@ function Navbar() {
     window.addEventListener("mousemove", onMouseMove, { passive: true });
     return () => window.removeEventListener("mousemove", onMouseMove);
   }, []);
+  // Close dropdown if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const showNav = atTop || nearTop; // visible at top, or when cursor near top
 
   return (
     <>
       {/* Top contact bar (only visible on md and above) */}
-      
+
+      <div
+        className={`${
+          isHome ? "bg-white" : "bg-[#f7f7f7]"
+        } w-screen hidden md:block transition-all duration-500 ease-out `}
+      >
         <div
-          className={`${isHome?"bg-white":"bg-[#f7f7f7]"} w-screen hidden md:block transition-all duration-500 ease-out `}
+          className={`${
+            isHome ? "text-black" : "text-black"
+          } flex justify-center gap-10 py-3 text-sm`}
         >
-          <div className={`${isHome?"text-black":"text-black"} flex justify-center gap-10 py-3 text-sm`}>
-            <div className="flex items-center gap-2">
-              <BsTelephone />
-              <span>+91 89656895632</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MdEmail />
-              <span>realbalaji999@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-2 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-none">
-              <MdLocationOn className="flex-shrink-0" />
-              <span className="truncate md:whitespace-normal md:overflow-visible md:text-ellipsis-none">
-                A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam,
-                Chennai - 602 103.
-              </span>
-            </div>
+          <div className="flex items-center gap-2">
+            <BsTelephone />
+            <span>+91 89656895632</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <MdEmail />
+            <span>realbalaji999@gmail.com</span>
+          </div>
+          <div className="flex items-center gap-2 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-none">
+            <MdLocationOn className="flex-shrink-0" />
+            <span className="truncate md:whitespace-normal md:overflow-visible md:text-ellipsis-none">
+              A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam,
+              Chennai - 602 103.
+            </span>
           </div>
         </div>
-   
+      </div>
 
       {/* Main Navbar */}
       <div
@@ -88,7 +105,11 @@ function Navbar() {
         {/* Logo */}
         <div>
           <Image
-            src={isHome?"/assets/home/sbhwhitelogo1.png":"/assets/home/sbhlogo.svg"}
+            src={
+              isHome
+                ? "/assets/home/sbhwhitelogo1.png"
+                : "/assets/home/sbhlogo.svg"
+            }
             alt="Logo"
             width={73}
             height={53}
@@ -103,22 +124,47 @@ function Navbar() {
             className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg relative group"
           >
             Home
-             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             href="/about"
             className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg relative group"
           >
             About Us
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
-          </Link>
-          <Link
-            href="/properties"
-            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg  relative group"
-          >
-            Properties
             <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
+        {/* ✅ Properties Dropdown */}
+          <div ref={dropdownRef} className="relative">
+            <button
+              onClick={() => setDropdownOpen((prev) => !prev)}
+              className="flex items-center md:px-2 lg:px-3 xl:px-5 xl:text-sm 2xl:text-lg text-white"
+            >
+              Properties
+              {dropdownOpen ? (
+                <HiChevronUp className="ml-1" />
+              ) : (
+                <HiChevronDown className="ml-1" />
+              )}
+            </button>
+
+            {dropdownOpen && (
+              <div className="absolute left-0 mt-2 bg-[#023a0d] rounded-2xl shadow-lg py-2 w-48">
+                <Link
+                  href="/properties/katrambakkam"
+                  className="block px-4 py-2 text-white hover:bg-[#024b12]"
+                >
+                  Katrambakkam
+                </Link>
+                <Link
+                  href="/properties/thaiyur"
+                  className="block px-4 py-2 text-white hover:bg-[#024b12]"
+                >
+                  Thaiyur
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link
             href="/testimonial"
             className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg relative group"
@@ -137,21 +183,23 @@ function Navbar() {
 
         {/* Enquire Now Button (Desktop only) */}
         <div className="hidden md:block">
-  <Link
-  href="/contact"
-  className={`
+          <Link
+            href="/contact"
+            className={`
     rounded-full border-[1px] flex bg-transparent py-2 px-6 mt-3 
     transition-all duration-300 ease-in-out relative overflow-hidden
     ${isHome ? "border-white text-white" : "border-black text-[#024b12]"}
     before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:rounded-full
     before:transition-all before:duration-500 before:ease-in-out before:-z-10
-    ${isHome ? 
-      "before:bg-white hover:text-[#024b12] hover:before:w-full" : 
-      "before:bg-[#024b12] hover:text-white hover:before:w-full"}
+    ${
+      isHome
+        ? "before:bg-white hover:text-[#024b12] hover:before:w-full"
+        : "before:bg-[#024b12] hover:text-white hover:before:w-full"
+    }
   `}
->
-  Enquire Now
-</Link>
+          >
+            Enquire Now
+          </Link>
         </div>
 
         {/* Mobile Hamburger Icon */}
@@ -179,9 +227,46 @@ function Navbar() {
           <Link href="/about" onClick={() => setMenuOpen(false)}>
             About Us
           </Link>
-          <Link href="/properties" onClick={() => setMenuOpen(false)}>
-            Properties
-          </Link>
+        
+          {/* ✅ Mobile Properties Dropdown */}
+          <div className="w-full flex flex-col items-center">
+            <button
+              onClick={() => setDropdownOpen((prev) => !prev)}
+              className="flex items-center justify-center gap-1 w-full py-2"
+            >
+              Properties
+              {dropdownOpen ? (
+                <HiChevronUp className="ml-1" />
+              ) : (
+                <HiChevronDown className="ml-1" />
+              )}
+            </button>
+
+            {dropdownOpen && (
+              <div className=" flex flex-col items-center bg-[#08200AE5] rounded-md">
+                <Link
+                  href="/properties/katrambakkam"
+                  className="block w-full text-center px-4 py-2 hover:bg-[#024b12]"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  Katrambakkam
+                </Link>
+                <Link
+                  href="/properties/thaiyur"
+                  className="block w-full text-center px-4 py-2 hover:bg-[#024b12]"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setDropdownOpen(false);
+                  }}
+                >
+                  Thaiyur
+                </Link>
+              </div>
+            )}
+          </div>
           <Link href="/testimonial" onClick={() => setMenuOpen(false)}>
             Testimonial
           </Link>
@@ -190,9 +275,8 @@ function Navbar() {
           </Link>
           <Link
             href="/contact"
-          className={`rounded-full border flex bg-transparent py-2 px-6 mt-3 
+            className={`rounded-full border flex bg-transparent py-2 px-6 mt-3 
   ${isHome ? "border-white text-white" : "border-white text-white"}`}
-
             onClick={() => setMenuOpen(false)}
           >
             Enquire Now
