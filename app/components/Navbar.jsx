@@ -6,12 +6,12 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 import { HiMenu, HiX, HiChevronDown, HiChevronUp } from "react-icons/hi";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
-
+import { MapPin } from "lucide-react"; // example icon
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [atTop, setAtTop] = useState(true); // Track if page is at the very top
   const [nearTop, setNearTop] = useState(false); // Cursor is near the top edge
-    const [dropdownOpen, setDropdownOpen] = useState(false); // 👈 new state
+  const [dropdownOpen, setDropdownOpen] = useState(false); // 👈 new state
   const dropdownRef = useRef(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
@@ -118,26 +118,25 @@ function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex p-3 font-poppins text-white rounded-full bg-[#024b12]">
+        <div className="hidden md:flex p-3 font-poppins text-white  rounded-full bg-[#024b12]">
           <Link
             href="/"
-            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg relative group"
+            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg hover:text-[#91eda5]"
           >
             Home
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             href="/about"
-            className="md:px-2 lg:px-3 xl:px-5   xl:text-sm 2xl:text-lg relative group"
+            className=" md:px-2 lg:px-3 xl:px-5 xl:text-sm 2xl:text-lg  hover:text-[#91eda5]"
           >
-            About Us
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
+            <span className="relative z-10">About Us</span>
           </Link>
-        {/* ✅ Properties Dropdown */}
+
+          {/* ✅ Properties Dropdown */}
           <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setDropdownOpen((prev) => !prev)}
-              className="flex items-center md:px-2 lg:px-3 xl:px-5 xl:text-sm 2xl:text-lg text-white"
+              className="flex items-center md:px-2 lg:px-3 xl:px-5 xl:text-sm 2xl:text-lg text-white  hover:text-[#91eda5]"
             >
               Properties
               {dropdownOpen ? (
@@ -151,13 +150,13 @@ function Navbar() {
               <div className="absolute left-0 mt-2 bg-[#023a0d] rounded-2xl shadow-lg py-2 w-48">
                 <Link
                   href="/properties/katrambakkam"
-                  className="block px-4 py-2 text-white hover:bg-[#024b12]"
+                  className="block px-4 py-2 text-white hover:bg-[#024b12]  hover:text-[#91eda5]"
                 >
                   Katrambakkam
                 </Link>
                 <Link
                   href="/properties/thaiyur"
-                  className="block px-4 py-2 text-white hover:bg-[#024b12]"
+                  className="block px-4 py-2 text-white hover:bg-[#024b12]  hover:text-[#91eda5]"
                 >
                   Thaiyur
                 </Link>
@@ -167,17 +166,15 @@ function Navbar() {
 
           <Link
             href="/testimonial"
-            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg relative group"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg  hover:text-[#91eda5]"
           >
             Testimonial
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             href="/contact"
-            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg relative group"
+            className="md:px-2 lg:px-3 xl:px-5  xl:text-sm 2xl:text-lg  hover:text-[#91eda5]"
           >
             Contact Us
-            <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"></span>
           </Link>
         </div>
 
@@ -221,13 +218,13 @@ function Navbar() {
       {/* Mobile Menu (Dropdown) */}
       {menuOpen && (
         <div className="absolute top-20 left-0 w-full bg-[#024b12] text-white flex flex-col items-center py-5 space-y-5 md:hidden z-40 animate-slideDown">
-          <Link href="/" onClick={() => setMenuOpen(false)}>
+          <Link href="/" onClick={() => setMenuOpen(false)} className=" hover:text-[#91eda5]">
             Home
           </Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>
             About Us
           </Link>
-        
+
           {/* ✅ Mobile Properties Dropdown */}
           <div className="w-full flex flex-col items-center">
             <button
@@ -242,30 +239,32 @@ function Navbar() {
               )}
             </button>
 
-            {dropdownOpen && (
-              <div className=" flex flex-col items-center bg-[#08200AE5] rounded-md">
-                <Link
-                  href="/properties/katrambakkam"
-                  className="block w-full text-center px-4 py-2 hover:bg-[#024b12]"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setDropdownOpen(false);
-                  }}
-                >
-                  Katrambakkam
-                </Link>
-                <Link
-                  href="/properties/thaiyur"
-                  className="block w-full text-center px-4 py-2 hover:bg-[#024b12]"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setDropdownOpen(false);
-                  }}
-                >
-                  Thaiyur
-                </Link>
-              </div>
-            )}
+           {dropdownOpen && (
+  <div className="flex flex-col items-center w-56 bg-white border border-gray-200 shadow-lg overflow-hidden">
+    <Link
+      href="/properties/katrambakkam"
+      className="w-full text-center px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
+      onClick={() => {
+        setMenuOpen(false);
+        setDropdownOpen(false);
+      }}
+    >
+      Katrambakkam
+    </Link>
+    <div className="h-px w-full bg-gray-200"></div> {/* divider */}
+    <Link
+      href="/properties/thaiyur"
+      className="w-full text-center px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
+      onClick={() => {
+        setMenuOpen(false);
+        setDropdownOpen(false);
+      }}
+    >
+      Thaiyur
+    </Link>
+  </div>
+)}
+
           </div>
           <Link href="/testimonial" onClick={() => setMenuOpen(false)}>
             Testimonial
@@ -275,9 +274,15 @@ function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className={`rounded-full border flex bg-transparent py-2 px-6 mt-3 
-  ${isHome ? "border-white text-white" : "border-white text-white"}`}
             onClick={() => setMenuOpen(false)}
+            className={`
+    rounded-full border flex bg-transparent py-2 px-6 mt-3 
+    transition-all duration-300 ease-in-out relative overflow-hidden
+    border-white text-white
+    before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:rounded-full
+    before:transition-all before:duration-500 before:ease-in-out before:-z-10
+    before:bg-white hover:text-[#024b12] hover:before:w-full
+  `}
           >
             Enquire Now
           </Link>

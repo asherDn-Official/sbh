@@ -19,7 +19,7 @@ const PropertySection = () => {
 
         {/* Images */}
         <div className="lg:flex py-10  lg:gap-15 ">
-          <div className="flex-1 relative w-full h-72 md:h-92 lg:h-104 mb-10 ">
+          <div className="flex-1 relative w-full h-50 md:h-72 lg:h-94 xl:h-104 mb-10">
             <Image
               src={thaiyur}
               alt="Thaiyur"
@@ -28,7 +28,7 @@ const PropertySection = () => {
               priority
             />
           </div>
-          <div className="flex-1 relative w-full h-40  md:h-72 xl:h-104">
+          <div className="flex-1 relative w-full h-50  md:h-72 lg:h-94 xl:h-104">
             <Image
               src={katrambakkan}
               alt="Katrambakkam"

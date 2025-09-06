@@ -56,11 +56,21 @@ export default function LandingPageHome() {
         </div>
 
         {/* ✅ Mobile/Tablet button */}
-        <div className="absolute left-5 bottom-0 translate-y-1/2 md:hidden z-20">
-          <button className="bg-white text-black px-6 py-2 rounded-full font-poppins border-[#024b12] border-2 shadow-lg glow-button-always">
-            Enquire Now
-          </button>
-        </div>
+    <div className="absolute left-5 bottom-0 translate-y-1/2 md:hidden z-20">
+  <button
+    className={`
+      bg-white text-black px-6 py-2 rounded-full font-poppins 
+      border-2 border-[#024b12] shadow-lg relative overflow-hidden
+      transition-all duration-300 ease-in-out
+      before:content-[''] before:absolute before:top-0 before:left-0 
+      before:w-0 before:h-full before:rounded-full before:-z-10
+      before:transition-all before:duration-500 before:ease-in-out
+      before:bg-[#024b12] hover:text-white hover:before:w-full
+    `}
+  >
+    Enquire Now
+  </button>
+</div>
 
         {/* Right badge (only desktop) */}
         <div className="text-sm md:text-md lg:text-lg   md:flex justify-end items-end hidden">
