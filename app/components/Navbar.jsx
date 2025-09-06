@@ -160,11 +160,11 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Enquire Now (Desktop) */}
-        <div className="hidden md:block">
+          {/* Enquire Now (Desktop) */}
+        <div className="hidden md:flex items-center h-full">
           <Link
             href="/contact"
-            className={`rounded-full border flex bg-transparent py-2 px-6 mt-3 
+            className={`rounded-full border flex bg-transparent py-2 px-6  
             transition-all duration-300 ease-in-out relative overflow-hidden
             ${isHome ? "border-white text-white" : "border-black text-[#024b12]"}
             before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:rounded-full

@@ -1,8 +1,54 @@
 "use client";
+import { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactPage() {
-return (
+  const [formData, setFormData] = useState({
+    name: "",
+    mobile: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validate = () => {
+    let tempErrors = {};
+    if (!formData.name) tempErrors.name = "Name is required.";
+    if (!formData.mobile) {
+      tempErrors.mobile = "Mobile number is required.";
+    } else if (!/^\d{10}$/.test(formData.mobile)) {
+      tempErrors.mobile = "Mobile number must be 10 digits.";
+    }
+    if (!formData.email) {
+      tempErrors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      tempErrors.email = "Email is invalid.";
+    }
+    if (!formData.message) tempErrors.message = "Message is required.";
+
+    setErrors(tempErrors);
+    return Object.keys(tempErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validate()) {
+      setIsSubmitting(true);
+      // Here you would call your API to send the email
+      console.log("Form is valid, submitting...", formData);
+      // After submission, you might want to reset the form or show a success message.
+      // setIsSubmitting(false);
+    }
+  };
+
+  return (
     <section className="pt-20 md:pt-30 lg:pt-30 placeholder-sky-300 bg-gradient-to-b from-white to-gray-50">
       {/* Heading */}
       <div className=" lg:px-20 ">
@@ -66,32 +112,57 @@ return (
           <h3 className="text-2xl font-semibold mb-6 text-gray-900">
             Get in Touch
           </h3>
-          <form className="space-y-5">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full px-4 py-3  bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition"
-            />
-            <input
-              type="text"
-              placeholder="Mobile Number"
-              className="w-full px-4 py-3  bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition"
-            />
-            <input
-              type="email"
-              placeholder="Mail Id"
-              className="w-full px-4 py-3  bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition"
-            />
-            <textarea
-              placeholder="Write Message"
-              rows={4}
-              className="w-full px-4 py-3  bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition"
-            ></textarea>
+          <form className="space-y-5" onSubmit={handleSubmit} noValidate>
+            <div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.name ? 'border-red-500 ring-red-500' : ''}`}
+              />
+              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="mobile"
+                placeholder="Mobile Number"
+                value={formData.mobile}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.mobile ? 'border-red-500 ring-red-500' : ''}`}
+              />
+              {errors.mobile && <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>}
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Mail Id"
+                value={formData.email}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.email ? 'border-red-500 ring-red-500' : ''}`}
+              />
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            </div>
+            <div>
+              <textarea
+                name="message"
+                placeholder="Write Message"
+                rows={4}
+                value={formData.message}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.message ? 'border-red-500 ring-red-500' : ''}`}
+              ></textarea>
+              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+            </div>
             <button
               type="submit"
-              className="w-40 bg-green-700 text-white py-3 rounded-lg font-medium shadow-md hover:bg-green-800 hover:shadow-lg transition-all"
+              disabled={isSubmitting}
+              className="w-40 bg-green-700 text-white py-3 rounded-lg font-medium shadow-md hover:bg-green-800 hover:shadow-lg transition-all disabled:bg-gray-400"
             >
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
