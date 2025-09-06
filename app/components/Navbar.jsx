@@ -197,7 +197,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-[#024b12] text-white flex flex-col items-center py-5 space-y-5 md:hidden z-40 animate-slideDown">
+        <div className="absolute top-20 left-0 p-15  w-full bg-[#024b12] text-white flex flex-col items-start py-15 space-y-5 md:hidden z-40 animate-slideDown font-poppins">
           <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-[#91eda5]">
             Home
           </Link>
@@ -206,20 +206,20 @@ function Navbar() {
           </Link>
 
           {/* Mobile Properties Dropdown */}
-          <div className="w-full flex flex-col items-center">
+          <div className="w-full flex flex-col items-start">
             <button
               onClick={() => setMobileDropdownOpen((prev) => !prev)}
-              className="flex items-center justify-center gap-1 w-full py-2"
+              className="flex items-center justify-start gap-1 w-full py-2"
             >
               Properties
               {mobileDropdownOpen ? <HiChevronUp className="ml-1" /> : <HiChevronDown className="ml-1" />}
             </button>
 
             {mobileDropdownOpen && (
-              <div className="flex flex-col items-center w-56 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden">
+              <div className="flex flex-col items-start w-56 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden">
                 <Link
                   href="/properties/katrambakkam"
-                  className="w-full text-center px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
+                  className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
                     setMobileDropdownOpen(false);
@@ -230,7 +230,7 @@ function Navbar() {
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
                   href="/properties/thaiyur"
-                  className="w-full text-center px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
+                  className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
                     setMobileDropdownOpen(false);

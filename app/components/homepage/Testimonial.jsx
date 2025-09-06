@@ -29,7 +29,7 @@ export default function TestimonialsPage() {
     <section className="py-16 px-6 lg:px-20 pt-20 lg:pt-40">
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-serif mb-3">Testimonial</h2>
+        <h2 className="text-3xl font-serif mb-3">What Client Say</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Hear from our happy customers who turned their dream of land ownership
           into reality. Their trust and satisfaction drive everything we do at
