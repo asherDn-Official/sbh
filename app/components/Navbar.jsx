@@ -50,7 +50,7 @@ function Navbar() {
   // Close desktop dropdown if clicked outside
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (dropdownRef.current && !(dropdownRef.current).contains(e.target)) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
         setDropdownOpen(false);
       }
     };
@@ -75,11 +75,11 @@ function Navbar() {
         >
           <div className="flex items-center gap-2">
             <BsTelephone />
-            <span>+91 89656895632</span>
+            <span>+91 7200940777</span>
           </div>
           <div className="flex items-center gap-2">
             <MdEmail />
-            <span>realbalaji999@gmail.com</span>
+            <span>info.sribalajihomes@gmail.com</span>
           </div>
           <div className="flex items-center gap-2 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-none">
             <MdLocationOn className="flex-shrink-0" />
@@ -131,7 +131,11 @@ function Navbar() {
               className="flex items-center px-3 hover:text-[#91eda5]"
             >
               Properties
-              {dropdownOpen ? <HiChevronUp className="ml-1" /> : <HiChevronDown className="ml-1" />}
+              {dropdownOpen ? (
+                <HiChevronUp className="ml-1" />
+              ) : (
+                <HiChevronDown className="ml-1" />
+              )}
             </button>
 
             {dropdownOpen && (
@@ -160,13 +164,15 @@ function Navbar() {
           </Link>
         </div>
 
-          {/* Enquire Now (Desktop) */}
+        {/* Enquire Now (Desktop) */}
         <div className="hidden md:flex items-center h-full">
           <Link
             href="/contact"
             className={`rounded-full border flex bg-transparent py-2 px-6  
             transition-all duration-300 ease-in-out relative overflow-hidden
-            ${isHome ? "border-white text-white" : "border-black text-[#024b12]"}
+            ${
+              isHome ? "border-white text-white" : "border-black text-[#024b12]"
+            }
             before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:rounded-full
             before:transition-all before:duration-500 before:ease-in-out before:-z-10
             ${
@@ -198,7 +204,11 @@ function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="absolute top-20 left-0 p-15  w-full bg-[#024b12] text-white flex flex-col items-start py-15 space-y-5 md:hidden z-40 animate-slideDown font-poppins">
-          <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-[#91eda5]">
+          <Link
+            href="/"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-[#91eda5]"
+          >
             Home
           </Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>
@@ -212,7 +222,11 @@ function Navbar() {
               className="flex items-center justify-start gap-1 w-full py-2"
             >
               Properties
-              {mobileDropdownOpen ? <HiChevronUp className="ml-1" /> : <HiChevronDown className="ml-1" />}
+              {mobileDropdownOpen ? (
+                <HiChevronUp className="ml-1" />
+              ) : (
+                <HiChevronDown className="ml-1" />
+              )}
             </button>
 
             {mobileDropdownOpen && (
