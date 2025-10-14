@@ -14,7 +14,7 @@ const PropertySection = () => {
           <h2 className="text-xl md:text-2xl xl:text-2xl font-semibold  leading-relaxed lg:w-1/2">
             Sri Balaji Homes Your Gateway to Property Ownership in
             <span className="text-gray-800">
-              &nbsp; Katrambakkam & Thaiyur (OMR).
+              &nbsp; Katrambakkam , Nandhambakkam & Thaiyur (OMR).
             </span>
           </h2>
         </div>
