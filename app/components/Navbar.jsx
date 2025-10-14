@@ -147,6 +147,12 @@ function Navbar() {
                   Katrambakkam
                 </Link>
                 <Link
+                  href="/properties/nandhambakkam"
+                  className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
+                >
+                  Nandhambakkam
+                </Link>
+                <Link
                   href="/properties/thaiyur"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
@@ -240,6 +246,17 @@ function Navbar() {
                   }}
                 >
                   Katrambakkam
+                </Link>
+                <div className="h-px w-full bg-gray-200"></div>
+                <Link
+                  href="/properties/nandhambakkam"
+                  className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setMobileDropdownOpen(false);
+                  }}
+                >
+                  Nandhambakkam
                 </Link>
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
