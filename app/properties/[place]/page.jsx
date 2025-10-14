@@ -19,9 +19,9 @@ const propertyData = {
     ],
   },
   thaiyur: {
-    title: "Thaiyur",
+    title: "Thaiyur (OMR)",
     description:
-      "In Thaiyur, Sri Balaji Homes offers DTCP and CMDA-approved plots in sizes of 1200, 1800, 2100, and 2400 sqft, with prices starting from just Rs.700/- to Rs.1000/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
+      "In Thaiyur (OMR), Sri Balaji Homes offers DTCP and CMDA-approved plots in sizes of 1200, 1800, 2100, and 2400 sqft, with prices starting from just Rs.700/- to Rs.1000/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
     plots: [
       { id: 1, img: "/assets/properties/plot1.jpg", size: "1400 Sq. Feet" },
       { id: 2, img: "/assets/properties/plot2.jpg", size: "1400 Sq. Feet" },

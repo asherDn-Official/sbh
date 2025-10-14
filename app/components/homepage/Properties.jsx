@@ -3,28 +3,28 @@ import Image from "next/image";
 const properties = [
   {
     id: 1,
-    title: "Katrambakkam Villa Plot",
-    size: "1400 Sq. Feet",
+    title: "Katrambakkam Plots",
+    // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla1.png", // replace with actual image path
   },
   {
     id: 2,
-    title: "Katrambakkam Villa Plot",
-    size: "1400 Sq. Feet",
+    title: "Nandhambakkam Plots",
+    // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla2.jpg",
   },
   {
     id: 3,
-    title: "Katrambakkam Villa Plot",
-    size: "1400 Sq. Feet",
+    title: "Thaiyur(OMR) Plots",
+    // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla3.png",
   },
-  {
-    id: 4,
-    title: "Katrambakkam Villa Plot",
-    size: "1400 Sq. Feet",
-    image: "/assets/home/katrambakkamvilla4.png",
-  },
+  // {
+  //   id: 4,
+  //   title: "Katrambakkam Villa Plot",
+  //   size: "1400 Sq. Feet",
+  //   image: "/assets/home/katrambakkamvilla4.png",
+  // },
 ];
 
 export default function Properties() {
@@ -33,9 +33,9 @@ export default function Properties() {
       <div className="text-center mb-8">
         <h2 className="text-2xl md:text-3xl  mb-3">Explore Our Properties</h2>
         <p className=" max-w-4xl mx-auto">
-          Discover DTCP and CMDA-approved residential plots in Chennai’s
-          fastest-growing suburbs. Ideal for building your dream home or making
-          a smart investment with high appreciation potential.
+          Discover DTCP and CMDA-approved residential plots in Peaceful
+          locations. Ideal for building your dream home or making a smart
+          investment with high appreciation potential.
         </p>
       </div>
 

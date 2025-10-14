@@ -1,6 +1,14 @@
 "use client";
 import { useState } from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import Link from "next/link";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -52,122 +60,150 @@ export default function ContactPage() {
     <section className="pt-20 md:pt-30 lg:pt-30 placeholder-sky-300 bg-gradient-to-b from-white to-gray-50">
       {/* Heading */}
       <div className=" lg:px-20 ">
-              <div className="text-center px-4 mb-16">
-        <h2 className="text-4xl font-serif font-semibold mb-4 text-gray-900">
-          Contact Us
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-          Have questions or ready to invest? Contact Sri Balaji Homes for expert
-          guidance, site visits, and complete plot-buying support.
-        </p>
-      </div>
-
-      {/* Contact Info + Form */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start md:px-20  lg:px-35">
-        {/* Left - Contact Info */}
-        <div className="space-y-10 flex flex-col h-full pt-20 lg:pl-20">
-          {/* Phone */}
-          <div className="flex items-start gap-5">
-            <span className="flex items-center justify-center w-12 h-12 bg-green-50 text-green-700 rounded-full shadow-sm">
-              <FaPhoneAlt className="text-xl" />
-            </span>
-            <div>
-              <p className="text-gray-500 text-sm">Have any question?</p>
-              <p className="text-lg font-semibold text-gray-900">
-                +91 74011 71777
-              </p>
-            </div>
-          </div>
-
-          {/* Email */}
-          <div className="flex items-start gap-5">
-            <span className="flex items-center justify-center w-12 h-12 bg-green-50 text-green-700 rounded-full shadow-sm">
-              <FaEnvelope className="text-xl" />
-            </span>
-            <div>
-              <p className="text-gray-500 text-sm">Write Email</p>
-              <p className="text-lg font-semibold text-gray-900">
-                realbalaji999@gmail.com
-              </p>
-            </div>
-          </div>
-
-          {/* Address */}
-          <div className="flex items-start gap-5">
-            <span className="flex items-center justify-center w-20 h-11 bg-green-50 text-green-700 rounded-full shadow-sm">
-              <FaMapMarkerAlt className="text-xl" />
-            </span>
-            <div>
-              <p className="text-gray-500 text-sm">Visit Now</p>
-              <p className="text-lg font-semibold text-gray-900 ">
-                A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam,
-                Chennai - 602 103.
-              </p>
-            </div>
-          </div>
+        <div className="text-center px-4 mb-16">
+          <h2 className="text-4xl font-serif font-semibold mb-4 text-gray-900">
+            Contact Us
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Have questions or ready to invest? Contact Sri Balaji Homes for
+            expert guidance, site visits, and complete plot-buying support.
+          </p>
         </div>
 
-        {/* Right - Form */}
-        <div className="bg-white shadow-lg lg:rounded-3xl px-5 py-10 lg:py-15 lg:px-20  border border-gray-100">
-          <h3 className="text-2xl font-semibold mb-6 text-gray-900">
-            Get in Touch
-          </h3>
-          <form className="space-y-5" onSubmit={handleSubmit} noValidate>
-            <div>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={formData.name}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.name ? 'border-red-500 ring-red-500' : ''}`}
-              />
-              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+        {/* Contact Info + Form */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start md:px-20  lg:px-35">
+          {/* Left - Contact Info */}
+          <div className="space-y-10 flex flex-col h-full pt-20 lg:pl-20">
+            {/* Phone */}
+            <div className="flex items-start gap-5">
+              <span className="flex items-center justify-center w-12 h-12 bg-green-50 text-green-700 rounded-full shadow-sm">
+                <FaPhoneAlt className="text-xl" />
+              </span>
+              <div>
+                <p className="text-gray-500 text-sm">Have any question?</p>
+                <p className="text-lg font-semibold text-gray-900">
+                  +91 7200940777
+                </p>
+              </div>
             </div>
-            <div>
-              <input
-                type="tel"
-                name="mobile"
-                placeholder="Mobile Number"
-                value={formData.mobile}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.mobile ? 'border-red-500 ring-red-500' : ''}`}
-              />
-              {errors.mobile && <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>}
-            </div>
-            <div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Mail Id"
-                value={formData.email}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.email ? 'border-red-500 ring-red-500' : ''}`}
-              />
-              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
-            </div>
-            <div>
-              <textarea
-                name="message"
-                placeholder="Write Message"
-                rows={4}
-                value={formData.message}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${errors.message ? 'border-red-500 ring-red-500' : ''}`}
-              ></textarea>
-              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
-            </div>
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-40 bg-green-700 text-white py-3 rounded-lg font-medium shadow-md hover:bg-green-800 hover:shadow-lg transition-all disabled:bg-gray-400"
-            >
-              {isSubmitting ? "Sending..." : "Send Message"}
-            </button>
-          </form>
-        </div>
-      </div>
 
+            {/* Email */}
+            <div className="flex items-start gap-5">
+              <span className="flex items-center justify-center w-12 h-12 bg-green-50 text-green-700 rounded-full shadow-sm">
+                <FaEnvelope className="text-xl" />
+              </span>
+              <div>
+                <p className="text-gray-500 text-sm">Write Email</p>
+                <p className="text-lg font-semibold text-gray-900">
+                  info.sribalajihomes@gmail.com
+                </p>
+              </div>
+            </div>
+
+            {/* Address */}
+            <div className="flex items-start gap-5">
+              <span className="flex items-center justify-center w-20 h-11 bg-green-50 text-green-700 rounded-full shadow-sm">
+                <FaMapMarkerAlt className="text-xl" />
+              </span>
+              <div>
+                <p className="text-gray-500 text-sm">Visit Now</p>
+                <p className="text-lg font-semibold text-gray-900 ">
+                  A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam,
+                  Chennai - 602 103.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-5 mx-auto">
+              <div className="flex items-center justify-center space-x-4">
+                <Link href="#" className="hover:text-green-400">
+                  <FaFacebookF size={20} />
+                </Link>
+                <Link href="#" className="hover:text-green-400">
+                  <FaInstagram size={20} />
+                </Link>
+                <Link href="#" className="hover:text-green-400">
+                  <FaYoutube size={20} />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Right - Form */}
+          <div className="bg-white shadow-lg lg:rounded-3xl px-5 py-10 lg:py-15 lg:px-20  border border-gray-100">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-900">
+              Get in Touch
+            </h3>
+            <form className="space-y-5" onSubmit={handleSubmit} noValidate>
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${
+                    errors.name ? "border-red-500 ring-red-500" : ""
+                  }`}
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                )}
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  name="mobile"
+                  placeholder="Mobile Number"
+                  value={formData.mobile}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${
+                    errors.mobile ? "border-red-500 ring-red-500" : ""
+                  }`}
+                />
+                {errors.mobile && (
+                  <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>
+                )}
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Mail Id"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${
+                    errors.email ? "border-red-500 ring-red-500" : ""
+                  }`}
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                )}
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  placeholder="Write Message"
+                  rows={4}
+                  value={formData.message}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${
+                    errors.message ? "border-red-500 ring-red-500" : ""
+                  }`}
+                ></textarea>
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                )}
+              </div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-40 bg-green-700 text-white py-3 rounded-lg font-medium shadow-md hover:bg-green-800 hover:shadow-lg transition-all disabled:bg-gray-400"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
 
       {/* Map Section */}

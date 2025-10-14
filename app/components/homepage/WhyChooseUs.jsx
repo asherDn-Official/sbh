@@ -1,7 +1,13 @@
 import Image from "next/image";
-import { UserIcon, DocumentCheckIcon, EyeIcon, MapPinIcon, LifebuoyIcon } from "@heroicons/react/24/outline";
+import {
+  UserIcon,
+  DocumentCheckIcon,
+  EyeIcon,
+  MapPinIcon,
+  LifebuoyIcon,
+} from "@heroicons/react/24/outline";
 import park from "../../../public/assets/home/park.jpg";
-import sbhLgog from "../../../public/assets/home/sbhlogo2.png"
+import sbhLgog from "../../../public/assets/home/sbhlogo2.png";
 const features = [
   {
     icon: <UserIcon className="h-6 w-6 text-gray-700" />,
@@ -21,7 +27,7 @@ const features = [
   {
     icon: <MapPinIcon className="h-6 w-6 text-gray-700" />,
     title: "Featured Locations We Specialize In",
-    desc: "Katrambakkam (near Kundrathur) and Thaiyur (OMR) are fast-growing Chennai suburbs with great connectivity and high appreciation.",
+    desc: "Katrambakkam (near Kundrathur), Nandhambakkam and Thaiyur (OMR) are fast-growing Chennai suburbs with great connectivity and high appreciation.",
   },
   {
     icon: <LifebuoyIcon className="h-6 w-6 text-gray-700" />,
@@ -65,8 +71,12 @@ const WhyChooseUs = () => {
             <div key={index} className="flex items-start gap-7">
               <div className="flex-shrink-0">{feature.icon}</div>
               <div>
-                <h4 className="font-bold text-xl text-gray-900">{feature.title}</h4>
-                <p className="text-gray-600 text-sm md:text-lg">{feature.desc}</p>
+                <h4 className="font-bold text-xl text-gray-900">
+                  {feature.title}
+                </h4>
+                <p className="text-gray-600 text-sm md:text-lg">
+                  {feature.desc}
+                </p>
               </div>
             </div>
           ))}

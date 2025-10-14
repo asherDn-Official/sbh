@@ -20,9 +20,10 @@ function Footer() {
             className="mb-4"
           />
           <p className="text-sm leading-relaxed mb-4">
-            Looking to invest in a plot, move into a resale plots, We guide you every step of the way.
+            Looking to invest in a plot, move into a resale plots, We guide you
+            every step of the way.
           </p>
-          <div className="flex space-x-4">
+          {/* <div className="flex space-x-4">
             <Link href="#" className="hover:text-green-400">
               <FaFacebookF size={20} />
             </Link>
@@ -32,7 +33,7 @@ function Footer() {
             <Link href="#" className="hover:text-green-400">
               <FaYoutube size={20} />
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Other Pages + Quick Links + Contact Us (65%) */}
@@ -97,11 +98,11 @@ function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center space-x-2">
                 <BsTelephone />
-                <span>+91 74011 71777</span>
+                <span>+91 7200940777</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MdEmail />
-                <span>realbalaji999@gmail.com</span>
+                <span>info.sribalajihomes@gmail.com</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MdLocationOn className="mt-1" />

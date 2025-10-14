@@ -7,27 +7,27 @@ const faqs = [
   {
     question: "What are the best areas to buy plots in Chennai?",
     answer:
-      "Sri Balaji Homes offers plots in fast-growing areas like Madhavaram, Manali, Porur, Poonamallee, Perungalathur, and more, all with great connectivity and value.",
+      "Sri Balaji Homes offers plots in fast-growing areas like Kundrathur, Katrambakkam, Thaiyur(OMR), Sirukalathur, Irungattukottai, Sriperumbudur, and more, all with great connectivity and value.",
   },
   {
     question: "What types of plots are available?",
     answer:
-      "We offer DTCP and CMDA-approved plots for homes, villas, and investments in prime Chennai suburbs.",
+      "We offer DTCP and CMDA-approved plots for homes and investments in Peaceful locations.",
   },
   {
     question: "How can I verify if a plot is legal?",
     answer:
-      "Check for DTCP/CMDA approvals, Patta/Chitta, and Encumbrance Certificates. We help verify all documents.",
+      "Our legal team provides complete assurance for the plot. They thoroughly verify all property documents, including title deeds, encumbrance certificates, and approvals from relevant authorities. You can rest assured that every plot is legally verified before purchase.",
   },
   {
-    question: "Do you sell villa plots?",
+    question: "Do you help with bank loans for land?",
     answer:
-      "Yes, we offer premium villa plots in gated communities with essential amenities.",
+      "Yes, we offer bank loan support from our Side. Our team will assist you with all the paperwork and coordination with the bank to make your land purchase smooth and easy.",
   },
   {
     question: "Are amenities available near your plots?",
     answer:
-      "Yes, our plots are near schools, hospitals, colleges, supermarkets, and transport facilities.",
+      "Yes, our plots are near schools, hospitals, colleges, supermarkets, Industries, Theme parks, Upcoming paranur airport, Poonamallee metro, Beach  and railway station.",
   },
 ];
 
@@ -52,14 +52,9 @@ export default function FAQ() {
         {/* Right Section */}
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
-            <div
-              key={idx}
-              className="border-b border-gray-300 pb-4"
-            >
+            <div key={idx} className="border-b border-gray-300 pb-4">
               <button
-                onClick={() =>
-                  setOpenIndex(openIndex === idx ? null : idx)
-                }
+                onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                 className="flex justify-between items-center w-full text-left text-lg font-medium text-gray-800 focus:outline-none"
               >
                 {faq.question}

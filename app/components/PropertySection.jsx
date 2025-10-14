@@ -12,8 +12,10 @@ const PropertySection = () => {
             Find Verified Properties That Match Your Needs & Budget
           </h4>
           <h2 className="text-xl md:text-2xl xl:text-2xl font-semibold  leading-relaxed lg:w-1/2">
-            Sri Balaji Homes Your Gateway to Property Ownership in 
-            <span className="text-gray-800">&nbsp; Katrambakkam & Thaiyur.</span>
+            Sri Balaji Homes Your Gateway to Property Ownership in
+            <span className="text-gray-800">
+              &nbsp; Katrambakkam & Thaiyur (OMR).
+            </span>
           </h2>
         </div>
 
@@ -22,7 +24,7 @@ const PropertySection = () => {
           <div className="flex-1 relative w-full h-50 md:h-72 lg:h-94 xl:h-104 mb-10">
             <Image
               src={thaiyur}
-              alt="Thaiyur"
+              alt="Thaiyur (OMR)"
               fill
               className="rounded-2xl object-cover"
               priority
@@ -46,7 +48,7 @@ const PropertySection = () => {
           <p className="text-gray-600">Years Experience</p>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-gray-900">20+</h3>
+          <h3 className="text-2xl font-bold text-gray-900">30+</h3>
           <p className="text-gray-600">Professionals</p>
         </div>
         <div>
@@ -54,7 +56,7 @@ const PropertySection = () => {
           <p className="text-gray-600">Projects</p>
         </div>
         <div>
-          <h3 className="text-2xl font-bold text-gray-900">2617</h3>
+          <h3 className="text-2xl font-bold text-gray-900">13,543</h3>
           <p className="text-gray-600">Happy Clients</p>
         </div>
       </div>

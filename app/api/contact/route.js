@@ -1,6 +1,6 @@
 // app/api/contact/route.js
-import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
@@ -19,8 +19,8 @@ export async function POST(request) {
 
     const mailOptions = {
       from: `"${name}" <${email}>`,
-      to: 'realbalaji999@gmail.com', // Your receiving email
-      subject: 'New Contact Form Submission from Sri Balaji Homes',
+      to: "info.sribalajihomes@gmail.com", // Your receiving email
+      subject: "New Contact Form Submission from Sri Balaji Homes",
       html: `
         <h3>New Enquiry</h3>
         <p><strong>Name:</strong> ${name}</p>
@@ -33,9 +33,15 @@ export async function POST(request) {
 
     await transporter.sendMail(mailOptions);
 
-    return NextResponse.json({ message: 'Email sent successfully!' }, { status: 200 });
+    return NextResponse.json(
+      { message: "Email sent successfully!" },
+      { status: 200 }
+    );
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ message: 'Failed to send email.' }, { status: 500 });
+    return NextResponse.json(
+      { message: "Failed to send email." },
+      { status: 500 }
+    );
   }
 }

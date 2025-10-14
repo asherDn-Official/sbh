@@ -21,7 +21,7 @@ const features = [
   {
     icon: <TrophyIcon className="h-6 w-6 text-gray-700" />,
     title: "Our Achievements",
-    desc: "With over 900 projects completed, we've brought joy to 2,617+ clients through trusted and timely property solutions.",
+    desc: "With over 900 projects completed, we've brought joy to 13,543+ clients through trusted and timely property solutions.",
   },
   {
     icon: <BuildingOffice2Icon className="h-6 w-6 text-gray-700" />,

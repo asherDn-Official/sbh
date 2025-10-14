@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Banner from "../../../public/assets/home/landscape.png";
 
 export default function InvestmentBanner() {
@@ -29,9 +30,12 @@ export default function InvestmentBanner() {
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center md:text-left max-w-xl">
             The Best Investment on Earth is Earth
           </h2>
-          <button className="bg-white text-gray-900 font-medium px-6 md:px-8 py-3 rounded-full shadow hover:bg-gray-100 transition text-base lg:text-lg">
+          <Link
+            href="/contact"
+            className="bg-white text-gray-900 font-medium px-6 md:px-8 py-3 rounded-full shadow hover:bg-gray-100 transition text-base lg:text-lg"
+          >
             Enquire Now
-          </button>
+          </Link>
         </div>
       </div>
     </section>

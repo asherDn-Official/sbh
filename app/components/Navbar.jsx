@@ -150,7 +150,7 @@ function Navbar() {
                   href="/properties/thaiyur"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
-                  Thaiyur
+                  Thaiyur (OMR)
                 </Link>
               </div>
             )}
@@ -250,7 +250,7 @@ function Navbar() {
                     setMobileDropdownOpen(false);
                   }}
                 >
-                  Thaiyur
+                  Thaiyur (OMR)
                 </Link>
               </div>
             )}
