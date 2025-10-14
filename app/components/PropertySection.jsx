@@ -21,7 +21,7 @@ const PropertySection = () => {
 
         {/* Images */}
         <div className="lg:flex py-10  lg:gap-15 ">
-          <div className="flex-1 relative w-full h-44  md:h-72 lg:h-72 xl:h-80">
+          <div className="flex-1 relative w-full h-44  md:h-72 lg:h-72 xl:h-80 mt-2">
             <Image
               src={katrambakkan}
               alt="Katrambakkam"
@@ -29,7 +29,7 @@ const PropertySection = () => {
               className="rounded-2xl "
             />
           </div>
-          <div className="flex-1 relative w-full h-44  md:h-72 lg:h-72 xl:h-80">
+          <div className="flex-1 relative w-full h-44  md:h-72 lg:h-72 xl:h-80 mt-2">
             <Image
               src={katrambakkan}
               alt="Katrambakkam"
@@ -37,7 +37,7 @@ const PropertySection = () => {
               className="rounded-2xl "
             />
           </div>
-          <div className="flex-1 relative w-full h-44 md:h-72 lg:h-72 xl:h-80 mb-10">
+          <div className="flex-1 relative w-full h-44 md:h-72 lg:h-72 xl:h-80 mb-10 mt-2">
             <Image
               src={thaiyur}
               alt="Thaiyur (OMR)"

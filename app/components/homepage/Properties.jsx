@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const properties = [
   {
@@ -6,18 +7,21 @@ const properties = [
     title: "Katrambakkam Plots",
     // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla1.png", // replace with actual image path
+    link: "/properties/katrambakkam",
   },
   {
     id: 2,
     title: "Nandhambakkam Plots",
     // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla2.jpg",
+    link: "/properties/nandhambakkam",
   },
   {
     id: 3,
     title: "Thaiyur(OMR) Plots",
     // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla3.png",
+    link: "/properties/thaiyur",
   },
   // {
   //   id: 4,
@@ -60,9 +64,11 @@ export default function Properties() {
             <div className="p-4">
               <h3 className="text-lg font-medium">{property.title}</h3>
               <p className="text-gray-500 text-sm mt-1">{property.size}</p>
-              <button className="mt-3 px-4 py-2 bg-green-800 text-white text-sm rounded-lg hover:bg-green-700">
-                Know More
-              </button>
+              <Link href={property.link}>
+                <button className="mt-3 px-4 py-2 bg-green-800 text-white text-sm rounded-lg hover:bg-green-700 cursor-pointer">
+                  Know More
+                </button>
+              </Link>
             </div>
           </div>
         ))}
@@ -70,9 +76,11 @@ export default function Properties() {
 
       {/* View More */}
       <div className="flex justify-center mt-8">
-        <button className="text-gray-700 border-b border-gray-400 hover:text-black">
-          View More
-        </button>
+        <Link href="/properties/katrambakkam">
+          <button className="text-gray-700 border-b border-gray-400 hover:text-black cursor-pointer">
+            View More
+          </button>
+        </Link>
       </div>
     </section>
   );
