@@ -49,7 +49,7 @@ const testimonials = [
     text: "They helped with Patta, fencing, and follow-up documentation without any extra charges",
     image: "/assets/home/profile1.jpg",
   },
-    {
+  {
     name: "Aravind",
     text: "Sri Balaji Homes made the entire land-buying journey easy and transparent. Highly recommended!",
     image: "/assets/home/profile1.jpg",
@@ -71,7 +71,7 @@ export default function TestimonialsPage() {
   const [visibleCount, setVisibleCount] = useState(9);
 
   return (
-  <section className="py-16 px-6 lg:px-20 pt-20 lg:pt-40">
+    <section className="py-16 px-6 lg:px-20 pt-20 lg:pt-40">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-serif mb-3">Testimonial</h2>
@@ -93,22 +93,18 @@ export default function TestimonialsPage() {
           >
             {/* Top Row → Profile */}
             <div className="flex items-center gap-4">
-              <div className="relative w-14 h-14">
-                <Image
-                  src={t.image}
-                  alt={t.name}
-                  fill
-                  className="rounded-full object-cover"
-                />
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">
+                  {t.name.charAt(0).toUpperCase()}
+                </span>
               </div>
-              
             </div>
 
             {/* Feedback */}
-            <p className="text-gray-700 text-md  mt-4 flex-1 ">
-              "{t.text}"
-            </p>
-            <span className="font-semibold text-gray-800 text-lg">- &nbsp;{t.name}</span>
+            <p className="text-gray-700 text-md  mt-4 flex-1 ">"{t.text}"</p>
+            <span className="font-semibold text-gray-800 text-lg">
+              - &nbsp;{t.name}
+            </span>
           </div>
         ))}
       </div>

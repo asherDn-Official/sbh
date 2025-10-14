@@ -21,21 +21,29 @@ const PropertySection = () => {
 
         {/* Images */}
         <div className="lg:flex py-10  lg:gap-15 ">
-          <div className="flex-1 relative w-full h-50 md:h-72 lg:h-94 xl:h-104 mb-10">
-            <Image
-              src={thaiyur}
-              alt="Thaiyur (OMR)"
-              fill
-              className="rounded-2xl object-cover"
-              priority
-            />
-          </div>
-          <div className="flex-1 relative w-full h-50  md:h-72 lg:h-94 xl:h-104">
+          <div className="flex-1 relative w-full h-44  md:h-72 lg:h-72 xl:h-80">
             <Image
               src={katrambakkan}
               alt="Katrambakkam"
               fill
-              className="rounded-2xl object-cover"
+              className="rounded-2xl "
+            />
+          </div>
+          <div className="flex-1 relative w-full h-44  md:h-72 lg:h-72 xl:h-80">
+            <Image
+              src={katrambakkan}
+              alt="Katrambakkam"
+              fill
+              className="rounded-2xl "
+            />
+          </div>
+          <div className="flex-1 relative w-full h-44 md:h-72 lg:h-72 xl:h-80 mb-10">
+            <Image
+              src={thaiyur}
+              alt="Thaiyur (OMR)"
+              fill
+              className="rounded-2xl"
+              priority
             />
           </div>
         </div>

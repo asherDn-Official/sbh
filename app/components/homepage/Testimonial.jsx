@@ -47,13 +47,10 @@ export default function TestimonialsPage() {
           >
             {/* Profile */}
             <div className="flex items-center gap-4">
-              <div className="relative w-14 h-14">
-                <Image
-                  src={t.image}
-                  alt={t.name}
-                  fill
-                  className="rounded-full object-cover"
-                />
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">
+                  {t.name.charAt(0).toUpperCase()}
+                </span>
               </div>
             </div>
 
