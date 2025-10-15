@@ -4,18 +4,18 @@ import { useState } from "react";
 
 const testimonials = [
   {
-    name: "Aravind",
-    text: "Sri Balaji Homes made the entire land-buying journey easy and transparent. Highly recommended!",
+    name: "Aravind Kumar",
+    text: "Sri Balaji Homes made my land-buying journey effortless. Their legal team verified every document and ensured full transparency. Highly reliable!",
     image: "/assets/home/profile1.jpg",
   },
   {
-    name: "Priya Ramesh",
-    text: "Invested in a plot near Kundrathur. Excellent connectivity and great future value",
+    name: "Abdul Rahman",
+    text: "I appreciate their honesty and quick process. The land documents were legally perfect, and the team helped me through every step.",
     image: "/assets/home/profile1.jpg",
   },
   {
-    name: "Karthik",
-    text: "They helped with Patta, fencing, and follow-up documentation without any extra charges",
+    name: "Farhana Begum",
+    text: "The documents were crystal clear and verified by their legal team. I received my originals and Patta immediately after registration.",
     image: "/assets/home/profile1.jpg",
   },
   // ... repeat your existing testimonials
