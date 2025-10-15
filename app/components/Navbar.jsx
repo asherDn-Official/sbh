@@ -107,13 +107,13 @@ function Navbar() {
               isHome
                 ? // ? "/assets/home/sbhwhitelogo1.png"
                   // : "/assets/home/sbhlogo.svg"
-                  "/assets/home/SBH-LOGO.jpg"
-                : "/assets/home/sbhlogo.svg"
+                  "/assets/home/sbh-logo-white.png"
+                : "/assets/home/sbh-logo.png"
             }
             alt="Logo"
             width={73}
             height={53}
-            className="w-12 h-auto sm:w-[73px]"
+            className="w-12 h-auto sm:w-[100px]"
           />
         </div>
 

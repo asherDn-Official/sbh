@@ -209,14 +209,14 @@ export default function ContactPage() {
       {/* Map Section */}
       <div className="mt-20">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124329.2578299496!2d79.96226779996955!3d13.144142353705593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5287532fe0858f%3A0xe0407ac4738106fd!2sMani%20Garden!5e0!3m2!1sen!2sin!4v1760509671547!5m2!1sen!2sin"
-          width="100%"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8414762254033!2d80.0295029!3d12.9819891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528bb7a16ae543%3A0x10ae9addafa574fd!2sSRI%20BALAJI%20HOMES!5e0!3m2!1sen!2sin!4v1760514644539!5m2!1sen!2sin"
+          width="600"
           height="450"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="rounded-xl shadow-lg"
+          className="w-full rounded-xl shadow-lg"
         ></iframe>
       </div>
     </section>

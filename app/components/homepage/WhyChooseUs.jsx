@@ -7,7 +7,7 @@ import {
   LifebuoyIcon,
 } from "@heroicons/react/24/outline";
 import park from "../../../public/assets/home/park.jpg";
-import sbhLgog from "../../../public/assets/home/sbhlogo2.png";
+import sbhLgog from "../../../public/assets/home/sbh-logo.png";
 const features = [
   {
     icon: <UserIcon className="h-6 w-6 text-gray-700" />,
