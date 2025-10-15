@@ -209,12 +209,13 @@ export default function ContactPage() {
       {/* Map Section */}
       <div className="mt-20">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.4738142679956!2d80.06716977481967!3d12.81756631962164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528bc7e77c85c3%3A0x9c3bff4466e4b3d!2sPallavan%20Nagar%2C%20Katrambakkam%2C%20Tamil%20Nadu%20602105!5e0!3m2!1sen!2sin!4v1693643319271!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124329.2578299496!2d79.96226779996955!3d13.144142353705593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5287532fe0858f%3A0xe0407ac4738106fd!2sMani%20Garden!5e0!3m2!1sen!2sin!4v1760509671547!5m2!1sen!2sin"
           width="100%"
           height="450"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
           className="rounded-xl shadow-lg"
         ></iframe>
       </div>
