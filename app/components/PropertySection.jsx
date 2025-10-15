@@ -1,5 +1,6 @@
 import Image from "next/image";
 import katrambakkan from "../../public/assets/home/katrambakkam.png";
+import nandhambakkam from "../../public/assets/home/nandhapakkam.png";
 import thaiyur from "../../public/assets/home/thaiyur.png";
 const PropertySection = () => {
   return (
@@ -31,7 +32,7 @@ const PropertySection = () => {
           </div>
           <div className="flex-1 relative w-full h-44  md:h-72 lg:h-72 xl:h-80 mt-2">
             <Image
-              src={katrambakkan}
+              src={nandhambakkam}
               alt="Katrambakkam"
               fill
               className="rounded-2xl "

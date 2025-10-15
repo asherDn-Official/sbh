@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import React from 'react'
-import founder from "../../../public/assets/about/founder.jpg"
+import Image from "next/image";
+import React from "react";
+import founder from "../../../public/assets/about/SIR.png";
 export default function AboutUs() {
   return (
-     <section className="w-full xl:px-6 sl:py-12 max-w-7xl mx-auto mb-10">
+    <section className="w-full xl:px-6 sl:py-12 max-w-7xl mx-auto mb-10">
       <div className="flex flex-col-reverse lg:flex-row items-start gap-10">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 space-y-6  px-6">
@@ -14,10 +14,10 @@ export default function AboutUs() {
             <p>
               When I founded SBH in 2003, I had a simple yet ambitious vision:
               to build a real estate company rooted in trust, integrity, and an
-              unwavering commitment to clients. Starting alone with a firm belief
-              in my capabilities, I have been fortunate to witness the journey of
-              SBH grow into what it is today—a trusted name in real estate,
-              supported by a dedicated team and loyal clients.
+              unwavering commitment to clients. Starting alone with a firm
+              belief in my capabilities, I have been fortunate to witness the
+              journey of SBH grow into what it is today—a trusted name in real
+              estate, supported by a dedicated team and loyal clients.
             </p>
             <p>
               I firmly believe that “The best investment on Earth is Earth,” and
@@ -35,9 +35,7 @@ export default function AboutUs() {
             <div className="pt-4">
               <p>Warm regards,</p>
               <p className="font-medium">B. Dhanasekar</p>
-              <p className="text-gray-600">
-                Founder, Sri Balaji Homes (SBH)
-              </p>
+              <p className="text-gray-600">Founder, Sri Balaji Homes (SBH)</p>
             </div>
           </div>
         </div>
@@ -54,5 +52,5 @@ export default function AboutUs() {
         </div>
       </div>
     </section>
-  )
+  );
 }

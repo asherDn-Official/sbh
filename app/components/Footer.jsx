@@ -13,9 +13,9 @@ function Footer() {
         {/* Logo + About (35%) */}
         <div className="md:w-[40%]">
           <Image
-            src="/assets/home/sbhwhitelogo1.png"
-            width={100}
-            height={80}
+            src="/assets/home/SBH-LOGO.jpg"
+            width={150}
+            height={100}
             alt="Sri Balaji Homes Logo"
             className="mb-4"
           />
@@ -53,7 +53,10 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/properties" className="hover:text-green-400">
+                <Link
+                  href="/properties/katrambakkam"
+                  className="hover:text-green-400"
+                >
                   Properties
                 </Link>
               </li>

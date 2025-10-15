@@ -105,7 +105,9 @@ function Navbar() {
           <Image
             src={
               isHome
-                ? "/assets/home/sbhwhitelogo1.png"
+                ? // ? "/assets/home/sbhwhitelogo1.png"
+                  // : "/assets/home/sbhlogo.svg"
+                  "/assets/home/SBH-LOGO.jpg"
                 : "/assets/home/sbhlogo.svg"
             }
             alt="Logo"
