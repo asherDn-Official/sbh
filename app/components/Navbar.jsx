@@ -15,7 +15,7 @@ function Navbar() {
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false); // mobile dropdown
   const dropdownRef = useRef(null);
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const isHome = pathname === "/" || pathname?.startsWith("/properties");
 
   // Track if page is at top
   useEffect(() => {

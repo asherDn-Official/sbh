@@ -118,7 +118,10 @@ export default function ContactPage() {
                 <Link href="#" className="hover:text-green-400">
                   <FaFacebookF size={20} />
                 </Link>
-                <Link href="#" className="hover:text-green-400">
+                <Link
+                  href="https://www.instagram.com/sribalajihomes_official"
+                  className="hover:text-green-400"
+                >
                   <FaInstagram size={20} />
                 </Link>
                 <Link href="#" className="hover:text-green-400">

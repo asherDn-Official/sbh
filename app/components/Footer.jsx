@@ -101,11 +101,21 @@ function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center space-x-2">
                 <BsTelephone />
-                <span>+91 7200940777</span>
+                <a
+                  href="tel:+917200940777"
+                  className="hover:text-green-400 transition-colors duration-200"
+                >
+                  +91 7200940777
+                </a>
               </li>
               <li className="flex items-center space-x-2">
                 <MdEmail />
-                <span>info.sribalajihomes@gmail.com</span>
+                <a
+                  href="mailto:info.sribalajihomes@gmail.com"
+                  className="hover:text-green-400 transition-colors duration-200"
+                >
+                  info.sribalajihomes@gmail.com
+                </a>
               </li>
               <li className="flex items-start space-x-2">
                 <MdLocationOn className="mt-1" />
