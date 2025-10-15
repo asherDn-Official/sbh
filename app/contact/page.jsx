@@ -23,7 +23,15 @@ export default function ContactPage() {
 
   const validate = () => {
     let tempErrors = {};
-    if (!formData.name) tempErrors.name = "Name is required.";
+    const trimmedName = formData.name.trim();
+
+    if (!trimmedName) {
+      tempErrors.name = "Name is required.";
+    } else if (trimmedName.length < 3) {
+      tempErrors.name = "Name must be at least 3 characters.";
+    } else if (!/^[A-Za-z\s]+$/.test(trimmedName)) {
+      tempErrors.name = "Name can contain only letters.";
+    }
     if (!formData.mobile) {
       tempErrors.mobile = "Mobile number is required.";
     } else if (!/^\d{10}$/.test(formData.mobile)) {
@@ -42,6 +50,15 @@ export default function ContactPage() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === "name") {
+      // Allow only alphabetic characters and spaces while typing
+      if (/^[A-Za-z\s]*$/.test(value)) {
+        setFormData({ ...formData, [name]: value });
+      }
+      return;
+    }
+
     setFormData({ ...formData, [name]: value });
   };
 
