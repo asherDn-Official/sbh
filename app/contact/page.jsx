@@ -189,6 +189,7 @@ export default function ContactPage() {
                   placeholder="Name"
                   value={formData.name}
                   onChange={handleChange}
+                  maxLength={20}
                   className={`w-full px-4 py-3 bg-gray-50 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-green-600 outline-none transition ${
                     errors.name ? "border-red-500 ring-red-500" : ""
                   }`}
