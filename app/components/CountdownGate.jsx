@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
-export const LAUNCH_DATE_ISO = "2024-10-20T00:00:00+05:30"; // October 20th, 12:00 AM IST
+export const LAUNCH_DATE_ISO =
+  process.env.NEXT_PUBLIC_LAUNCH_DATE_ISO ?? "2025-10-20T00:00:00+05:30"; // October 20th, 12:00 AM IST
 
 function computeTimeSegments(targetDate) {
   const diff = targetDate.getTime() - Date.now();
@@ -27,30 +28,40 @@ function pad(value) {
 
 export function useCountdown(targetIso) {
   const targetDate = useMemo(() => new Date(targetIso), [targetIso]);
-  const [timeLeft, setTimeLeft] = useState(() =>
-    computeTimeSegments(targetDate)
-  );
+  const [timeLeft, setTimeLeft] = useState(undefined);
 
   useEffect(() => {
     if (!isFinite(targetDate.getTime())) {
       console.error("Invalid countdown target date:", targetIso);
+      setTimeLeft(null);
       return undefined;
     }
 
-    const interval = setInterval(() => {
-      setTimeLeft((prev) => {
-        const updated = computeTimeSegments(targetDate);
-        if (!updated) {
-          clearInterval(interval);
-        }
-        return updated;
-      });
-    }, 1000);
+    let intervalId = null;
 
-    return () => clearInterval(interval);
+    const update = () => {
+      const next = computeTimeSegments(targetDate);
+      setTimeLeft(next);
+
+      if (!next && intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+
+    update();
+    intervalId = setInterval(update, 1000);
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
   }, [targetDate, targetIso]);
 
-  return { timeLeft, isLive: !timeLeft, targetDate };
+  const hasHydrated = timeLeft !== undefined;
+  const isLive = hasHydrated && timeLeft === null;
+
+  return { timeLeft, isLive, hasHydrated, targetDate };
 }
 
 export function CountdownContent({ timeLeft }) {
@@ -63,7 +74,7 @@ export function CountdownContent({ timeLeft }) {
       <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
       <div className="relative flex flex-col items-center space-y-10 max-w-lg">
         <Image
-          src="/assets/home/sbh-logo.png"
+          src="/assets/home/sbh-logo-white.png"
           alt="Sri Balaji Homes Logo"
           width={200}
           height={200}
@@ -106,10 +117,18 @@ function TimeCard({ label, value }) {
 }
 
 export default function CountdownGate({ children }) {
-  const { timeLeft, isLive } = useCountdown(LAUNCH_DATE_ISO);
+  const { timeLeft, isLive, hasHydrated } = useCountdown(LAUNCH_DATE_ISO);
+
+  if (!hasHydrated) {
+    return null;
+  }
 
   if (isLive) {
     return <>{children}</>;
+  }
+
+  if (!timeLeft) {
+    return null;
   }
 
   return <CountdownContent timeLeft={timeLeft} />;
