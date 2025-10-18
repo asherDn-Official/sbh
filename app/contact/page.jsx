@@ -132,7 +132,10 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center justify-center gap-5 mx-auto">
               <div className="flex items-center justify-center space-x-4">
-                <Link href="#" className="hover:text-green-400">
+                <Link
+                  href="https://www.facebook.com/share/1BUtDYePcK/?mibextid=wwXIfr"
+                  className="hover:text-green-400"
+                >
                   <FaFacebookF size={20} />
                 </Link>
                 <Link
@@ -141,7 +144,10 @@ export default function ContactPage() {
                 >
                   <FaInstagram size={20} />
                 </Link>
-                <Link href="#" className="hover:text-green-400">
+                <Link
+                  href="https://youtube.com/@sribalajihomes-official?si=CE_Q5iLn6JI7c9nx"
+                  className="hover:text-green-400"
+                >
                   <FaYoutube size={20} />
                 </Link>
               </div>
