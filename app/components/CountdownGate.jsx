@@ -169,15 +169,15 @@ export function CountdownContent({ timeLeft }) {
             <div className="contact-grid">
               <a
                 className="contact-item"
-                href="mailto:hello@sribalajihomes.com"
-                aria-label="Email hello@sribalajihomes.com"
+                href="mailto:info.sribalajihomes@gmail.com"
+                aria-label="Email info.sribalajihomes@gmail.com"
               >
                 <span className="contact-icon" aria-hidden="true">
                   <FaEnvelope />
                 </span>
                 <div>
                   <p className="contact-label">Email</p>
-                  <p className="contact-value">hello@sribalajihomes.com</p>
+                  <p className="contact-value">info.sribalajihomes@gmail.com</p>
                 </div>
               </a>
               <a
@@ -190,7 +190,7 @@ export function CountdownContent({ timeLeft }) {
                 </span>
                 <div>
                   <p className="contact-label">Phone</p>
-                  <p className="contact-value">+91 98765 43210</p>
+                  <p className="contact-value"> +91 7200940777</p>
                 </div>
               </a>
               <div className="contact-item" role="group" aria-label="Address">
@@ -200,11 +200,8 @@ export function CountdownContent({ timeLeft }) {
                 <div>
                   <p className="contact-label">Visit Us</p>
                   <p className="contact-value">
-                    Sri Balaji Homes, 2nd Floor,
-                    <br />
-                    45 Celebration Avenue,
-                    <br />
-                    Hyderabad, Telangana 500081
+                    A.S. Mani Garden, Plot No. 143, Pallavan Nagar,
+                    Katrambakkam, Chennai - 602 103.
                   </p>
                 </div>
               </div>
