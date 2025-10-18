@@ -20,6 +20,7 @@ export default function ContactPage() {
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // null, 'success', or 'error'
 
   const validate = () => {
     let tempErrors = {};
@@ -64,12 +65,33 @@ export default function ContactPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitStatus(null); // Reset status on new submission
     if (validate()) {
       setIsSubmitting(true);
-      // Here you would call your API to send the email
-      console.log("Form is valid, submitting...", formData);
-      // After submission, you might want to reset the form or show a success message.
-      // setIsSubmitting(false);
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          setSubmitStatus("success");
+          console.log("Email sent successfully!");
+          // Reset form on success
+          setFormData({ name: "", mobile: "", email: "", message: "" });
+        } else {
+          const errorData = await response.json();
+          setSubmitStatus("error");
+          console.error("Failed to send email:", errorData.message);
+        }
+      } catch (error) {
+        setSubmitStatus("error");
+        console.error("An error occurred while submitting the form:", error);
+      }
+      setIsSubmitting(false);
     }
   };
 
@@ -227,6 +249,17 @@ export default function ContactPage() {
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
+              {submitStatus === "success" && (
+                <p className="text-green-600 mt-4 font-medium">
+                  Thank you! Your message has been sent successfully.
+                </p>
+              )}
+              {submitStatus === "error" && (
+                <p className="text-red-600 mt-4 font-medium">
+                  Sorry, something went wrong. Please check your details or try
+                  again later.
+                </p>
+              )}
             </form>
           </div>
         </div>

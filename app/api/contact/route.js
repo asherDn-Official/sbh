@@ -6,6 +6,14 @@ export async function POST(request) {
   try {
     const { name, email, mobile, message } = await request.json();
 
+    // Log to check if environment variables are loaded
+    if (!process.env.EMAIL_USER) {
+      console.error("EMAIL_USER is not defined. Make sure your .env.local file is set up correctly and the server is restarted.");
+      return NextResponse.json(
+        { message: "Server configuration error." },
+        { status: 500 }
+      );
+    }
     // IMPORTANT: Use environment variables for credentials
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST, // e.g., 'smtp.gmail.com'
@@ -38,7 +46,8 @@ export async function POST(request) {
       { status: 200 }
     );
   } catch (error) {
-    console.error(error);
+    // Log the detailed error from nodemailer
+    console.error("Failed to send email:", error);
     return NextResponse.json(
       { message: "Failed to send email." },
       { status: 500 }
