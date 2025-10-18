@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 export const LAUNCH_DATE_ISO =
   process.env.NEXT_PUBLIC_LAUNCH_DATE_ISO ?? "2025-10-20T00:00:00+05:30"; // October 20th, 12:00 AM IST
@@ -114,8 +115,8 @@ export function CountdownContent({ timeLeft }) {
           <p className="uppercase tracking-[0.3em] text-sm text-green-200">
             We are gearing up
           </p>
-          <h1 className="text-3xl sm:text-4xl font-semibold">
-            Our website goes live soon
+          <h1 className="text-3xl sm:text-4xl font-semibold text-yellow-300 drop-shadow-md">
+            Our website will go live on Diwali.
           </h1>
           <div className="celebration-pop" aria-hidden="true">
             <span className="pop-burst pop-burst-left" />
@@ -130,9 +131,9 @@ export function CountdownContent({ timeLeft }) {
             >
               🧨
             </span> */}
-            <p className="text-2xl font-semibold text-yellow-300 drop-shadow-md">
+            {/* <p className="text-2xl font-semibold text-yellow-300 drop-shadow-md">
               Live on Diwali
-            </p>
+            </p> */}
             {/* <span
               role="img"
               aria-label="Firecracker"
@@ -162,6 +163,53 @@ export function CountdownContent({ timeLeft }) {
             <span className="sparkle sparkle-2" />
             <span className="sparkle sparkle-3" />
           </div>
+
+          <footer className="contact-card">
+            <h2 className="contact-title">Stay in Touch</h2>
+            <div className="contact-grid">
+              <a
+                className="contact-item"
+                href="mailto:hello@sribalajihomes.com"
+                aria-label="Email hello@sribalajihomes.com"
+              >
+                <span className="contact-icon" aria-hidden="true">
+                  <FaEnvelope />
+                </span>
+                <div>
+                  <p className="contact-label">Email</p>
+                  <p className="contact-value">hello@sribalajihomes.com</p>
+                </div>
+              </a>
+              <a
+                className="contact-item"
+                href="tel:+919876543210"
+                aria-label="Call +91 98765 43210"
+              >
+                <span className="contact-icon" aria-hidden="true">
+                  <FaPhoneAlt />
+                </span>
+                <div>
+                  <p className="contact-label">Phone</p>
+                  <p className="contact-value">+91 98765 43210</p>
+                </div>
+              </a>
+              <div className="contact-item" role="group" aria-label="Address">
+                <span className="contact-icon" aria-hidden="true">
+                  <FaMapMarkerAlt />
+                </span>
+                <div>
+                  <p className="contact-label">Visit Us</p>
+                  <p className="contact-value">
+                    Sri Balaji Homes, 2nd Floor,
+                    <br />
+                    45 Celebration Avenue,
+                    <br />
+                    Hyderabad, Telangana 500081
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
 
         {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
