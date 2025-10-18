@@ -182,8 +182,8 @@ export function CountdownContent({ timeLeft }) {
               </a>
               <a
                 className="contact-item"
-                href="tel:+919876543210"
-                aria-label="Call +91 98765 43210"
+                href="tel:+917200940777"
+                aria-label="Call  +91 7200940777"
               >
                 <span className="contact-icon" aria-hidden="true">
                   <FaPhoneAlt />
