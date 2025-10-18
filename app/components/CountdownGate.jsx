@@ -72,6 +72,24 @@ export function CountdownContent({ timeLeft }) {
   return (
     <section className="countdown-gradient relative flex flex-col min-h-screen items-center justify-center text-white text-center px-6 py-16 overflow-hidden">
       <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+      <div className="diwali-fireworks" aria-hidden="true">
+        <span className="firework firework-1" />
+        <span className="firework firework-2" />
+        <span className="firework firework-3" />
+        <span className="firework firework-4" />
+      </div>
+      <div className="diwali-firecracker" aria-hidden="true">
+        <span className="cracker-segment segment-1" />
+        <span className="cracker-segment segment-2" />
+        <span className="cracker-segment segment-3" />
+        <span className="cracker-spark" />
+      </div>
+      <div className="floating-diyas" aria-hidden="true">
+        <span className="diya diya-left" />
+        <span className="diya diya-center" />
+        <span className="diya diya-right" />
+      </div>
+
       <div className="relative flex flex-col items-center space-y-10 max-w-lg">
         <Image
           src="/assets/home/sbh-logo-white.png"
@@ -83,38 +101,75 @@ export function CountdownContent({ timeLeft }) {
         />
 
         <div className="space-y-4">
+          <div className="diwali-banner">
+            <span role="img" aria-label="Diya">
+              🪔
+            </span>
+            <p className="diwali-banner__text">Wishing You a Happy Deepavali</p>
+            <span role="img" aria-label="Diya">
+              🪔
+            </span>
+          </div>
+
           <p className="uppercase tracking-[0.3em] text-sm text-green-200">
             We are gearing up
           </p>
           <h1 className="text-3xl sm:text-4xl font-semibold">
             Our website goes live soon
           </h1>
-          {/* <span className="animate-bounce">🎆</span> */}
-          <div className="flex align-middle justify-center">
+          <div className="celebration-pop" aria-hidden="true">
+            <span className="pop-burst pop-burst-left" />
+            <span className="pop-burst pop-burst-right" />
+          </div>
+          <div className="flex align-middle justify-center space-x-3">
+            {/* <span
+              role="img"
+              aria-label="Firecracker"
+              className="text-3xl"
+              aria-hidden="true"
+            >
+              🧨
+            </span> */}
             <p className="text-2xl font-semibold text-yellow-300 drop-shadow-md">
               Live on Diwali
             </p>
-            {/* <span className="animate-pulse">🧨</span> */}
+            {/* <span
+              role="img"
+              aria-label="Firecracker"
+              className="text-3xl"
+              aria-hidden="true"
+            >
+              🎇
+            </span> */}
           </div>
 
-          {/* <span className="animate-bounce" style={{ animationDelay: "0.2s" }}>
-            🎇
-          </span> */}
           <p className="text-base text-green-100">
             Get ready for the grand launch on October 20th at midnight IST.
           </p>
-          <div
-            className="flex items-center justify-center space-x-4 text-3xl"
-            aria-hidden="true"
-          ></div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
+            <TimeCard label="Days" value={pad(timeLeft.days)} />
+            <TimeCard label="Hours" value={pad(timeLeft.hours)} />
+            <TimeCard label="Minutes" value={pad(timeLeft.minutes)} />
+            <TimeCard label="Seconds" value={pad(timeLeft.seconds)} />
+          </div>
+          <div className="festive-divider" aria-hidden="true" />
+          <p className="festive-message">
+            May the festival of lights brighten your home and our launch with
+            joy, prosperity, and sparkling celebrations.
+          </p>
+          <div className="sparkle-row" aria-hidden="true">
+            <span className="sparkle sparkle-1" />
+            <span className="sparkle sparkle-2" />
+            <span className="sparkle sparkle-3" />
+          </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
+        {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
           <TimeCard label="Days" value={pad(timeLeft.days)} />
           <TimeCard label="Hours" value={pad(timeLeft.hours)} />
           <TimeCard label="Minutes" value={pad(timeLeft.minutes)} />
           <TimeCard label="Seconds" value={pad(timeLeft.seconds)} />
-        </div>
+        </div> */}
       </div>
     </section>
   );
