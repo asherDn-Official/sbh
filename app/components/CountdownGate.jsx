@@ -82,16 +82,31 @@ export function CountdownContent({ timeLeft }) {
           priority
         />
 
-        <div className="space-y-3">
+        <div className="space-y-4">
           <p className="uppercase tracking-[0.3em] text-sm text-green-200">
             We are gearing up
           </p>
           <h1 className="text-3xl sm:text-4xl font-semibold">
             Our website goes live soon
           </h1>
+          {/* <span className="animate-bounce">🎆</span> */}
+          <div className="flex align-middle justify-center">
+            <p className="text-2xl font-semibold text-yellow-300 drop-shadow-md">
+              Live on Diwali
+            </p>
+            {/* <span className="animate-pulse">🧨</span> */}
+          </div>
+
+          {/* <span className="animate-bounce" style={{ animationDelay: "0.2s" }}>
+            🎇
+          </span> */}
           <p className="text-base text-green-100">
             Get ready for the grand launch on October 20th at midnight IST.
           </p>
+          <div
+            className="flex items-center justify-center space-x-4 text-3xl"
+            aria-hidden="true"
+          ></div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
