@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${lora.className} ${poppins.variable}`}>
         <CountdownGate>
-          <div className="min-h-screenflex flex-col">
+          <div className="min-h-screen flex-col">
             <Navbar />
             <main className="flex-1 ">{children}</main>
             <Footer />

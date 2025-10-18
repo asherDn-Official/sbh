@@ -5,7 +5,6 @@ import WhyChooseUs from "./components/homepage/WhyChooseUs";
 import Properties from "./components/homepage/Properties";
 import InvestmentBanner from "./components/homepage/InvestmentBanner";
 import Testimonials from "./components/homepage/Testimonial";
-
 import Reveal from "./components/Reveal";
 
 export default function Home() {
