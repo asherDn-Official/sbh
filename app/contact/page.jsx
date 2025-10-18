@@ -8,6 +8,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 export default function ContactPage() {
@@ -171,6 +172,12 @@ export default function ContactPage() {
                   className="hover:text-green-400"
                 >
                   <FaYoutube size={20} />
+                </Link>
+                <Link
+                  href="https://wa.me/917200940777"
+                  className="hover:text-green-400"
+                >
+                  <FaWhatsapp size={20} />
                 </Link>
               </div>
             </div>

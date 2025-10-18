@@ -8,11 +8,11 @@ const propertyData = {
   katrambakkam: {
     title: "Katrambakkam",
     description:
-      "In Katrambakkam, Sri Balaji Homes offers DTCP-approved plots in sizes of 2100 sqft, 1800 sqft with prices starting from just Rs.700/- to Rs.1000/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
+      "In Katrambakkam, Sri Balaji Homes offers DTCP-approved plots in sizes of 2400 sqft, 2100 sqft, 1800 sqft, 1200 sqft, 800 sqft  with prices starting from just Rs.700/- to Rs.1600/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
     plots: [
-      { id: 1, img: "/assets/properties/k-1.jpg", size: "2100 Sq. Feet" },
-      { id: 2, img: "/assets/properties/k-2.jpg", size: "1800 Sq. Feet" },
-      { id: 3, img: "/assets/properties/k-3.jpg", size: "2100 Sq. Feet" },
+      { id: 1, img: "/assets/properties/k-1.jpg", size: "800 Sq. Feet" },
+      { id: 2, img: "/assets/properties/k-2.jpg", size: "1200 Sq. Feet" },
+      { id: 3, img: "/assets/properties/k-3.jpg", size: "2400 Sq. Feet" },
       { id: 4, img: "/assets/properties/k-4.jpg", size: "1800 Sq. Feet" },
       { id: 5, img: "/assets/properties/k-5.jpg", size: "2100 Sq. Feet" },
     ],
@@ -20,7 +20,7 @@ const propertyData = {
   nandhambakkam: {
     title: "Nandhambakkam",
     description:
-      "In Nandhambakkam, Sri Balaji Homes presents DTCP and CMDA-approved plots with prime connectivity and plot sizes ranging from 1200 to 2400 sqft, with prices starting from Rs.1500/- to Rs.3000/- per sqft, giving you flexible options for both residence and investment.",
+      "In Nandhambakkam, Sri Balaji Homes presents CMDA-approved plots with prime connectivity and plot sizes ranging from 1200 to 2400 sqft, with prices starting from Rs.1500/- to Rs.3000/- per sqft, giving you flexible options for both residence and investment.",
     plots: [
       { id: 1, img: "/assets/properties/plot-1.jpg", size: "2400 Sq. Feet" },
       { id: 2, img: "/assets/properties/plot-2.png", size: "1200 Sq. Feet" },
@@ -32,13 +32,13 @@ const propertyData = {
   thaiyur: {
     title: "Thaiyur (OMR)",
     description:
-      "In Thaiyur (OMR), Sri Balaji Homes offers DTCP-approved plots in Sqft sizes -600 Sqft, 1200 Sqft, 1500 Sqft, 2000 Sqft, with prices starting from just Rs.2200/- to Rs.2900/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
+      "In Thaiyur (OMR), Sri Balaji Homes offers DTCP-approved plots in Sqft sizes -800 Sqft, 1200 Sqft, 2400 Sqft, with prices starting from just Rs.2400/- to Rs.3000/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
     plots: [
       { id: 1, img: "/assets/properties/t-1.jpg", size: "1200 Sq. Feet" },
-      { id: 2, img: "/assets/properties/t-2.jpg", size: "1500 Sq. Feet" },
+      { id: 2, img: "/assets/properties/t-2.jpg", size: "2400 Sq. Feet" },
       { id: 3, img: "/assets/properties/t-3.jpg", size: "1200 Sq. Feet" },
-      { id: 4, img: "/assets/properties/t-4.jpg", size: "1500 Sq. Feet" },
-      { id: 5, img: "/assets/properties/5.jpg", size: "2000 Sq. Feet" },
+      { id: 4, img: "/assets/properties/t-4.jpg", size: "800 Sq. Feet" },
+      { id: 5, img: "/assets/properties/5.jpg", size: "2400 Sq. Feet" },
     ],
   },
 };
