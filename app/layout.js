@@ -3,6 +3,7 @@ import "./globals.css";
 import { Lora } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import CountdownGate from "./components/CountdownGate";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,9 +32,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${lora.className} ${poppins.variable}`}>
-        <Navbar />
-        <main >{children}</main>
-        <Footer />
+        <CountdownGate>
+          <div className="min-h-screenflex flex-col">
+            <Navbar />
+            <main className="flex-1 ">{children}</main>
+            <Footer />
+          </div>
+        </CountdownGate>
       </body>
     </html>
   );
