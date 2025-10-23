@@ -23,9 +23,38 @@ const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], // choose what you need
 });
+// export const metadata = {
+//   title: "Sri Balaji Homes",
+//   description: "You see Land, We See Plan",
+// };
+
 export const metadata = {
   title: "Sri Balaji Homes",
   description: "You see Land, We See Plan",
+  icons: {
+    icon: "/favicon.ico", // Browser tab icon
+    apple: "/apple-touch-icon.png", // iOS shortcut icon
+    shortcut: "/favicon.ico",
+  },
+  //manifest: "/site.webmanifest", // PWA manifest file
+  themeColor: "#ffffff", // Optional - matches manifest background
+  openGraph: {
+    title: "Sri Balaji Homes",
+    description:
+      "Discover DTCP and CMDA-approved residential plots in peaceful locations. You see Land, We See Plan.",
+    url: "https://sribalajihomes.in",
+    siteName: "Sri Balaji Homes",
+    images: [
+      {
+        url: "/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Sri Balaji Homes",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
