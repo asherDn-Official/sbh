@@ -64,6 +64,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> */}
+      </head>
       <body className={`${lora.className} ${poppins.variable}`}>
         <CountdownGate>
           <div className="min-h-screen flex-col">
