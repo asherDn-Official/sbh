@@ -4,20 +4,24 @@ import { Lora } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CountdownGate from "./components/CountdownGate";
-const geistSans = Geist({
+const geistSans = Geist_Mono({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], // choose the weights you need
   variable: "--font-poppins",
 });
+
+
+
+
 // Load Lora font (adjust weights as needed)
 const lora = Lora({
   subsets: ["latin"],
@@ -33,7 +37,7 @@ export const metadata = {
   description: "You see Land, We See Plan",
   icons: {
     icon: "/favicon.ico", // Browser tab icon
-    apple: "/apple-touch-icon.png", // iOS shortcut icon
+    apple: "/favicon.ico", // iOS shortcut icon
     shortcut: "/favicon.ico",
   },
   //manifest: "/site.webmanifest", // PWA manifest file
