@@ -24,8 +24,8 @@ const lora = Lora({
   weight: ["400", "500", "600", "700"], // choose what you need
 });
 export const metadata = {
-  title: "SBH",
-  description: "Static Next.js landing page",
+  title: "Sri Balaji Homes",
+  description: "You see Land, We See Plan",
 };
 
 export default function RootLayout({ children }) {
