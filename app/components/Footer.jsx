@@ -6,6 +6,12 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 
 function Footer() {
+  const [year, setYear] = useState("");
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-black text-white">
       {/* Top Section */}
@@ -131,8 +137,7 @@ function Footer() {
 
       {/* Bottom Section */}
       <div className="pb-7 text-center text-lg border-t border-gray-700 pt-4">
-        Copyright © {new Date().getFullYear()} Sri Balaji Homes. All Rights
-        Reserved.
+        Copyright © {year} Sri Balaji Homes. All Rights Reserved.
       </div>
     </footer>
   );
