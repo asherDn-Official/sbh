@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
+import { useState, useEffect } from "react";
+
 
 function Footer() {
   const [year, setYear] = useState("");
