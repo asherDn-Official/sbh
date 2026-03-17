@@ -41,6 +41,11 @@
       apple: "/favicon.ico", // iOS shortcut icon
       shortcut: "/favicon.ico",
     },
+    verification: {
+    other: {
+      "msvalidate.01": "E028FAAE6388F723E1604A29FB6F8456",
+    },
+  },
     //manifest: "/site.webmanifest", // PWA manifest file
     themeColor: "#ffffff", // Optional - matches manifest background
     openGraph: {
