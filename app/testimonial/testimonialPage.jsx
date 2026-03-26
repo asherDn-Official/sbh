@@ -171,6 +171,7 @@ export default function TestimonialsPageClient() {
           Sri Balaji Homes.
         </p>
       </div>
+      <h1 className="hidden">Client Reviews & Testimonials for Sri Balaji Homes</h1>
 
       {/* Testimonial Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

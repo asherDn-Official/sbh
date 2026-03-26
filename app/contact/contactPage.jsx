@@ -110,6 +110,7 @@ export default function ContactPageClient() {
             expert guidance, site visits, and complete plot-buying support.
           </p>
         </div>
+        <h1 className="hidden">Contact Sri Balaji Homes: Book Your Resale Plot Today</h1>
 
         {/* Contact Info + Form */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start md:px-20  lg:px-35">

@@ -2,8 +2,8 @@
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import katrambakkam from "../../../public/assets/properties/katrambakkam.png";
-import plotKatrambakkam from "../../../public/assets/home/katrambakkamvilla1.png";
+import katrambakkam  from "../../public/assets/home/katrambakkamvilla1.png"
+// import plotKatrambakkam from "../../../public/assets/home/katrambakkamvilla1.png";
 const propertyData = {
   katrambakkam: {
     title: "Katrambakkam",
@@ -44,7 +44,8 @@ const propertyData = {
 };
 
 export default function PropertyPageClient() {
-  const { place } = useParams();
+  const { slug } = useParams();
+  const place = slug.replace("resale-plots-", "");
   const data = propertyData[place];
 
   if (!data) {

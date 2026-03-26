@@ -143,19 +143,19 @@ function Navbar() {
             {dropdownOpen && (
               <div className="absolute left-0 mt-2 bg-[#023a0d] rounded-2xl shadow-lg py-2 w-48">
                 <Link
-                  href="/properties/katrambakkam"
+                  href="/resale-plots-katrambakkam"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Katrambakkam
                 </Link>
                 <Link
-                  href="/properties/nandhambakkam"
+                  href="/resale-plots-nandhambakkam"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Nandhambakkam
                 </Link>
                 <Link
-                  href="/properties/thaiyur"
+                  href="/resale-plots-thaiyur"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Thaiyur (OMR)

@@ -1,12 +1,20 @@
 import Image from "next/image";
 import React from "react";
 import founder from "../../../public/assets/about/SIR.png";
+export const metadata = {
+  title: "About Us | Sri Balaji Homes | Direct Plot Developers Chennai",
+  description: "Learn about Sri Balaji Homes, Chennai's trusted direct land developers. We offer legally verified, CMDA & DTCP approved resale plots with zero brokerage.",
+  alternates : {
+    canonical: "https://www.sribalajihomes.in/about"
+  }
+};
 export default function AboutUs() {
   return (
     <section className="w-full xl:px-6 sl:py-12 max-w-7xl mx-auto mb-10">
       <div className="flex flex-col-reverse lg:flex-row items-start gap-10">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 space-y-6  px-6">
+        <h1 className="hidden">About Sri Balaji Homes: Trusted Direct Land Developers in Chennai</h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
             About Us
           </h2>
