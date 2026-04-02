@@ -34,7 +34,7 @@
   // };
 
   export const metadata = {
-    title: "Sri Balaji Homes | Approved Resale Plots in Chennai",
+    title: "Approved Resale Plots in Chennai | Sri Balaji Homes ",
     description: "Buy CMDA & DTCP approved resale plots in Chennai directly from Sri Balaji Homes. Premium land in Kattrambakkam, Nandhambakkam & Thaiyur. Zero brokerage!",
     icons: {
       icon: "/favicon.ico", // Browser tab icon
@@ -52,16 +52,16 @@
     //manifest: "/site.webmanifest", // PWA manifest file
     themeColor: "#ffffff", // Optional - matches manifest background
     openGraph: {
-      title: "Sri Balaji Homes",
+      title: "Approved Resale Plots in Chennai | Sri Balaji Homes",
       description:
-        "Discover DTCP and CMDA-approved residential plots in peaceful locations. You see Land, We See Plan.",
+        "Buy CMDA & DTCP approved resale plots in Chennai directly from Sri Balaji Homes. Premium land in Kattrambakkam, Nandhambakkam & Thaiyur. Zero brokerage!",
       url: "https://sribalajihomes.in",
       siteName: "Sri Balaji Homes",
       images: [
         {
           url: "/android-chrome-512x512.png",
-          width: 512,
-          height: 512,
+          width: 496,
+          height: 496,
           alt: "Sri Balaji Homes",
         },
       ],
