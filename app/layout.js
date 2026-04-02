@@ -60,8 +60,8 @@
       images: [
         {
           url: "/android-chrome-512x512.png",
-          width: 496,
-          height: 496,
+          width: 486,
+          height: 486,
           alt: "Sri Balaji Homes",
         },
       ],
