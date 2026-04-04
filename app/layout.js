@@ -65,6 +65,9 @@
           alt: "Sri Balaji Homes",
         },
       ],
+       other: {
+      'google-site-verification': 'M1i2Jo7DjmrLG-bPTP7M6ESyKr7b2rEOIh7LuBt2A1Y'
+    },
       locale: "en_IN",
       type: "website",
     },
