@@ -102,6 +102,7 @@ export default function ContactPageClient() {
       {/* Heading */}
       <div className=" lg:px-20 ">
         <div className="text-center px-4 mb-16">
+          <h1 className="hidden">Contact Sri Balaji Homes: Book Your Resale Plot Today</h1>
           <h2 className="text-4xl font-serif font-semibold mb-4 text-gray-900">
             Contact Us
           </h2>

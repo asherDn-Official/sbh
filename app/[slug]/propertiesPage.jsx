@@ -16,6 +16,7 @@ const propertyData = {
       { id: 4, img: "/assets/properties/k-4.jpg", size: "1800 Sq. Feet" },
       { id: 5, img: "/assets/properties/k-5.jpg", size: "2100 Sq. Feet" },
     ],
+    h1: "CMDA & DTCP Approved Resale Plots in Kattrambakkam near Sriperumbudur",
   },
   nandhambakkam: {
     title: "Nandhambakkam",
@@ -28,6 +29,7 @@ const propertyData = {
       { id: 4, img: "/assets/properties/n-plot-4.jpg", size: "1200 Sq. Feet" },
       { id: 5, img: "/assets/properties/n-plot-5.jpg", size: "2400 Sq. Feet" },
     ],
+    h1: "Premium CMDA Approved Resale Plots in Nandhambakkam near Kundrathur",
   },
   thaiyur: {
     title: "Thaiyur (OMR)",
@@ -40,6 +42,7 @@ const propertyData = {
       { id: 4, img: "/assets/properties/t-4.jpg", size: "800 Sq. Feet" },
       { id: 5, img: "/assets/properties/5.jpg", size: "2400 Sq. Feet" },
     ],
+    h1: "CMDA & DTCP Approved Resale Plots for Sale in Thaiyur, OMR",
   },
 };
 
@@ -60,6 +63,7 @@ export default function PropertyPageClient() {
     <div>
       {/* Hero Section */}
       <div className="relative w-full h-[400px] bg-black/60 flex items-end justify-start  text-white pb-5   lg:pb-15 lg:pl-15">
+      <h1 className="hidden">{data.h1}</h1>
         <Image
           src={katrambakkam}
           alt={data.title}
