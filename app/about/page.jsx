@@ -12,6 +12,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
    <div className='lg:py-40 '>
+    <h1 className="hidden">About Sri Balaji Homes: Trusted Direct Land Developers in Chennai</h1>
     <AboutUs/>
     <MissionVision/>
     <FAQ/>
