@@ -79,16 +79,17 @@
         <head>
           <link rel="icon" href="/favicon.ico" sizes="any" />
          <Script
-  src="https://www.googletagmanager.com/gtag/js?id=G-S78652KV33"
+  src="https://www.googletagmanager.com/gtag/js?id=G-Z8WPKS6LLG"
   strategy="afterInteractive"
 />
 
 <Script id="google-analytics" strategy="afterInteractive">
   {`
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-S78652KV33');
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-Z8WPKS6LLG');
   `}
 </Script>
           {/* <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> */}
