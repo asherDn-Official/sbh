@@ -115,17 +115,26 @@ function Footer() {
                   href="tel:+917200940777"
                   className="hover:text-green-400 transition-colors duration-200"
                 >
-                  +91 7200940777
+                  +91 7200940777 {" "},
+                </a>
+                <a href="tel:+91638400006" className="hover:text-green-400 transition-colors duration-200">
+                  +91 63840 00006
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <MdEmail />
-                <a
+                <div className="flex flex-col">
+                    <a
                   href="mailto:info.sribalajihomes@gmail.com"
                   className="hover:text-green-400 transition-colors duration-200"
                 >
-                  info.sribalajihomes@gmail.com
+                  info.sribalajihomes@gmail.com{" "},
                 </a>
+                <a href="mailto:sales@sribalajihomes.in" className="hover:text-green-400 transition-colors duration-200">
+                  sales@sribalajihomes.in
+                </a>
+                </div>
+              
               </li>
               <li className="flex items-start space-x-2">
                 <MdLocationOn className="mt-1" />
