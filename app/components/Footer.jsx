@@ -115,10 +115,10 @@ function Footer() {
                   href="tel:+917200940777"
                   className="hover:text-green-400 transition-colors duration-200"
                 >
-                  +91 7200940777 {" "},
+                  +91 72009 40777 {" "}
                 </a>
                 <a href="tel:+91638400006" className="hover:text-green-400 transition-colors duration-200">
-                  +91 63840 00006
+                  ,+91 63840 00006
                 </a>
               </li>
               <li className="flex items-center space-x-2">
