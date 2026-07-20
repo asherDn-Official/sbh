@@ -48,7 +48,7 @@ const propertyData = {
 
 export default function PropertyPageClient() {
   const { slug } = useParams();
-  const place = slug.replace("resale-plots-", "");
+  const place = slug.replace("plots-in-", "");
   const data = propertyData[place];
 
   if (!data) {

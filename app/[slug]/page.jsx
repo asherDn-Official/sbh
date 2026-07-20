@@ -18,7 +18,7 @@ const seoData = {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
-  const place = slug.replace("resale-plots-", "");
+  const place = slug.replace("plots-in-", "");
 
   const data = seoData[place];
 
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }) {
 export default async function Page({ params }) {
   const { slug } = await params;
 
-  const place = slug.replace("resale-plots-", "");
+  const place = slug.replace("plots-in-", "");
 
   return <PropertyPageClient place={place} />;
 }

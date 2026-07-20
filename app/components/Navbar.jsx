@@ -143,19 +143,19 @@ function Navbar() {
             {dropdownOpen && (
               <div className="absolute left-0 mt-2 bg-[#023a0d] rounded-2xl shadow-lg py-2 w-48">
                 <Link
-                  href="/resale-plots-katrambakkam"
+                  href="/plots-in-katrambakkam"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Katrambakkam
                 </Link>
                 <Link
-                  href="/resale-plots-nandhambakkam"
+                  href="/plots-in-nandhambakkam"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Nandhambakkam
                 </Link>
                 <Link
-                  href="/resale-plots-thaiyur"
+                  href="/plots-in-thaiyur"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Thaiyur (OMR)
@@ -164,10 +164,10 @@ function Navbar() {
             )}
           </div>
 
-          <Link href="/testimonial" className="px-3 hover:text-[#91eda5]">
+          <Link href="/testimonials" className="px-3 hover:text-[#91eda5]">
             Testimonial
           </Link>
-          <Link href="/contact" className="px-3 hover:text-[#91eda5]">
+          <Link href="/contact-us" className="px-3 hover:text-[#91eda5]">
             Contact Us
           </Link>
         </div>
