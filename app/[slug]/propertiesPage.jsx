@@ -71,7 +71,7 @@ export default function PropertyPageClient() {
           className="object-cover -z-10"
         />
         <div className="max-w-2xl px-4">
-          <h1 className="text-4xl font-bold">{data.title}</h1>
+          <h2 className="text-4xl font-bold">{data.title}</h2>
           <p className="mt-4">{data.description}</p>
         </div>
       </div>

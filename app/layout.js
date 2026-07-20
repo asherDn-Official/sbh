@@ -24,9 +24,9 @@ const lora = Lora({
 });
 
 export const metadata = {
-  title: "Approved Resale Plots in Chennai | Sri Balaji Homes",
+  title: "CMDA & DTCP Approved Resale Plots Chennai | Clear Title | Sri Balaji Homes",
   description:
-    "Buy CMDA & DTCP approved resale plots in Chennai directly from Sri Balaji Homes. Premium land in Kattrambakkam, Nandhambakkam & Thaiyur. Zero brokerage!",
+    "Buy CMDA & DTCP approved resale plots in Chennai. Premium plots by Sri Balaji Homes in Kattrambakkam, Nandhambakkam & Thaiyur. Enquire today!",
 
   icons: {
     icon: "/favicon.ico",

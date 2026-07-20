@@ -1,5 +1,13 @@
 import React from 'react'
 
+
+export const metadata = {
+  title: "Terms and condition | Sri Balaji Homes",
+  description: "Learn more about Sri Balaji Homes, our mission, vision, and values.",
+   alternates: {
+    canonical: "https://www.sribalajihomes.in/terms",
+  },
+};
 function TermsOfUsePage() {
   return (
     <section className="py-20 px-6 lg:px-32 bg-white pt-20 lg:pt-30 pb-20">

@@ -9,9 +9,9 @@ const PropertySection = () => {
       <div className="w-full">
         {/* Text Content */}
         <div className=" lg:flex lg:gap-15">
-          <h4 className="text-gray-600 lg:w-1/2 lg:text:lg xl:text-xl">
+          <h3 className="text-gray-600 lg:w-1/2 lg:text:lg xl:text-xl">
             Find Verified Properties That Match Your Needs & Budget
-          </h4>
+          </h3>
           <h2 className="text-xl md:text-2xl xl:text-2xl font-semibold  leading-relaxed lg:w-1/2">
             Sri Balaji Homes Your Gateway to Property Ownership in
             <span className="text-gray-800">

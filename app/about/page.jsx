@@ -7,6 +7,9 @@ import FAQ from '../components/about/Faq'
 export const metadata = {
   title: "About Us | Sri Balaji Homes",
   description: "Learn more about Sri Balaji Homes, our mission, vision, and values.",
+   alternates: {
+    canonical: "https://www.sribalajihomes.in/about",
+  },
 };
 
 export default function AboutPage() {

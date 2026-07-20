@@ -71,9 +71,9 @@ const WhyChooseUs = () => {
             <div key={index} className="flex items-start gap-7">
               <div className="flex-shrink-0">{feature.icon}</div>
               <div>
-                <h4 className="font-bold text-xl text-gray-900">
+                <h3 className="font-bold text-xl text-gray-900">
                   {feature.title}
-                </h4>
+                </h3>
                 <p className="text-gray-600 text-sm md:text-lg">
                   {feature.desc}
                 </p>
