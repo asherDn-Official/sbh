@@ -33,6 +33,7 @@ export default function Home() {
       <Reveal animation="fade-up" duration={700}>
         <Testimonials />
       </Reveal>
+      
     </div>
   );
 }
