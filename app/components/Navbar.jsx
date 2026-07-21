@@ -74,12 +74,15 @@ function Navbar() {
           } flex justify-center gap-10 py-3 text-sm`}
         >
           <div className="flex items-center gap-2">
-            <BsTelephone />
-            <span>+91 7200940777</span>
-          </div>
+  <BsTelephone />
+  <a href="tel:+917200940777">+91 72009 40777</a>
+  <span>,</span>
+  <a href="tel:+916384000006">+91 63840 00006</a>
+</div>
+         
           <div className="flex items-center gap-2">
             <MdEmail />
-            <span>info.sribalajihomes@gmail.com</span>
+            <a href="mailto:info.sribalajihomes@gmail.com">info.sribalajihomes@gmail.com</a>
           </div>
           <div className="flex items-center gap-2 max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-none">
             <MdLocationOn className="flex-shrink-0" />
@@ -110,7 +113,7 @@ function Navbar() {
                   "/assets/home/sbh-logo-white.png"
                 : "/assets/home/sbh-logo.png"
             }
-            alt="Logo"
+            alt="Sri Balaji Homes – Resale Plots in Chennai"
             width={73}
             height={53}
             className="w-12 h-auto sm:w-[100px]"
@@ -122,7 +125,7 @@ function Navbar() {
           <Link href="/" className="px-3 hover:text-[#91eda5]">
             Home
           </Link>
-          <Link href="/about" className="px-3 hover:text-[#91eda5]">
+          <Link href="/about-us" className="px-3 hover:text-[#91eda5]">
             About Us
           </Link>
 
@@ -143,19 +146,19 @@ function Navbar() {
             {dropdownOpen && (
               <div className="absolute left-0 mt-2 bg-[#023a0d] rounded-2xl shadow-lg py-2 w-48">
                 <Link
-                  href="/resale-plots-katrambakkam"
+                  href="/properties/plots-in-katrambakkam"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Katrambakkam
                 </Link>
                 <Link
-                  href="/resale-plots-nandhambakkam"
+                  href="/properties/plots-in-nandhambakkam"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Nandhambakkam
                 </Link>
                 <Link
-                  href="/resale-plots-thaiyur"
+                  href="/properties/plots-in-thaiyur-omr"
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Thaiyur (OMR)
@@ -164,10 +167,10 @@ function Navbar() {
             )}
           </div>
 
-          <Link href="/testimonial" className="px-3 hover:text-[#91eda5]">
-            Testimonial
+          <Link href="/testimonials" className="px-3 hover:text-[#91eda5]">
+            Testimonials
           </Link>
-          <Link href="/contact" className="px-3 hover:text-[#91eda5]">
+          <Link href="/contact-us" className="px-3 hover:text-[#91eda5]">
             Contact Us
           </Link>
         </div>
@@ -175,7 +178,7 @@ function Navbar() {
         {/* Enquire Now (Desktop) */}
         <div className="hidden md:flex items-center h-full">
           <Link
-            href="/contact"
+            href="/contact-us"
             className={`rounded-full border flex bg-transparent py-2 px-6  
             transition-all duration-300 ease-in-out relative overflow-hidden
             ${
@@ -219,7 +222,7 @@ function Navbar() {
           >
             Home
           </Link>
-          <Link href="/about" onClick={() => setMenuOpen(false)}>
+          <Link href="/about-us" onClick={() => setMenuOpen(false)}>
             About Us
           </Link>
 
@@ -240,7 +243,7 @@ function Navbar() {
             {mobileDropdownOpen && (
               <div className="flex flex-col items-start w-56 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden">
                 <Link
-                  href="/properties/katrambakkam"
+                  href="/properties/plots-in-katrambakkam"
                   className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
@@ -251,7 +254,7 @@ function Navbar() {
                 </Link>
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
-                  href="/properties/nandhambakkam"
+                  href="/properties/plots-in-nandhambakkam"
                   className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
@@ -262,7 +265,7 @@ function Navbar() {
                 </Link>
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
-                  href="/properties/thaiyur"
+                  href="/properties/plots-in-thaiyur-omr"
                   className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
@@ -275,14 +278,14 @@ function Navbar() {
             )}
           </div>
 
-          <Link href="/testimonial" onClick={() => setMenuOpen(false)}>
-            Testimonial
+          <Link href="/testimonials" onClick={() => setMenuOpen(false)}>
+            Testimonials
           </Link>
-          <Link href="/contact" onClick={() => setMenuOpen(false)}>
+          <Link href="/contact-us" onClick={() => setMenuOpen(false)}>
             Contact Us
           </Link>
           <Link
-            href="/contact"
+            href="/contact-us"
             onClick={() => setMenuOpen(false)}
             className={`rounded-full border flex bg-transparent py-2 px-6 mt-3 
               transition-all duration-300 ease-in-out relative overflow-hidden

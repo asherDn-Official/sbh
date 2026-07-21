@@ -7,23 +7,23 @@ const properties = [
     title: "Katrambakkam Plots",
     // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla1.png", // replace with actual image path
-    link: "/properties/katrambakkam",
+    link: "/properties/plots-in-katrambakkam",
   },
   {
     id: 2,
     title: "Nandhambakkam Plots",
     // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla2.jpg",
-    link: "/properties/nandhambakkam",
+    link: "/properties/plots-in-nandhambakkam",
   },
   {
     id: 3,
     title: "Thaiyur(OMR) Plots",
     // size: "1400 Sq. Feet",
     image: "/assets/home/katrambakkamvilla3.png",
-    link: "/properties/thaiyur",
+    link: "/properties/plots-in-thaiyur-omr",
   },
-  // {
+  // {s
   //   id: 4,
   //   title: "Katrambakkam Villa Plot",
   //   size: "1400 Sq. Feet",
@@ -76,7 +76,7 @@ export default function Properties() {
 
       {/* View More */}
       <div className="flex justify-center mt-8">
-        <Link href="/properties/katrambakkam">
+        <Link href="/properties/plots-in-katrambakkam">
           <button className="text-gray-700 border-b border-gray-400 hover:text-black cursor-pointer">
             View More
           </button>

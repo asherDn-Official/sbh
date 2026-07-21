@@ -26,13 +26,13 @@ function Footer() {
             src="/assets/home/SBH-LOGO.jpg"
             width={150}
             height={100}
-            alt="Sri Balaji Homes Logo"
+            alt="Sri Balaji Homes – Resale Plots in Chennai"
             className="mb-4"
           />
           <p className="text-sm leading-relaxed mb-4">
-            Looking to invest in a plot, move into a resale plots, We guide you
-            every step of the way.
-          </p>
+  Looking to invest in a resale plot in Chennai? We guide you every
+  step of the way.
+</p>
           {/* <div className="flex space-x-4">
             <Link href="#" className="hover:text-green-400">
               <FaFacebookF size={20} />
@@ -58,21 +58,21 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-green-400">
+                <Link href="/about-us" className="hover:text-green-400">
                   About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/properties/katrambakkam"
+                  href="/properties/plots-in-katrambakkam"
                   className="hover:text-green-400"
                 >
                   Properties
                 </Link>
               </li>
               <li>
-                <Link href="/testimonial" className="hover:text-green-400">
-                  Testimonial
+                <Link href="/testimonials" className="hover:text-green-400">
+                  Testimonials
                 </Link>
               </li>
             </ul>
@@ -98,7 +98,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-green-400">
+                <Link href="/contact-us" className="hover:text-green-400">
                   Contact Us
                 </Link>
               </li>

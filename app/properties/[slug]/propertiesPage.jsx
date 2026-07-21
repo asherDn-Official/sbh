@@ -2,10 +2,10 @@
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import katrambakkam  from "../../public/assets/home/katrambakkamvilla1.png"
+import katrambakkam  from "../../../public/assets/home/katrambakkamvilla1.png"
 // import plotKatrambakkam from "../../../public/assets/home/katrambakkamvilla1.png";
 const propertyData = {
-  katrambakkam: {
+  "plots-in-katrambakkam": {
     title: "Katrambakkam",
     description:
       "In Katrambakkam, Sri Balaji Homes offers DTCP-approved plots in sizes of 2400 sqft, 2100 sqft, 1800 sqft, 1200 sqft, 800 sqft  with prices starting from just Rs.700/- to Rs.1600/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
@@ -18,7 +18,7 @@ const propertyData = {
     ],
     h1: "CMDA & DTCP Approved Resale Plots in Kattrambakkam near Sriperumbudur",
   },
-  nandhambakkam: {
+  "plots-in-nandhambakkam": {
     title: "Nandhambakkam",
     description:
       "In Nandhambakkam, Sri Balaji Homes presents CMDA-approved plots with prime connectivity and plot sizes ranging from 1200 to 2400 sqft, with prices starting from Rs.1500/- to Rs.3000/- per sqft, giving you flexible options for both residence and investment.",
@@ -31,7 +31,7 @@ const propertyData = {
     ],
     h1: "Premium CMDA Approved Resale Plots in Nandhambakkam near Kundrathur",
   },
-  thaiyur: {
+  "plots-in-thaiyur-omr": {
     title: "Thaiyur (OMR)",
     description:
       "In Thaiyur (OMR), Sri Balaji Homes offers DTCP-approved plots in Sqft sizes -800 Sqft, 1200 Sqft, 2400 Sqft, with prices starting from just Rs.2400/- to Rs.3000/- per sqft — making them ideal for building your dream home or a secure long-term investment.",
@@ -48,8 +48,7 @@ const propertyData = {
 
 export default function PropertyPageClient() {
   const { slug } = useParams();
-  const place = slug.replace("resale-plots-", "");
-  const data = propertyData[place];
+  const data = propertyData[slug];
 
   if (!data) {
     return (
@@ -97,7 +96,7 @@ export default function PropertyPageClient() {
             <div className="p-4">
               <h3 className="text-lg font-medium">{data.title} Plots</h3>
               <p className="text-gray-500 text-sm mt-1">📐 {plot.size}</p>
-              <Link href="/contact">
+              <Link href="/contact-us">
                 <button className="mt-3 px-4 py-2 bg-green-800 text-white text-sm rounded-lg hover:bg-green-700 transition">
                   Know More
                 </button>

@@ -115,6 +115,29 @@ export default function RootLayout({ children }) {
             fbq('track', 'PageView');
           `}
         </Script>
+
+
+        <Script id="local-business-schema" type="application/ld+json" strategy="afterInteractive">
+  {`
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Sri Balaji Homes",
+      "image": "https://www.sribalajihomes.in/android-chrome-512x512.png",
+      "telephone": ["+917200940777", "+916384000006"],
+      "email": "info.sribalajihomes@gmail.com",
+      "url": "https://www.sribalajihomes.in",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "602103",
+        "addressCountry": "IN"
+      }
+    }
+  `}
+</Script>
       </head>
 
       <body className={`${lora.className} ${poppins.variable}`}>

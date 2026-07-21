@@ -31,7 +31,7 @@ export default function InvestmentBanner() {
             The Best Investment on Earth is Earth
           </h2>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="bg-white text-gray-900 font-medium px-6 md:px-8 py-3 rounded-full shadow hover:bg-gray-100 transition text-base lg:text-lg"
           >
             Enquire Now

@@ -5,7 +5,7 @@ export const metadata = {
   title: "About Us | Sri Balaji Homes | Direct Plot Developers Chennai",
   description: "Learn about Sri Balaji Homes, Chennai's trusted direct land developers. We offer legally verified, CMDA & DTCP approved resale plots with zero brokerage.",
   alternates : {
-    canonical: "https://www.sribalajihomes.in/about"
+    canonical: "https://www.sribalajihomes.in/about-us"
   }
 };
 export default function AboutUs() {

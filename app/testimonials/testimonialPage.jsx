@@ -165,7 +165,7 @@ export default function TestimonialsPageClient() {
       {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="hidden">Client Reviews & Testimonials for Sri Balaji Homes</h1>
-        <h2 className="text-3xl font-serif mb-3">Testimonial</h2>
+        <h2 className="text-3xl font-serif mb-3">Testimonials</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Hear from our happy customers who turned their dream of land ownership
           into reality. Their trust and satisfaction drive everything we do at

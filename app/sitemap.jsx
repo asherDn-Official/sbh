@@ -1,10 +1,10 @@
 export default function sitemap() {
   const baseUrl = "https://sribalajihomes.in";
 
-  const places = ["katrambakkam", "nandhambakkam", "thaiyur"];
+  const places = ["plots-in-katrambakkam", "plots-in-nandhambakkam", "plots-in-thaiyur-omr"];
 
   const propertyUrls = places.map((place) => ({
-    url: `${baseUrl}/resale-plots-${place}`,
+    url: `${baseUrl}/properties/${place}`,
     lastModified: new Date(),
   }));
 
@@ -15,11 +15,11 @@ export default function sitemap() {
     },
     ...propertyUrls,
     {
-        url: `${baseUrl}/about`,
+        url: `${baseUrl}/about-us`,
         lastModified: new Date(),
     },
     {
-        url: `${baseUrl}/contact`,
+        url: `${baseUrl}/contact-us`,
         lastModified: new Date(),
     },
     {

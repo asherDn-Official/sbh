@@ -50,7 +50,7 @@ export default function LandingPageHome() {
             <p> Wealth Starts with Us</p>
           </span>
           <div className="absolute left-5 bottom-0 translate-y-1/2 hidden md:block z-20 pt-20">
-            <Link href="/contact">
+            <Link href="/contact-us">
               <button className="bg-white glow-button text-black px-7 py-3 rounded-full font-poppins border-[#024b12] border-2 shadow-lg text-lg">
                 Enquire Now
               </button>
@@ -60,7 +60,7 @@ export default function LandingPageHome() {
 
         {/* ✅ Mobile/Tablet button */}
         <div className="absolute left-5 bottom-0 translate-y-1/2 md:hidden z-20">
-          <Link href="/contact">
+          <Link href="/contact-us">
             <button
               className={`
       bg-white text-black px-6 py-2 rounded-full font-poppins 

@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
         <div className="w-full lg:w-1/2 space-y-6">
           <Image
             src={sbhLgog}
-            alt="Logo"
+           alt="Sri Balaji Homes – Resale Plots in Chennai"
             width={93}
             height={73}
             className="w-22 h-auto sm:w-[93px] lg:w-[150px]" // 48px on mobile, original on sm+

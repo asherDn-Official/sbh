@@ -125,8 +125,8 @@ export default function ContactPageClient() {
               <div>
                 <p className="text-gray-500 text-sm">Have any question?</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  +91 7200940777
-                </p>
+  <a href="tel:+917200940777">+91 7200940777</a>
+</p>
               </div>
             </div>
 
@@ -137,9 +137,9 @@ export default function ContactPageClient() {
               </span>
               <div>
                 <p className="text-gray-500 text-sm">Write Email</p>
-                <p className="text-lg font-semibold text-gray-900">
-                  info.sribalajihomes@gmail.com
-                </p>
+               <p className="text-lg font-semibold text-gray-900">
+  <a href="mailto:info.sribalajihomes@gmail.com">info.sribalajihomes@gmail.com</a>
+</p>
               </div>
             </div>
 
