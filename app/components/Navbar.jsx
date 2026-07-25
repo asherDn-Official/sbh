@@ -108,10 +108,10 @@ function Navbar() {
           <Image
             src={
               isHome
-                ? // ? "/assets/home/sbhwhitelogo1.png"
+                ? // ? "/assets/home/sbhwhitelogo1.webp"
                   // : "/assets/home/sbhlogo.svg"
-                  "/assets/home/sbh-logo-white.png"
-                : "/assets/home/sbh-logo.png"
+                  "/assets/home/sbh-logo-white.webp"
+                : "/assets/home/sbh-logo-dark.webp"
             }
             alt="Sri Balaji Homes – Resale Plots in Chennai"
             width={73}

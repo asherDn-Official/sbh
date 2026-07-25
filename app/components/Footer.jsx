@@ -23,7 +23,7 @@ function Footer() {
         {/* Logo + About (35%) */}
         <div className="md:w-[40%]">
           <Image
-            src="/assets/home/SBH-LOGO.jpg"
+            src="/assets/home/SBH-LOGO.webp"
             width={150}
             height={100}
             alt="Sri Balaji Homes – Resale Plots in Chennai"

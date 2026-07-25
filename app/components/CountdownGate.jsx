@@ -93,7 +93,7 @@ export function CountdownContent({ timeLeft }) {
 
       <div className="relative flex flex-col items-center space-y-10 max-w-lg">
         <Image
-          src="/assets/home/sbh-logo-white.png"
+          src="/assets/home/sbh-logo-white.webp"
           alt="Sri Balaji Homes – Resale Plots in Chennai"
           width={200}
           height={200}

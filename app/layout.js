@@ -23,10 +23,76 @@ const lora = Lora({
   weight: ["400", "500", "600", "700"],
 });
 
+// export const metadata = {
+//   title: "CMDA & DTCP Approved Resale Plots Chennai | Clear Title | Sri Balaji Homes",
+//   description:
+//     "Buy CMDA & DTCP approved resale plots in Chennai. Premium plots by Sri Balaji Homes in Kattrambakkam, Nandhambakkam & Thaiyur. Enquire today!",
+
+//   icons: {
+//     icon: "/favicon.ico",
+//     apple: "/favicon.ico",
+//     shortcut: "/favicon.ico",
+//   },
+
+//   alternates: {
+//     canonical: "https://www.sribalajihomes.in",
+//   },
+
+//   verification: {
+//     other: {
+//       "msvalidate.01": "E028FAAE6388F723E1604A29FB6F8456",
+//       "google-site-verification": "M1i2Jo7DjmrLG-bPTP7M6ESyKr7b2rEOIh7LuBt2A1Y",
+//     },
+//   },
+
+//   themeColor: "#ffffff",
+
+//   openGraph: {
+//     title: "Approved Resale Plots in Chennai | Sri Balaji Homes",
+//     description:
+//       "Buy CMDA & DTCP approved resale plots in Chennai directly from Sri Balaji Homes. Premium land in Kattrambakkam, Nandhambakkam & Thaiyur. Zero brokerage!",
+
+//     url: "https://sribalajihomes.in",
+
+//     siteName: "Sri Balaji Homes",
+
+//     images: [
+//       {
+//         url: "/android-chrome-512x512.png",
+//         width: 486,
+//         height: 486,
+//         alt: "Sri Balaji Homes",
+//       },
+//     ],
+
+//     locale: "en_IN",
+//     type: "website",
+//   },
+// };
+
+export const viewport = {
+  themeColor: "#ffffff",
+};
+
 export const metadata = {
-  title: "CMDA & DTCP Approved Resale Plots Chennai | Clear Title | Sri Balaji Homes",
+  // Base URL resolves relative asset links safely
+  metadataBase: new URL("https://www.sribalajihomes.in"),
+
+  // Exact Title (53 chars) & Description (156 chars) as per spec
+  title: "Approved Resale Plots in Chennai | Sri Balaji Homes",
   description:
-    "Buy CMDA & DTCP approved resale plots in Chennai. Premium plots by Sri Balaji Homes in Kattrambakkam, Nandhambakkam & Thaiyur. Enquire today!",
+    "Buy CMDA & DTCP approved resale plots in Chennai with clear title & zero brokerage. Katrambakkam, Nandhambakkam & Thaiyur OMR. Get a free site visit.",
+
+  // Primary Focus Keywords
+  keywords: [
+    "Approved Resale Plots Chennai",
+    "CMDA approved plots Chennai",
+    "DTCP approved plots Chennai",
+    "resale plots Katrambakkam",
+    "plots in Nandhambakkam",
+    "plots in Thaiyur OMR",
+    "Sri Balaji Homes",
+  ],
 
   icons: {
     icon: "/favicon.ico",
@@ -34,10 +100,12 @@ export const metadata = {
     shortcut: "/favicon.ico",
   },
 
+  // Fixed Canonical URL
   alternates: {
     canonical: "https://www.sribalajihomes.in",
   },
 
+  // Verification Tags
   verification: {
     other: {
       "msvalidate.01": "E028FAAE6388F723E1604A29FB6F8456",
@@ -45,29 +113,74 @@ export const metadata = {
     },
   },
 
-  themeColor: "#ffffff",
-
+  // OpenGraph (Social Sharing) Metadata
   openGraph: {
-    title: "Approved Resale Plots in Chennai | Sri Balaji Homes",
+    title: "Approved Resale Plots in Chennai — Sri Balaji Homes",
     description:
-      "Buy CMDA & DTCP approved resale plots in Chennai directly from Sri Balaji Homes. Premium land in Kattrambakkam, Nandhambakkam & Thaiyur. Zero brokerage!",
-
-    url: "https://sribalajihomes.in",
-
+      "CMDA & DTCP approved resale plots with clear title and zero brokerage, across Katrambakkam, Nandhambakkam and Thaiyur OMR.",
+    url: "https://www.sribalajihomes.in",
     siteName: "Sri Balaji Homes",
-
-    images: [
-      {
-        url: "/android-chrome-512x512.png",
-        width: 486,
-        height: 486,
-        alt: "Sri Balaji Homes",
-      },
-    ],
-
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "https://www.sribalajihomes.in/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Sri Balaji Homes - Approved Resale Plots in Chennai",
+      },
+    ],
   },
+
+  // Twitter Card Metadata
+  twitter: {
+    card: "summary_large_image",
+    title: "Approved Resale Plots in Chennai — Sri Balaji Homes",
+    description:
+      "CMDA & DTCP approved resale plots with clear title and zero brokerage in Katrambakkam, Nandhambakkam and Thaiyur OMR.",
+    images: ["https://www.sribalajihomes.in/android-chrome-512x512.png"],
+  },
+};
+
+
+const combinedSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.sribalajihomes.in/#organization",
+      "name": "Sri Balaji Homes",
+      "url": "https://www.sribalajihomes.in",
+      "logo": "https://www.sribalajihomes.in/android-chrome-512x512.png",
+      "foundingDate": "2005",
+      "email": "info.sribalajihomes@gmail.com",
+      "telephone": ["+917200940777", "+916384000006"]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://www.sribalajihomes.in/#realestateagent",
+      "name": "Sri Balaji Homes",
+      "image": "https://www.sribalajihomes.in/android-chrome-512x512.png",
+      "url": "https://www.sribalajihomes.in",
+      "telephone": ["+917200940777", "+916384000006"],
+      "email": "info.sribalajihomes@gmail.com",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "602103",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Katrambakkam" },
+        { "@type": "Place", "name": "Nandhambakkam" },
+        { "@type": "Place", "name": "Thaiyur" },
+        { "@type": "City", "name": "Chennai" }
+      ]
+    }
+  ]
 };
 
 export default function RootLayout({ children }) {
@@ -75,6 +188,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
+        />
 
         {/* Google Analytics */}
         <Script
@@ -117,27 +235,7 @@ export default function RootLayout({ children }) {
         </Script>
 
 
-        <Script id="local-business-schema" type="application/ld+json" strategy="afterInteractive">
-  {`
-    {
-      "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": "Sri Balaji Homes",
-      "image": "https://www.sribalajihomes.in/android-chrome-512x512.png",
-      "telephone": ["+917200940777", "+916384000006"],
-      "email": "info.sribalajihomes@gmail.com",
-      "url": "https://www.sribalajihomes.in",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "A.S. Mani Garden, Plot No. 143, Pallavan Nagar, Katrambakkam",
-        "addressLocality": "Chennai",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "602103",
-        "addressCountry": "IN"
-      }
-    }
-  `}
-</Script>
+        
       </head>
 
       <body className={`${lora.className} ${poppins.variable}`}>
@@ -156,9 +254,9 @@ export default function RootLayout({ children }) {
           <div className="min-h-screen flex-col">
             <Navbar />
 
-            <h1 className="hidden">
+            {/* <h1 className="hidden">
               CMDA & DTCP Approved Resale Plots and Residential Land in Chennai
-            </h1>
+            </h1> */}
 
             <main className="flex-1">{children}</main>
 
