@@ -65,7 +65,7 @@ const seoData = {
     ogTitle: "Resale Plots in Katrambakkam — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage.",
-    canonicalSlug: "resale-plots-katrambakkam",
+    canonicalSlug: "plots-in-katrambakkam",
     locationName: "Katrambakkam",
   },
   "plots-in-katrambakkam": {
@@ -75,7 +75,7 @@ const seoData = {
     ogTitle: "Resale Plots in Katrambakkam — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage.",
-    canonicalSlug: "resale-plots-katrambakkam",
+    canonicalSlug: "plots-in-katrambakkam",
     locationName: "Katrambakkam",
   },
   "resale-plots-nandhambakkam": {
@@ -85,7 +85,7 @@ const seoData = {
     ogTitle: "Resale Plots in Nandhambakkam — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage.",
-    canonicalSlug: "resale-plots-nandhambakkam",
+    canonicalSlug: "plots-in-nandhambakkam",
     locationName: "Nandhambakkam",
   },
   "plots-in-nandhambakkam": {
@@ -95,7 +95,7 @@ const seoData = {
     ogTitle: "Resale Plots in Nandhambakkam — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage.",
-    canonicalSlug: "resale-plots-nandhambakkam",
+    canonicalSlug: "plots-in-nandhambakkam",
     locationName: "Nandhambakkam",
   },
   "resale-plots-thaiyur-omr": {
@@ -105,7 +105,7 @@ const seoData = {
     ogTitle: "Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage.",
-    canonicalSlug: "resale-plots-thaiyur",
+    canonicalSlug: "plots-in-thaiyur-omr",
     locationName: "Thaiyur",
   },
   "plots-in-thaiyur-omr": {
@@ -115,8 +115,8 @@ const seoData = {
     ogTitle: "Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage.",
-    canonicalSlug: "resale-plots-thaiyur",
-    locationName: "Thaiyur",
+    canonicalSlug: "plots-in-thaiyur-omr",
+    locationName: "Thaiyur OMR",
   },
 };
 
@@ -246,31 +246,30 @@ export default async function Page({ params }) {
   const cleanSlug = data.canonicalSlug || slug;
   const faqs = locationFaqs[slug] || locationFaqs["resale-plots-katrambakkam"];
 
-  // Breadcrumb Schema for SEO
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://www.sribalajihomes.in",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Properties",
-        item: "https://www.sribalajihomes.in/#properties",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: data.locationName || "Katrambakkam",
-        item: `https://www.sribalajihomes.in/properties/${cleanSlug}`,
-      },
-    ],
-  };
+ const breadcrumbSchema = {
+     "@context": "https://schema.org",
+     "@type": "BreadcrumbList",
+     "itemListElement": [
+       {
+         "@type": "ListItem",
+         "position": 1,
+         "name": "Home",
+         "item": "https://www.sribalajihomes.in",
+       },
+       {
+         "@type": "ListItem",
+         "position": 2,
+         "name": "Properties",
+         "item": "https://www.sribalajihomes.in/properties",
+       },
+       {
+         "@type": "ListItem",
+         "position": 3,
+         "name": data?.locationName || "Location",
+         "item": `https://www.sribalajihomes.in/properties/${slug}`,
+       },
+     ],
+   };
 
   const faqSchema = {
   "@context": "https://schema.org",
@@ -285,6 +284,21 @@ export default async function Page({ params }) {
   })),
 };
 
+// Add inside PropertyPage function in app/properties/[slug]/page.jsx:
+
+const propertyListingSchema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateListing",
+  "name": `CMDA & DTCP Approved Resale Plots in ${slug.replace("plots-in-", "")}`,
+  "description": `Verified resale plots available in ${slug.replace("plots-in-", "")} with clear title and zero brokerage.`,
+  "url": `https://www.sribalajihomes.in/properties/${slug}`,
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
+  }
+};
+
   return (
     <>
       {/* Inject Breadcrumb Schema */}
@@ -292,10 +306,17 @@ export default async function Page({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+
       <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
     />
+
+
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(propertyListingSchema) }}
+/>
       <PropertyPageClient />
     </>
   );

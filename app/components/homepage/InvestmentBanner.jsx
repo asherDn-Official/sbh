@@ -44,7 +44,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Banner from "../../../public/assets/home/landscape.webp";
+import Banner from "../../../public/assets/home/book-a-site-visit.webp";
 
 export default function InvestmentBanner() {
   return (
@@ -54,7 +54,7 @@ export default function InvestmentBanner() {
         <div className="absolute inset-0">
           <Image
             src={Banner}
-            alt="Book site visit Sri Balaji Homes"
+            alt="Book a free site visit - Sri Balaji Homes"
             fill
             className="object-cover"
             priority

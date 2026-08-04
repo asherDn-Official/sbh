@@ -190,8 +190,8 @@ import {
   ClockIcon,
   BuildingOffice2Icon,
 } from "@heroicons/react/24/outline";
-import park from "../../../public/assets/home/park.webp";
-import sbhLgog from "../../../public/assets/home/sbh-logo-dark.webp";
+import park from "../../../public/assets/home/sri-balaji-homes-park.webp";
+import sbhLgog from "../../../public/assets/home/sri-balaji-homes-logo-dark.webp";
 
 const verificationAndWhyUs = [
   {

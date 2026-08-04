@@ -76,9 +76,9 @@
 // export default PropertySection;
 
 import Image from "next/image";
-import katrambakkan from "../../public/assets/home/katrambakkam.webp";
-import nandhambakkam from "../../public/assets/home/nandhapakkam.webp";
-import thaiyur from "../../public/assets/home/thaiyur.webp";
+import katrambakkan from "../../public/assets/home/resale-plots-katrambakkam.webp";
+import nandhambakkam from "../../public/assets/home/resale-plots-nandhapakkam.webp";
+import thaiyur from "../../public/assets/home/resale-plots-thaiyur.webp";
 
 const PropertySection = () => {
   return (

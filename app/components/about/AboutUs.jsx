@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import founder from "../../../public/assets/about/SIR.webp";
+import founder from "../../../public/assets/about/sri-balaji-homes-owner.webp";
 export const metadata = {
   title: "About Us | Sri Balaji Homes | Direct Plot Developers Chennai",
   description: "Learn about Sri Balaji Homes, Chennai's trusted direct land developers. We offer legally verified, CMDA & DTCP approved resale plots with zero brokerage.",

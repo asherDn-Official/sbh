@@ -78,8 +78,25 @@ export const metadata = {
   // Base URL resolves relative asset links safely
   metadataBase: new URL("https://www.sribalajihomes.in"),
 
+  // Explicit Robots Directive for standard indexing
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
   // Exact Title (53 chars) & Description (156 chars) as per spec
-  title: "Approved Resale Plots in Chennai | Sri Balaji Homes",
+  title: {
+    default: "Approved Resale Plots in Chennai | Sri Balaji Homes",
+    template: "%s | Sri Balaji Homes", // Appends "| Sri Balaji Homes" to child titles
+  },
+  
   description:
     "Buy CMDA & DTCP approved resale plots in Chennai with clear title & zero brokerage. Katrambakkam, Nandhambakkam & Thaiyur OMR. Get a free site visit.",
 
@@ -173,6 +190,11 @@ const combinedSchema = {
         "postalCode": "602103",
         "addressCountry": "IN"
       },
+      "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 12.9819891,
+  "longitude": 80.0295029
+},
       "areaServed": [
         { "@type": "Place", "name": "Katrambakkam" },
         { "@type": "Place", "name": "Nandhambakkam" },
@@ -211,7 +233,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Meta Pixel Code */}
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        <Script id="facebook-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -252,7 +274,9 @@ export default function RootLayout({ children }) {
 
         <CountdownGate>
           <div className="min-h-screen flex-col">
-            <Navbar />
+          <header>
+              <Navbar />
+            </header>
 
             {/* <h1 className="hidden">
               CMDA & DTCP Approved Resale Plots and Residential Land in Chennai

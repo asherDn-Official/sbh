@@ -9,8 +9,32 @@ export const metadata = {
 };
 
 function PrivacyPolicyPage() {
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.sribalajihomes.in",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Privacy Policy",
+        item: "https://www.sribalajihomes.in/privacy",
+      },
+    ],
+  };
+
   return (
        <section className="py-20 px-6 lg:px-32 bg-white pt-20 lg:pt-30 pb-20">
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Heading */}
       <div className="text-center mb-16">
         <h1 className="text-3xl lg:text-4xl font-serif  text-gray-900">

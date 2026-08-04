@@ -511,7 +511,170 @@ import Image from "next/image";
 import Link from "next/link";
 import { PlusIcon, MinusIcon } from "@heroicons/react/24/outline";
 
-import katrambakkamHero from "../../../public/assets/home/katrambakkamvilla1.webp";
+import katrambakkamHero from "../../../public/assets/home/resale-plots-katrambakkam-layout.webp";
+
+// --- KATRAMBAKKAM PLOTS ---
+export const katrambakkamPlots = [
+  {
+    id: 1,
+    img: "/assets/properties/resale-plots-katrambakkam-800sqft.webp",
+    size: "800 Sq. Feet",
+    alt: "800 Sq Ft DTCP approved resale plot layout in Katrambakkam near Sriperumbudur",
+    title: "Resale Plots Katrambakkam 800 Sq Ft",
+    caption: "DTCP approved 800 sq ft plot in Katrambakkam, verified for clear title.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 2,
+    img: "/assets/properties/resale-plots-katrambakkam-1200sqft.webp",
+    size: "1200 Sq. Feet",
+    alt: "1200 Sq Ft CMDA approved residential plot layout in Katrambakkam Chennai",
+    title: "Resale Plots Katrambakkam 1200 Sq Ft",
+    caption: "1200 sq ft ready-to-build resale plot in Katrambakkam with zero brokerage.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 3,
+    img: "/assets/properties/resale-plots-katrambakkam-2400sqft.webp",
+    size: "2400 Sq. Feet",
+    alt: "2400 Sq Ft corner plot layout in Katrambakkam near Sriperumbudur corridor",
+    title: "Resale Plots Katrambakkam 2400 Sq Ft",
+    caption: "DTCP approved premium 2400 sq ft resale plot with road connectivity.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 4,
+    img: "/assets/properties/resale-plots-katrambakkam-1800sqft.webp",
+    size: "1800 Sq. Feet",
+    alt: "1800 Sq Ft clear title residential plot layout in Katrambakkam",
+    title: "Resale Plots Katrambakkam 1800 Sq Ft",
+    caption: "1800 sq ft plot verified with 30-year encumbrance certificate.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 5,
+    img: "/assets/properties/resale-plots-katrambakkam-2100sqft.webp",
+    size: "2100 Sq. Feet",
+    alt: "2100 Sq Ft resale plot in Katrambakkam layout ready for immediate construction",
+    title: "Resale Plots Katrambakkam 2100 Sq Ft",
+    caption: "Direct developer 2100 sq ft plot in Katrambakkam, clear legal title.",
+    width: 1200,
+    height: 800,
+  },
+];
+
+// --- NANDHAMBAKKAM PLOTS ---
+export const nandhambakkamPlots = [
+  {
+    id: 1,
+    img: "/assets/properties/resale-plots-nandhambakkam-2400sqft.webp",
+    size: "2400 Sq. Feet",
+    alt: "2400 Sq Ft CMDA approved resale plot layout in Nandhambakkam near Kundrathur",
+    title: "Resale Plots Nandhambakkam 2400 Sq Ft",
+    caption: "CMDA approved 2400 sq ft resale plot in Nandhambakkam near Kundrathur.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 2,
+    img: "/assets/properties/resale-plots-nandhambakkam-1200sqft.webp",
+    size: "1200 Sq. Feet",
+    alt: "1200 Sq Ft clear title plot layout in Nandhambakkam Chennai",
+    title: "Resale Plots Nandhambakkam 1200 Sq Ft",
+    caption: "Ready for construction 1200 sq ft plot in Nandhambakkam with clear Patta.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 3,
+    img: "/assets/properties/resale-plots-nandhambakkam-2400sqft-layout2.webp",
+    size: "2400 Sq. Feet",
+    alt: "2400 Sq Ft residential plot in Nandhambakkam near Porur junction",
+    title: "Resale Plots Nandhambakkam 2400 Sq Ft",
+    caption: "2400 sq ft premium resale plot verified for legal title in Nandhambakkam.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 4,
+    img: "/assets/properties/resale-plots-nandhambakkam-1200sqft-layout2.webp",
+    size: "1200 Sq. Feet",
+    alt: "1200 Sq Ft CMDA plot layout in Nandhambakkam ready for villa construction",
+    title: "Resale Plots Nandhambakkam 1200 Sq Ft",
+    caption: "CMDA approved 1200 sq ft plot in Nandhambakkam with 0% brokerage.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 5,
+    img: "/assets/properties/resale-plots-nandhambakkam-2400sqft-layout3.webp",
+    size: "2400 Sq. Feet",
+    alt: "2400 Sq Ft gated community resale plot layout in Nandhambakkam",
+    title: "Resale Plots Nandhambakkam 2400 Sq Ft",
+    caption: "2400 sq ft residential land in Nandhambakkam with excellent road connectivity.",
+    width: 1200,
+    height: 800,
+  },
+];
+
+// --- THAIYUR OMR PLOTS ---
+export const thaiyurOmrPlots = [
+  {
+    id: 1,
+    img: "/assets/properties/resale-plots-thaiyur-omr-1200sqft.webp",
+    size: "1200 Sq. Feet",
+    alt: "1200 Sq Ft DTCP approved plot layout in Thaiyur OMR near Siruseri IT Park",
+    title: "Resale Plots Thaiyur OMR 1200 Sq Ft",
+    caption: "Approved 1200 sq ft plot in Thaiyur OMR, close to Siruseri IT Park.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 2,
+    img: "/assets/properties/resale-plots-thaiyur-omr-2400sqft.webp",
+    size: "2400 Sq. Feet",
+    alt: "2400 Sq Ft resale plot in Thaiyur OMR Kelambakkam stretch",
+    title: "Resale Plots Thaiyur OMR 2400 Sq Ft",
+    caption: "2400 sq ft plot in Thaiyur OMR, 100% verified clear title.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 3,
+    img: "/assets/properties/resale-plots-thaiyur-omr-1200sqft-layout2.webp",
+    size: "1200 Sq. Feet",
+    alt: "1200 Sq Ft residential land layout in Thaiyur OMR Chennai",
+    title: "Resale Plots Thaiyur OMR 1200 Sq Ft",
+    caption: "1200 sq ft investment-ready plot in Thaiyur OMR with zero broker fees.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 4,
+    img: "/assets/properties/resale-plots-thaiyur-omr-800sqft.webp",
+    size: "800 Sq. Feet",
+    alt: "800 Sq Ft compact plot layout in Thaiyur OMR near IT corridor",
+    title: "Resale Plots Thaiyur OMR 800 Sq Ft",
+    caption: "Affordable 800 sq ft plot layout in Thaiyur OMR near Kelambakkam.",
+    width: 1200,
+    height: 800,
+  },
+  {
+    id: 5,
+    img: "/assets/properties/resale-plots-thaiyur-omr-2400sqft-layout2.webp",
+    size: "2400 Sq. Feet",
+    alt: "2400 Sq Ft DTCP approved corner plot layout in Thaiyur OMR",
+    title: "Resale Plots Thaiyur OMR 2400 Sq Ft",
+    caption: "DTCP approved 2400 sq ft plot in Thaiyur OMR with direct owner pricing.",
+    width: 1200,
+    height: 800,
+  },
+];
+
 
 const allLocations = [
   {
@@ -546,13 +709,15 @@ const propertyData = {
     whyBuyText:
       "Katrambakkam sits within reach of Sriperumbudur's industrial employment base, giving it steady demand from both end-users looking to build and investors targeting rental or resale appreciation. Unlike a brand-new unapproved layout, this is an established plotted development with existing infrastructure and legal approvals already in place — you're not waiting years for a project to catch up to its promises.",
 
-    plots: [
-      { id: 1, img: "/assets/properties/k-1.webp", size: "800 Sq. Feet" },
-      { id: 2, img: "/assets/properties/k-2.webp", size: "1200 Sq. Feet" },
-      { id: 3, img: "/assets/properties/k-3.webp", size: "2400 Sq. Feet" },
-      { id: 4, img: "/assets/properties/k-4.webp", size: "1800 Sq. Feet" },
-      { id: 5, img: "/assets/properties/k-5.webp", size: "2100 Sq. Feet" },
-    ],
+    // plots: [
+    //   { id: 1, img: "/assets/properties/k-1.webp", size: "800 Sq. Feet" },
+    //   { id: 2, img: "/assets/properties/k-2.webp", size: "1200 Sq. Feet" },
+    //   { id: 3, img: "/assets/properties/k-3.webp", size: "2400 Sq. Feet" },
+    //   { id: 4, img: "/assets/properties/k-4.webp", size: "1800 Sq. Feet" },
+    //   { id: 5, img: "/assets/properties/k-5.webp", size: "2100 Sq. Feet" },
+    // ],
+    
+    plots: katrambakkamPlots,
 
     specifications: {
       sizes:
@@ -621,13 +786,15 @@ const propertyData = {
     whyBuyText:
       "Nandhambakkam benefits from its position near Kundrathur and Porur — an area with growing residential demand and improving connectivity toward Chennai's western industrial corridor. For buyers who want proximity to the city's west side without the price premium of more established Porur-adjacent layouts, this location offers a practical middle ground, backed by the same verification process we apply everywhere.",
 
-    plots: [
-      { id: 1, img: "/assets/properties/plot-1.webp", size: "2400 Sq. Feet" },
-      { id: 2, img: "/assets/properties/plot-2.webp", size: "1200 Sq. Feet" },
-      { id: 3, img: "/assets/properties/n-plot-3.webp", size: "2400 Sq. Feet" },
-      { id: 4, img: "/assets/properties/n-plot-4.webp", size: "1200 Sq. Feet" },
-      { id: 5, img: "/assets/properties/n-plot-5.webp", size: "2400 Sq. Feet" },
-    ],
+    // plots: [
+    //   { id: 1, img: "/assets/properties/plot-1.webp", size: "2400 Sq. Feet" },
+    //   { id: 2, img: "/assets/properties/plot-2.webp", size: "1200 Sq. Feet" },
+    //   { id: 3, img: "/assets/properties/n-plot-3.webp", size: "2400 Sq. Feet" },
+    //   { id: 4, img: "/assets/properties/n-plot-4.webp", size: "1200 Sq. Feet" },
+    //   { id: 5, img: "/assets/properties/n-plot-5.webp", size: "2400 Sq. Feet" },
+    // ],
+
+    plots: nandhambakkamPlots,
 
     specifications: {
       sizes:
@@ -696,13 +863,15 @@ const propertyData = {
     whyBuyText:
       "OMR's IT corridor has driven some of the most consistent land and rental demand in Chennai over the past decade, and Thaiyur sits within that demand zone without carrying the premium pricing of more central OMR stretches. For buyers targeting rental yield from IT/ITES employees or long-term appreciation tied to continued corridor growth, this location offers a genuinely different investment case than our Katrambakkam or Nandhambakkam layouts.",
 
-    plots: [
-      { id: 1, img: "/assets/properties/t-1.webp", size: "1200 Sq. Feet" },
-       { id: 2, img: "/assets/properties/t-2.webp", size: "2400 Sq. Feet" },
-      { id: 3, img: "/assets/properties/t-3.webp", size: "1200 Sq. Feet" },
-     { id: 4, img: "/assets/properties/t-4.webp", size: "800 Sq. Feet" },
-      { id: 5, img: "/assets/properties/5.webp", size: "2400 Sq. Feet" },
-    ],
+//     plots: [
+//       { id: 1, img: "/assets/properties/t-1.webp", size: "1200 Sq. Feet" },
+//        { id: 2, img: "/assets/properties/t-2.webp", size: "2400 Sq. Feet" },
+//       { id: 3, img: "/assets/properties/t-3.webp", size: "1200 Sq. Feet" },
+//      { id: 4, img: "/assets/properties/t-4.webp", size: "800 Sq. Feet" },
+//       { id: 5, img: "/assets/properties/5.webp", size: "2400 Sq. Feet" },
+//     ],
+
+   plots:thaiyurOmrPlots,
 
     specifications: {
       sizes:
@@ -780,15 +949,21 @@ export default function PropertyPageClient() {
     setOpenFaq(openFaq === index ? null : index);
   };
 
+  
+
   return (
     <div className="bg-white text-gray-800">
+      
       {/* 1. Hero Section */}
       <section className="relative w-full bg-slate-900 text-white py-16 px-6 lg:px-24">
         <div className="absolute inset-0 overflow-hidden opacity-30">
           <Image
             src={katrambakkamHero}
             alt={`${data.locationName} Resale Plots`}
+            caption="Approved resale plot layout in Chennai with marked boundaries"
             fill
+            quality={80}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
             className="object-cover"
             priority
           />
@@ -860,44 +1035,69 @@ export default function PropertyPageClient() {
           </div>
 
           {/* Plot Cards Grid */}
-          <div className="pt-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">
-              Featured Available Plots in {data.locationName}
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {data.plots.map((plot) => (
-                <div
-                  key={plot.id}
-                  className="bg-white border border-gray-100 shadow-sm rounded-2xl overflow-hidden hover:shadow-md transition"
-                >
-                  <div className="relative h-48 w-full bg-gray-100">
-                    <Image
-                      src={plot.img}
-                      alt={`${data.locationName} Plot ${plot.size}`}
-                      fill
-                      className="object-cover p-2 rounded-2xl"
-                    />
-                  </div>
-                  <div className="p-5 flex justify-between items-center">
-                    <div>
-                      <span className="text-xs font-semibold text-green-800 bg-green-50 px-2.5 py-1 rounded-full">
-                        Approved
-                      </span>
-                      <p className="text-lg font-bold text-gray-900 mt-2">
-                        📐 {plot.size}
-                      </p>
-                    </div>
-                    <Link href="/contact-us">
-                      <button className="px-4 py-2 bg-green-800 text-white text-sm font-medium rounded-xl hover:bg-green-700 transition">
-                        Know More
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
+<div className="pt-6">
+  <h3 className="text-xl font-semibold text-gray-900 mb-6">
+    Featured Available Plots in {data.locationName}
+  </h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* Optional chaining ?. prevents page crashes if plots is missing */}
+    {data.plots?.map((plot) => (
+      <div
+        key={plot.id}
+        className="bg-white border border-gray-100 shadow-sm rounded-2xl overflow-hidden hover:shadow-md transition flex flex-col justify-between"
+      >
+        <div>
+          {/* Card Image */}
+          <div className="relative h-48 w-full bg-gray-100">
+            <Image
+              src={plot.img}
+              alt={plot.alt || `${data.locationName} Plot ${plot.size}`}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+              className="object-cover p-2 rounded-2xl"
+            />
           </div>
-        </section>
+
+          {/* Card Content */}
+          <div className="p-5 pb-2">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs font-semibold text-green-800 bg-green-50 px-2.5 py-1 rounded-full">
+                Approved
+              </span>
+              <span className="text-lg font-bold text-gray-900">
+                📐 {plot.size}
+              </span>
+            </div>
+
+            {/* Display Title */}
+            {plot.title && (
+              <h4 className="font-semibold text-gray-900 text-base mt-2">
+                {plot.title}
+              </h4>
+            )}
+
+            {/* Display Caption */}
+            {plot.caption && (
+              <p className="text-xs text-gray-600 mt-1 line-clamp-2 leading-relaxed">
+                {plot.caption}
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Action Button */}
+        <div className="p-5 pt-3">
+          <Link href="/contact-us">
+            <button className="w-full px-4 py-2 bg-green-800 text-white text-sm font-medium rounded-xl hover:bg-green-700 transition text-center">
+              Know More
+            </button>
+          </Link>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+</section>
 
         {/* 4. Location & Connectivity */}
         <section>
