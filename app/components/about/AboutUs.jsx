@@ -1,13 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import founder from "../../../public/assets/about/sri-balaji-homes-owner.webp";
-export const metadata = {
-  title: "About Us | Sri Balaji Homes | Direct Plot Developers Chennai",
-  description: "Learn about Sri Balaji Homes, Chennai's trusted direct land developers. We offer legally verified, CMDA & DTCP approved resale plots with zero brokerage.",
-  alternates : {
-    canonical: "https://www.sribalajihomes.in/about-us"
-  }
-};
+
 export default function AboutUs() {
   return (
     <section className="w-full xl:px-6 sl:py-12 max-w-7xl mx-auto mb-10">

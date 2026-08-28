@@ -61,60 +61,60 @@ const seoData = {
   "resale-plots-katrambakkam": {
     title: "Resale Plots in Katrambakkam | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Katrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book a free site visit today.",
+      "CMDA & DTCP approved resale plots in Katrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book your free site visit today! 📞",
     ogTitle: "Resale Plots in Katrambakkam — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage.",
+      "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage. Book your free site visit today! 📞",
     canonicalSlug: "plots-in-katrambakkam",
     locationName: "Katrambakkam",
   },
   "plots-in-katrambakkam": {
     title: "Resale Plots in Katrambakkam | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Katrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book a free site visit today.",
+      "CMDA & DTCP approved resale plots in Katrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book your free site visit today! 📞",
     ogTitle: "Resale Plots in Katrambakkam — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage.",
+      "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage. Book your free site visit today! 📞",
     canonicalSlug: "plots-in-katrambakkam",
     locationName: "Katrambakkam",
   },
   "resale-plots-nandhambakkam": {
     title: "Resale Plots in Nandhambakkam | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear title, zero brokerage. Book a free site visit today.",
+      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear title, zero brokerage. Book your free site visit today! 📞",
     ogTitle: "Resale Plots in Nandhambakkam — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage.",
+      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage. Book your free site visit today! 📞",
     canonicalSlug: "plots-in-nandhambakkam",
     locationName: "Nandhambakkam",
   },
   "plots-in-nandhambakkam": {
     title: "Resale Plots in Nandhambakkam | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear title, zero brokerage. Book a free site visit today.",
+      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear title, zero brokerage. Book your free site visit today! 📞",
     ogTitle: "Resale Plots in Nandhambakkam — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage.",
+      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage. Book your free site visit today! 📞",
     canonicalSlug: "plots-in-nandhambakkam",
     locationName: "Nandhambakkam",
   },
   "resale-plots-thaiyur-omr": {
     title: "Resale Plots in Thaiyur OMR | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear title, zero brokerage. Book a free site visit.",
+      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear title, zero brokerage. Book your free site visit today! 📞",
     ogTitle: "Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage.",
+      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage. Book your free site visit today! 📞",
     canonicalSlug: "plots-in-thaiyur-omr",
     locationName: "Thaiyur",
   },
   "plots-in-thaiyur-omr": {
     title: "Resale Plots in Thaiyur OMR | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear title, zero brokerage. Book a free site visit.",
+      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear title, zero brokerage. Book your free site visit today! 📞",
     ogTitle: "Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage.",
+      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage. Book your free site visit today! 📞",
     canonicalSlug: "plots-in-thaiyur-omr",
     locationName: "Thaiyur OMR",
   },

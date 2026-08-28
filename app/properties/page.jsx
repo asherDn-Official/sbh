@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Approved Resale Plots in Chennai | Katrambakkam, Nandhambakkam & Thaiyur",
+  title: "Approved Resale Plots in Chennai | Kattrambakkam, Nandhambakkam & Thaiyur",
   description:
-    "Explore CMDA & DTCP approved resale plots in Chennai across top micro-markets including Katrambakkam, Nandhambakkam, and Thaiyur OMR.",
+    "Explore CMDA & DTCP approved resale plots in Chennai across Kattrambakkam, Nandhambakkam & Thaiyur. Book your free site visit today! 📞",
   alternates: {
     canonical: "https://www.sribalajihomes.in/properties",
   },

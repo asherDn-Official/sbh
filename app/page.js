@@ -113,7 +113,7 @@ import Reveal from "./components/Reveal";
 
 // EXPLICIT METADATA FOR HOMEPAGE
 export const metadata = {
-  title: "Approved Resale Plots in Chennai | Sri Balaji Homes",
+  title: "CMDA & DTCP Approved Resale Plots in Chennai – Zero Brokerage | Sri Balaji Homes",
   description:
     "Buy CMDA & DTCP approved resale plots in Chennai with clear title & zero brokerage. Katrambakkam, Nandhambakkam & Thaiyur OMR. Get a free site visit.",
   alternates: {
