@@ -195,29 +195,29 @@ import sbhLgog from "../../../public/assets/home/sri-balaji-homes-logo-dark.webp
 
 const verificationAndWhyUs = [
   {
-    icon: <DocumentCheckIcon className="h-6 w-6 text-green-800" />,
-    title: "Clear Title & Encumbrance Check",
-    desc: "Every plot is checked for a clean chain of ownership and zero pending encumbrance before it's listed — not after a buyer has already shown interest.",
+    icon: <BuildingOffice2Icon className="h-6 w-6 text-green-800" />,
+    title: "Zero Brokerage — Direct from Owner",
+    desc: "No brokerage fees on either side of the transaction — deal directly with zero middleman markup or hidden commissions.",
   },
   {
     icon: <ShieldCheckIcon className="h-6 w-6 text-green-800" />,
-    title: "CMDA / DTCP Approval Verification",
-    desc: "We confirm the plot's approval status directly rather than taking a seller's word for it, so what you see listed is what you can legally register and build on.",
+    title: "Clear CMDA/DTCP Title Deeds",
+    desc: "Every plot is verified for legal CMDA/DTCP approval, 30-year encumbrance clearance, and 100% clean title deeds before listing.",
+  },
+  {
+    icon: <DocumentCheckIcon className="h-6 w-6 text-green-800" />,
+    title: "Bank Loan Approved Plots",
+    desc: "All listed resale plots meet standard bank eligibility guidelines, enabling smooth property loan processing with major nationalized banks.",
   },
   {
     icon: <MapPinIcon className="h-6 w-6 text-green-800" />,
-    title: "Physical Site Survey",
-    desc: "Beyond paperwork, we physically verify plot boundaries and access roads match what's documented — a step many resale listings skip entirely.",
-  },
-  {
-    icon: <BuildingOffice2Icon className="h-6 w-6 text-green-800" />,
-    title: "Zero Brokerage, Direct From Owner",
-    desc: "No brokerage fees on either side of the transaction — you deal with us directly, which also means fewer parties for information to get lost between.",
+    title: "Immediate Possession Available",
+    desc: "Plotted layouts feature existing access roads, demarcated boundaries, and clear ownership ready for immediate registration and construction.",
   },
   {
     icon: <ClockIcon className="h-6 w-6 text-green-800" />,
     title: "Trusted Since 2005 & Local Expertise",
-    desc: "Over two decades of resale plot transactions across Sriperumbudur, Kundrathur, and OMR belts with deep insights on infrastructure timelines and pricing trends.",
+    desc: "Over two decades of resale plot transactions across Sriperumbudur, Kundrathur, and OMR belts with deep legal and market experience.",
   },
 ];
 

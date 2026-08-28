@@ -10,17 +10,17 @@ export const metadata = {
   openGraph: {
     title: "Frequently Asked Questions — Sri Balaji Homes",
     description:
-      "Everything you need to know about buying legal, approved resale plots in Katrambakkam, Nandhambakkam, and Thaiyur OMR.",
+      "Everything you need to know about buying legal, approved resale plots in Kattrambakkam, Nandhambakkam, and Thaiyur OMR.",
     url: "https://www.sribalajihomes.in/faq",
     siteName: "Sri Balaji Homes",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://www.sribalajihomes.in/android-chrome-512x512.png",
-        width: 512,
-        height: 512,
-        alt: "Sri Balaji Homes FAQ",
+        url: "https://www.sribalajihomes.in/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CMDA & DTCP Approved Resale Plots in Chennai | Zero Brokerage | Sri Balaji Homes",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata = {
     title: "FAQ | Buying Resale Plots in Chennai",
     description:
       "Get answers to common questions about legal titles, DTCP approvals, and plot registration in Chennai.",
-    images: ["https://www.sribalajihomes.in/android-chrome-512x512.png"],
+    images: ["https://www.sribalajihomes.in/og-image.jpg"],
   },
 };
 

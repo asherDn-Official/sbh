@@ -141,10 +141,10 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.sribalajihomes.in/android-chrome-512x512.png",
-        width: 512,
-        height: 512,
-        alt: "Sri Balaji Homes - Approved Resale Plots in Chennai",
+        url: "https://www.sribalajihomes.in/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CMDA & DTCP Approved Resale Plots in Chennai | Zero Brokerage | Sri Balaji Homes",
       },
     ],
   },
@@ -155,7 +155,7 @@ export const metadata = {
     title: "Approved Resale Plots in Chennai — Sri Balaji Homes",
     description:
       "CMDA & DTCP approved resale plots with clear title and zero brokerage in Kattrambakkam, Nandhambakkam & Thaiyur. Book your free site visit today! 📞",
-    images: ["https://www.sribalajihomes.in/android-chrome-512x512.png"],
+    images: ["https://www.sribalajihomes.in/og-image.jpg"],
   },
 };
 
@@ -171,13 +171,18 @@ const combinedSchema = {
       "logo": "https://www.sribalajihomes.in/android-chrome-512x512.png",
       "foundingDate": "2005",
       "email": "info.sribalajihomes@gmail.com",
-      "telephone": ["+917200940777", "+916384000006"]
+      "telephone": ["+917200940777", "+916384000006"],
+      "sameAs": [
+        "https://www.facebook.com/share/1BUtDYePcK/?mibextid=wwXIfr",
+        "https://www.instagram.com/sribalajihomes_official",
+        "https://youtube.com/@sribalajihomes-official?si=CE_Q5iLn6JI7c9nx"
+      ]
     },
     {
       "@type": "RealEstateAgent",
       "@id": "https://www.sribalajihomes.in/#realestateagent",
       "name": "Sri Balaji Homes",
-      "image": "https://www.sribalajihomes.in/android-chrome-512x512.png",
+      "image": "https://www.sribalajihomes.in/og-image.jpg",
       "url": "https://www.sribalajihomes.in",
       "telephone": ["+917200940777", "+916384000006"],
       "email": "info.sribalajihomes@gmail.com",
@@ -191,15 +196,20 @@ const combinedSchema = {
         "addressCountry": "IN"
       },
       "geo": {
-  "@type": "GeoCoordinates",
-  "latitude": 12.9819891,
-  "longitude": 80.0295029
-},
+        "@type": "GeoCoordinates",
+        "latitude": 12.9819891,
+        "longitude": 80.0295029
+      },
       "areaServed": [
         { "@type": "Place", "name": "Katrambakkam" },
         { "@type": "Place", "name": "Nandhambakkam" },
         { "@type": "Place", "name": "Thaiyur" },
         { "@type": "City", "name": "Chennai" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/share/1BUtDYePcK/?mibextid=wwXIfr",
+        "https://www.instagram.com/sribalajihomes_official",
+        "https://youtube.com/@sribalajihomes-official?si=CE_Q5iLn6JI7c9nx"
       ]
     }
   ]

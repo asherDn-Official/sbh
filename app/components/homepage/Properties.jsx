@@ -92,24 +92,30 @@ import Link from "next/link";
 const properties = [
   {
     id: 1,
-    title: "Resale Plots in Katrambakkam (Near Sriperumbudur)",
+    title: "DTCP Approved Resale Plots in Kattrambakkam",
     desc: "Our original and most established location, close to the Sriperumbudur industrial belt. DTCP and CMDA approved plots with clear title, direct from owner.",
-    image: "/assets/home/resale-plots-katrambakkam-layout.webp",
-    link: "/properties/plots-in-katrambakkam",
+    image: "/assets/home/dtcp-approved-resale-plot-kattrambakkam-aerial.webp",
+    alt: "DTCP approved resale plot in Kattrambakkam Chennai – Sri Balaji Homes",
+    anchorText: "DTCP Approved Resale Plots in Kattrambakkam →",
+    link: "/properties/approved-resale-plots-kattrambakkam-chennai",
   },
   {
     id: 2,
-    title: "Resale Plots in Nandhambakkam (Near Kundrathur)",
+    title: "CMDA Approved Plots in Nandhambakkam",
     desc: "Positioned near Kundrathur and Porur, with growing connectivity to Chennai's western industrial corridor.",
-    image: "/assets/home/resale-plots-nandhambakkam-layout2.webp",
-    link: "/properties/plots-in-nandhambakkam",
+    image: "/assets/home/cmda-plot-nandhambakkam-road-view.webp",
+    alt: "CMDA approved resale plot in Nandhambakkam Chennai – Sri Balaji Homes",
+    anchorText: "CMDA Resale Plots Nandhambakkam →",
+    link: "/properties/cmda-approved-plots-nandhambakkam",
   },
   {
     id: 3,
-    title: "Resale Plots in Thaiyur, OMR (Near Siruseri IT Park)",
+    title: "Residential Resale Plots in Thaiyur, OMR",
     desc: "Our OMR location benefits from proximity to Siruseri IT Park and the broader IT corridor, making it a strong choice for buyers prioritizing long-term rental or resale demand.",
-    image: "/assets/home/resale-plots-thaiyur-layout3.webp",
-    link: "/properties/plots-in-thaiyur-omr",
+    image: "/assets/home/thaiyur-omr-residential-plot-sale.webp",
+    alt: "DTCP approved resale plot in Thaiyur OMR Chennai – Sri Balaji Homes",
+    anchorText: "Residential Resale Plots in Thaiyur →",
+    link: "/properties/dtcp-resale-plots-thaiyur-omr",
   },
 ];
 
@@ -136,15 +142,16 @@ export default function Properties() {
               <div className="relative h-48 lg:h-56 w-full">
                 <Image
                   src={property.image}
-                  alt={property.title}
+                  alt={property.alt}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover p-3 rounded-3xl"
                 />
               </div>
               <div className="p-5">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h2 className="text-lg font-bold text-gray-900 mb-2">
                   {property.title}
-                </h3>
+                </h2>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {property.desc}
                 </p>
@@ -152,14 +159,25 @@ export default function Properties() {
             </div>
 
             <div className="p-5 pt-0">
-              <Link href={property.link}>
-                <button className="w-full py-2.5 bg-green-800 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition cursor-pointer">
-                  View Available Plots →
-                </button>
+              <Link
+                href={property.link}
+                className="block w-full py-2.5 bg-green-800 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition cursor-pointer text-center"
+              >
+                {property.anchorText}
               </Link>
             </div>
           </div>
         ))}
+      </div>
+
+      {/* View More */}
+      <div className="flex justify-center mt-8">
+        <Link
+          href="/properties"
+          className="text-gray-700 border-b border-gray-400 hover:text-black cursor-pointer font-medium"
+        >
+          View All Approved Resale Plots in Chennai →
+        </Link>
       </div>
     </section>
   );

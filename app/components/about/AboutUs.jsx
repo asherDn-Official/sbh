@@ -8,10 +8,12 @@ export default function AboutUs() {
       <div className="flex flex-col-reverse lg:flex-row items-start gap-10">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 space-y-6  px-6">
-        <h1 className="hidden">About Sri Balaji Homes: Trusted Direct Land Developers in Chennai</h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-            About Us
-          </h2>
+          <h1 className="text-2xl md:text-3xl font-semibold text-gray-900">
+            About Sri Balaji Homes
+          </h1>
+          <p className="text-xs uppercase tracking-wider text-green-800 font-bold">
+            Trusted Direct Land Developers in Chennai
+          </p>
           <div className="text-gray-700 leading-relaxed space-y-4 text-sm md:text-base">
             <p>
               When I founded SBH in 2003, I had a simple yet ambitious vision:

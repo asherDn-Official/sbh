@@ -678,21 +678,21 @@ export const thaiyurOmrPlots = [
 
 const allLocations = [
   {
-    key: "plots-in-katrambakkam",
-    name: "Katrambakkam resale plots",
-    href: "/properties/plots-in-katrambakkam",
+    key: "approved-resale-plots-kattrambakkam-chennai",
+    name: "Kattrambakkam resale plots",
+    href: "/properties/approved-resale-plots-kattrambakkam-chennai",
     desc: "DTCP & CMDA approved plots near the Sriperumbudur industrial belt.",
   },
   {
-    key: "plots-in-nandhambakkam",
+    key: "cmda-approved-plots-nandhambakkam",
     name: "Nandhambakkam resale plots",
-    href: "/properties/plots-in-nandhambakkam",
+    href: "/properties/cmda-approved-plots-nandhambakkam",
     desc: "Verified CMDA approved plots near Kundrathur and Porur.",
   },
   {
-    key: "plots-in-thaiyur-omr",
+    key: "dtcp-resale-plots-thaiyur-omr",
     name: "Thaiyur OMR resale plots",
-    href: "/properties/plots-in-thaiyur-omr",
+    href: "/properties/dtcp-resale-plots-thaiyur-omr",
     desc: "Ready-to-build plots located near Siruseri IT Park on OMR.",
   },
 ];
@@ -931,6 +931,9 @@ const propertyData = {
 };
 
 // Aliases for alternate URL formats
+propertyData["approved-resale-plots-kattrambakkam-chennai"] = propertyData["plots-in-katrambakkam"];
+propertyData["cmda-approved-plots-nandhambakkam"] = propertyData["plots-in-nandhambakkam"];
+propertyData["dtcp-resale-plots-thaiyur-omr"] = propertyData["plots-in-thaiyur-omr"];
 propertyData["resale-plots-katrambakkam"] = propertyData["plots-in-katrambakkam"];
 propertyData["resale-plots-nandhambakkam"] = propertyData["plots-in-nandhambakkam"];
 propertyData["resale-plots-thaiyur"] = propertyData["plots-in-thaiyur-omr"];

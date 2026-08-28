@@ -224,8 +224,11 @@
     {/* Glassmorphism Text Container (Desktop) */}
     <div className="relative text-lg md:text-2xl lg:text-3xl md:w-[55%] xl:w-[48%] space-y-3 md:space-y-4 leading-snug z-10 p-5 md:p-7 rounded-2xl bg-black/60 backdrop-blur-md border border-white/10 shadow-2xl">
       <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight text-white drop-shadow-md">
-        Approved Resale Plots in Chennai — Clear Title, Zero Brokerage
+        CMDA & DTCP Approved Resale Plots in Chennai
       </h1>
+      <h2 className="text-base sm:text-lg md:text-xl font-semibold text-[#91eda5] drop-shadow-sm">
+        You see Land, We See Plan
+      </h2>
       <p className="text-xs sm:text-sm md:text-base text-gray-100 font-normal leading-relaxed drop-shadow-sm">
         Buying a resale plot in Chennai comes with a real risk most listings don't talk about: unclear titles, pending litigation, or approvals that don't hold up under scrutiny. Sri Balaji Homes exists to remove that risk. Every plot we list is CMDA or DTCP approved, verified for clear title and zero encumbrance, and sold directly with zero brokerage — across our three active locations in Katrambakkam, Nandhambakkam, and Thaiyur, OMR.
       </p>

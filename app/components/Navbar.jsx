@@ -458,21 +458,21 @@ function Navbar() {
                   All Properties Hub →
                 </Link>
                 <Link
-                  href="/properties/plots-in-katrambakkam"
+                  href="/properties/approved-resale-plots-kattrambakkam-chennai"
                   onClick={() => setDropdownOpen(false)}
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Katrambakkam
                 </Link>
                 <Link
-                  href="/properties/plots-in-nandhambakkam"
+                  href="/properties/cmda-approved-plots-nandhambakkam"
                   onClick={() => setDropdownOpen(false)}
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
                   Nandhambakkam
                 </Link>
                 <Link
-                  href="/properties/plots-in-thaiyur-omr"
+                  href="/properties/dtcp-resale-plots-thaiyur-omr"
                   onClick={() => setDropdownOpen(false)}
                   className="block px-4 py-2 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
@@ -568,7 +568,7 @@ function Navbar() {
                   All Properties Hub →
                 </Link>
                 <Link
-                  href="/properties/plots-in-katrambakkam"
+                  href="/properties/approved-resale-plots-kattrambakkam-chennai"
                   className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
@@ -579,7 +579,7 @@ function Navbar() {
                 </Link>
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
-                  href="/properties/plots-in-nandhambakkam"
+                  href="/properties/cmda-approved-plots-nandhambakkam"
                   className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
@@ -590,7 +590,7 @@ function Navbar() {
                 </Link>
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
-                  href="/properties/plots-in-thaiyur-omr"
+                  href="/properties/dtcp-resale-plots-thaiyur-omr"
                   className="w-full text-start px-4 py-3 text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);

@@ -58,71 +58,103 @@ import PropertyPageClient from "./propertiesPage";
 
 // Metadata Dictionary mapped to exact SEO specs
 const seoData = {
-  "resale-plots-katrambakkam": {
-    title: "Resale Plots in Katrambakkam | Sri Balaji Homes",
+  "approved-resale-plots-kattrambakkam-chennai": {
+    title: "DTCP Approved Resale Plots in Kattrambakkam | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Katrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book your free site visit today! 📞",
-    ogTitle: "Resale Plots in Katrambakkam — Sri Balaji Homes",
+      "CMDA & DTCP approved resale plots in Kattrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book your free site visit today! 📞",
+    ogTitle: "DTCP Approved Resale Plots in Kattrambakkam — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage. Book your free site visit today! 📞",
-    canonicalSlug: "plots-in-katrambakkam",
-    locationName: "Katrambakkam",
+      "DTCP & CMDA approved resale plots in Kattrambakkam, near Sriperumbudur, with clear title and zero brokerage. Book your free site visit today! 📞",
+    canonicalSlug: "approved-resale-plots-kattrambakkam-chennai",
+    locationName: "Kattrambakkam",
   },
   "plots-in-katrambakkam": {
-    title: "Resale Plots in Katrambakkam | Sri Balaji Homes",
+    title: "DTCP Approved Resale Plots in Kattrambakkam | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots in Katrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book your free site visit today! 📞",
-    ogTitle: "Resale Plots in Katrambakkam — Sri Balaji Homes",
+      "CMDA & DTCP approved resale plots in Kattrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book your free site visit today! 📞",
+    ogTitle: "DTCP Approved Resale Plots in Kattrambakkam — Sri Balaji Homes",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Katrambakkam, near Sriperumbudur, with clear title and zero brokerage. Book your free site visit today! 📞",
-    canonicalSlug: "plots-in-katrambakkam",
-    locationName: "Katrambakkam",
+      "DTCP & CMDA approved resale plots in Kattrambakkam, near Sriperumbudur, with clear title and zero brokerage. Book your free site visit today! 📞",
+    canonicalSlug: "approved-resale-plots-kattrambakkam-chennai",
+    locationName: "Kattrambakkam",
   },
-  "resale-plots-nandhambakkam": {
-    title: "Resale Plots in Nandhambakkam | Sri Balaji Homes",
+  "resale-plots-katrambakkam": {
+    title: "DTCP Approved Resale Plots in Kattrambakkam | Sri Balaji Homes",
+    description:
+      "CMDA & DTCP approved resale plots in Kattrambakkam, near Sriperumbudur. Clear title, zero brokerage. Book your free site visit today! 📞",
+    ogTitle: "DTCP Approved Resale Plots in Kattrambakkam — Sri Balaji Homes",
+    ogDescription:
+      "DTCP & CMDA approved resale plots in Kattrambakkam, near Sriperumbudur, with clear title and zero brokerage. Book your free site visit today! 📞",
+    canonicalSlug: "approved-resale-plots-kattrambakkam-chennai",
+    locationName: "Kattrambakkam",
+  },
+
+  "cmda-approved-plots-nandhambakkam": {
+    title: "CMDA Approved Plots in Nandhambakkam | Sri Balaji Homes",
     description:
       "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear title, zero brokerage. Book your free site visit today! 📞",
-    ogTitle: "Resale Plots in Nandhambakkam — Sri Balaji Homes",
+    ogTitle: "CMDA Approved Plots in Nandhambakkam — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage. Book your free site visit today! 📞",
-    canonicalSlug: "plots-in-nandhambakkam",
+    canonicalSlug: "cmda-approved-plots-nandhambakkam",
     locationName: "Nandhambakkam",
   },
   "plots-in-nandhambakkam": {
-    title: "Resale Plots in Nandhambakkam | Sri Balaji Homes",
+    title: "CMDA Approved Plots in Nandhambakkam | Sri Balaji Homes",
     description:
       "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear title, zero brokerage. Book your free site visit today! 📞",
-    ogTitle: "Resale Plots in Nandhambakkam — Sri Balaji Homes",
+    ogTitle: "CMDA Approved Plots in Nandhambakkam — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage. Book your free site visit today! 📞",
-    canonicalSlug: "plots-in-nandhambakkam",
+    canonicalSlug: "cmda-approved-plots-nandhambakkam",
     locationName: "Nandhambakkam",
   },
-  "resale-plots-thaiyur-omr": {
-    title: "Resale Plots in Thaiyur OMR | Sri Balaji Homes",
+  "resale-plots-nandhambakkam": {
+    title: "CMDA Approved Plots in Nandhambakkam | Sri Balaji Homes",
+    description:
+      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear title, zero brokerage. Book your free site visit today! 📞",
+    ogTitle: "CMDA Approved Plots in Nandhambakkam — Sri Balaji Homes",
+    ogDescription:
+      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear title and zero brokerage. Book your free site visit today! 📞",
+    canonicalSlug: "cmda-approved-plots-nandhambakkam",
+    locationName: "Nandhambakkam",
+  },
+
+  "dtcp-resale-plots-thaiyur-omr": {
+    title: "Residential Resale Plots in Thaiyur, OMR | Sri Balaji Homes",
     description:
       "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear title, zero brokerage. Book your free site visit today! 📞",
-    ogTitle: "Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
+    ogTitle: "Residential Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage. Book your free site visit today! 📞",
-    canonicalSlug: "plots-in-thaiyur-omr",
-    locationName: "Thaiyur",
+    canonicalSlug: "dtcp-resale-plots-thaiyur-omr",
+    locationName: "Thaiyur OMR",
   },
   "plots-in-thaiyur-omr": {
-    title: "Resale Plots in Thaiyur OMR | Sri Balaji Homes",
+    title: "Residential Resale Plots in Thaiyur, OMR | Sri Balaji Homes",
     description:
       "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear title, zero brokerage. Book your free site visit today! 📞",
-    ogTitle: "Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
+    ogTitle: "Residential Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
     ogDescription:
       "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage. Book your free site visit today! 📞",
-    canonicalSlug: "plots-in-thaiyur-omr",
+    canonicalSlug: "dtcp-resale-plots-thaiyur-omr",
+    locationName: "Thaiyur OMR",
+  },
+  "resale-plots-thaiyur-omr": {
+    title: "Residential Resale Plots in Thaiyur, OMR | Sri Balaji Homes",
+    description:
+      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear title, zero brokerage. Book your free site visit today! 📞",
+    ogTitle: "Residential Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
+    ogDescription:
+      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear title and zero brokerage. Book your free site visit today! 📞",
+    canonicalSlug: "dtcp-resale-plots-thaiyur-omr",
     locationName: "Thaiyur OMR",
   },
 };
 
 // Add Katrambakkam FAQs for Schema generation
 const locationFaqs = {
-  "resale-plots-katrambakkam": [
+  "approved-resale-plots-kattrambakkam-chennai": [
     {
       q: "Are the plots in Katrambakkam DTCP approved?",
       a: "Yes — this layout carries DTCP approval, verified as part of our listing process before any plot is made available to buyers.",
@@ -144,7 +176,7 @@ const locationFaqs = {
       a: "You'll receive the registered sale deed along with the title and encumbrance verification documents compiled before the plot was listed.",
     },
   ],
-  "resale-plots-nandhambakkam": [
+  "cmda-approved-plots-nandhambakkam": [
     {
       q: "Are the plots in Nandhambakkam DTCP approved?",
       a: "Yes — this layout carries DTCP approval, verified as part of our listing process before any plot is made available.",
@@ -166,7 +198,7 @@ const locationFaqs = {
       a: "Nandhambakkam is positioned on Chennai's western side near Kundrathur and Porur, while Katrambakkam is closer to the Sriperumbudur industrial belt — the right choice depends on which corridor better matches your commute or investment goals.",
     },
   ],
-  "resale-plots-thaiyur": [
+  "dtcp-resale-plots-thaiyur-omr": [
     {
       q: "Are the plots in Thaiyur, OMR DTCP approved?",
       a: "Yes — this layout carries DTCP approval, verified as part of our listing process before any plot is made available.",
@@ -191,9 +223,12 @@ const locationFaqs = {
 };
 
 // Alias mapping so alternate slug retrieves the same FAQs
-locationFaqs["plots-in-katrambakkam"] = locationFaqs["resale-plots-katrambakkam"];
-locationFaqs["plots-in-nandhambakkam"] = locationFaqs["resale-plots-nandhambakkam"];
-locationFaqs["plots-in-thaiyur-omr"] = locationFaqs["resale-plots-thaiyur"];
+locationFaqs["plots-in-katrambakkam"] = locationFaqs["approved-resale-plots-kattrambakkam-chennai"];
+locationFaqs["resale-plots-katrambakkam"] = locationFaqs["approved-resale-plots-kattrambakkam-chennai"];
+locationFaqs["plots-in-nandhambakkam"] = locationFaqs["cmda-approved-plots-nandhambakkam"];
+locationFaqs["resale-plots-nandhambakkam"] = locationFaqs["cmda-approved-plots-nandhambakkam"];
+locationFaqs["plots-in-thaiyur-omr"] = locationFaqs["dtcp-resale-plots-thaiyur-omr"];
+locationFaqs["resale-plots-thaiyur-omr"] = locationFaqs["dtcp-resale-plots-thaiyur-omr"];
 
 export async function generateStaticParams() {
   return Object.keys(seoData).map((slug) => ({
@@ -222,10 +257,10 @@ export async function generateMetadata({ params }) {
       siteName: "Sri Balaji Homes",
       images: [
         {
-          url: "https://www.sribalajihomes.in/android-chrome-512x512.png",
-          width: 512,
-          height: 512,
-          alt: `${data.locationName || "Katrambakkam"} Resale Plots - Sri Balaji Homes`,
+          url: "https://www.sribalajihomes.in/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: `${data.locationName || "Kattrambakkam"} Resale Plots - Sri Balaji Homes`,
         },
       ],
       locale: "en_IN",
@@ -235,7 +270,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: data.ogTitle || data.title,
       description: data.ogDescription || data.description,
-      images: ["https://www.sribalajihomes.in/android-chrome-512x512.png"],
+      images: ["https://www.sribalajihomes.in/og-image.jpg"],
     },
   };
 }
@@ -246,58 +281,75 @@ export default async function Page({ params }) {
   const cleanSlug = data.canonicalSlug || slug;
   const faqs = locationFaqs[slug] || locationFaqs["resale-plots-katrambakkam"];
 
- const breadcrumbSchema = {
-     "@context": "https://schema.org",
-     "@type": "BreadcrumbList",
-     "itemListElement": [
-       {
-         "@type": "ListItem",
-         "position": 1,
-         "name": "Home",
-         "item": "https://www.sribalajihomes.in",
-       },
-       {
-         "@type": "ListItem",
-         "position": 2,
-         "name": "Properties",
-         "item": "https://www.sribalajihomes.in/properties",
-       },
-       {
-         "@type": "ListItem",
-         "position": 3,
-         "name": data?.locationName || "Location",
-         "item": `https://www.sribalajihomes.in/properties/${slug}`,
-       },
-     ],
-   };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.sribalajihomes.in",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Properties",
+        "item": "https://www.sribalajihomes.in/properties",
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": data?.locationName || "Location",
+        "item": `https://www.sribalajihomes.in/properties/${cleanSlug}`,
+      },
+    ],
+  };
 
   const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: f.a,
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+
+  const lotOrAcreageSchema = {
+    "@context": "https://schema.org",
+    "@type": "LotOrAcreage",
+    "name": data.title || `Approved Resale Plots in ${data.locationName || "Chennai"}`,
+    "description": data.description || "Buy CMDA & DTCP approved resale plots in Chennai directly from Sri Balaji Homes.",
+    "url": `https://www.sribalajihomes.in/properties/${cleanSlug}`,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": data.locationName || "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600001",
+      "addressCountry": "IN"
     },
-  })),
-};
-
-// Add inside PropertyPage function in app/properties/[slug]/page.jsx:
-
-const propertyListingSchema = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateListing",
-  "name": `CMDA & DTCP Approved Resale Plots in ${slug.replace("plots-in-", "")}`,
-  "description": `Verified resale plots available in ${slug.replace("plots-in-", "")} with clear title and zero brokerage.`,
-  "url": `https://www.sribalajihomes.in/properties/${slug}`,
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock"
-  }
-};
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": data.locationName === "Nandhambakkam" ? 13.0031 : data.locationName === "Thaiyur OMR" ? 12.7937 : 12.9819891,
+      "longitude": data.locationName === "Nandhambakkam" ? 80.0617 : data.locationName === "Thaiyur OMR" ? 80.2076 : 80.0295029
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Approval",
+        "value": data.locationName === "Nandhambakkam" ? "CMDA" : "DTCP"
+      }
+    ]
+  };
 
   return (
     <>
@@ -307,16 +359,18 @@ const propertyListingSchema = {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
+      {/* Inject FAQ Schema */}
       <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-    />
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
+      {/* Inject LotOrAcreage Property Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(lotOrAcreageSchema) }}
+      />
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify(propertyListingSchema) }}
-/>
       <PropertyPageClient />
     </>
   );

@@ -52,7 +52,6 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
    <div className='lg:py-40 '>
-    <h1 className="hidden">About Sri Balaji Homes: Trusted Direct Land Developers in Chennai</h1>
     <AboutUs/>
     <MissionVision/>
     <FAQ/>

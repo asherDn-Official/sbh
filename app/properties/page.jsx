@@ -13,21 +13,27 @@ export const metadata = {
 
 const locations = [
   {
-    title: "Resale Plots in Katrambakkam",
-    slug: "plots-in-katrambakkam",
-    image: "/assets/home/resale-plots-katrambakkam-layout.webp", // update with your asset path
+    title: "DTCP Approved Resale Plots in Kattrambakkam",
+    slug: "approved-resale-plots-kattrambakkam-chennai",
+    image: "/assets/home/dtcp-approved-resale-plot-kattrambakkam-aerial.webp",
+    alt: "DTCP approved resale plot in Kattrambakkam Chennai – Sri Balaji Homes",
+    anchorText: "DTCP Approved Resale Plots in Kattrambakkam →",
     desc: "CMDA & DTCP approved plots near Sriperumbudur industrial corridor with high appreciation value.",
   },
   {
-    title: "Resale Plots in Nandhambakkam",
-    slug: "plots-in-nandhambakkam",
-    image: "/assets/home/resale-plots-nandhambakkam-layout2.webp", // update with your asset path
+    title: "CMDA Approved Plots in Nandhambakkam",
+    slug: "cmda-approved-plots-nandhambakkam",
+    image: "/assets/home/cmda-plot-nandhambakkam-road-view.webp",
+    alt: "CMDA approved resale plot in Nandhambakkam Chennai – Sri Balaji Homes",
+    anchorText: "CMDA Resale Plots Nandhambakkam →",
     desc: "Ready-to-build approved plots in a rapidly growing residential hub.",
   },
   {
-    title: "Resale Plots in Thaiyur OMR",
-    slug: "plots-in-thaiyur-omr",
-    image: "/assets/home/resale-plots-thaiyur-layout3.webp", // update with your asset path
+    title: "Residential Resale Plots in Thaiyur, OMR",
+    slug: "dtcp-resale-plots-thaiyur-omr",
+    image: "/assets/home/thaiyur-omr-residential-plot-sale.webp",
+    alt: "DTCP approved resale plot in Thaiyur OMR Chennai – Sri Balaji Homes",
+    anchorText: "Residential Resale Plots in Thaiyur →",
     desc: "Prime investment land along the IT corridor on OMR Kelambakkam.",
   },
 ];
@@ -45,6 +51,15 @@ export default function PropertiesHubPage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {locations.map((item) => (
           <div key={item.slug} className="border rounded-xl overflow-hidden shadow-md bg-white flex flex-col justify-between">
+            <div className="relative h-48 w-full">
+              <Image
+                src={item.image}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+              />
+            </div>
             <div className="p-6">
               <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
               <p className="text-sm text-gray-600 mb-4">{item.desc}</p>
@@ -52,9 +67,9 @@ export default function PropertiesHubPage() {
             <div className="p-6 pt-0">
               <Link
                 href={`/properties/${item.slug}`}
-                className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-neutral-800 transition-colors"
+                className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-neutral-800 transition-colors font-medium text-sm"
               >
-                View Plots →
+                {item.anchorText}
               </Link>
             </div>
           </div>

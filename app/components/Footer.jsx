@@ -237,7 +237,7 @@ function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/properties/plots-in-katrambakkam"
+                  href="/properties/approved-resale-plots-kattrambakkam-chennai"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm"
                 >
                   Plots in Katrambakkam
@@ -245,7 +245,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/properties/plots-in-nandhambakkam"
+                  href="/properties/cmda-approved-plots-nandhambakkam"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm"
                 >
                   Plots in Nandhambakkam
@@ -253,7 +253,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="/properties/plots-in-thaiyur-omr"
+                  href="/properties/dtcp-resale-plots-thaiyur-omr"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm"
                 >
                   Plots in Thaiyur OMR

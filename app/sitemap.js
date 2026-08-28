@@ -3,9 +3,9 @@ export default function sitemap() {
   const baseUrl = "https://www.sribalajihomes.in";
 
   const places = [
-    "plots-in-katrambakkam",
-    "plots-in-nandhambakkam",
-    "plots-in-thaiyur-omr",
+    "approved-resale-plots-kattrambakkam-chennai",
+    "cmda-approved-plots-nandhambakkam",
+    "dtcp-resale-plots-thaiyur-omr",
   ];
 
   const propertyUrls = places.map((place) => ({

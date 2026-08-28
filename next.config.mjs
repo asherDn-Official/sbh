@@ -104,11 +104,21 @@ const nextConfig = {
       { source: '/about', destination: '/about-us', permanent: true },
       { source: '/testimonial', destination: '/testimonials', permanent: true },
       { source: '/contact', destination: '/contact-us', permanent: true },
-      { source: '/resale-plots-katrambakkam', destination: '/properties/plots-in-katrambakkam', permanent: true },
-      { source: '/properties/katrambakkam', destination: '/properties/plots-in-katrambakkam', permanent: true },
-      { source: '/resale-plots-nandhambakkam', destination: '/properties/plots-in-nandhambakkam', permanent: true },
-      { source: '/properties/nandhambakkam', destination: '/properties/plots-in-nandhambakkam', permanent: true },
-      { source: '/resale-plots-thaiyur', destination: '/properties/plots-in-thaiyur-omr', permanent: true },
+      // Katrambakkam redirects
+      { source: '/resale-plots-katrambakkam', destination: '/properties/approved-resale-plots-kattrambakkam-chennai', permanent: true },
+      { source: '/properties/katrambakkam', destination: '/properties/approved-resale-plots-kattrambakkam-chennai', permanent: true },
+      { source: '/properties/plots-in-katrambakkam', destination: '/properties/approved-resale-plots-kattrambakkam-chennai', permanent: true },
+      { source: '/approved-resale-plots-kattrambakkam-chennai', destination: '/properties/approved-resale-plots-kattrambakkam-chennai', permanent: true },
+      // Nandhambakkam redirects
+      { source: '/resale-plots-nandhambakkam', destination: '/properties/cmda-approved-plots-nandhambakkam', permanent: true },
+      { source: '/properties/nandhambakkam', destination: '/properties/cmda-approved-plots-nandhambakkam', permanent: true },
+      { source: '/properties/plots-in-nandhambakkam', destination: '/properties/cmda-approved-plots-nandhambakkam', permanent: true },
+      { source: '/cmda-approved-plots-nandhambakkam', destination: '/properties/cmda-approved-plots-nandhambakkam', permanent: true },
+      // Thaiyur OMR redirects
+      { source: '/resale-plots-thaiyur', destination: '/properties/dtcp-resale-plots-thaiyur-omr', permanent: true },
+      { source: '/properties/thaiyur', destination: '/properties/dtcp-resale-plots-thaiyur-omr', permanent: true },
+      { source: '/properties/plots-in-thaiyur-omr', destination: '/properties/dtcp-resale-plots-thaiyur-omr', permanent: true },
+      { source: '/dtcp-resale-plots-thaiyur-omr', destination: '/properties/dtcp-resale-plots-thaiyur-omr', permanent: true },
     ];
   },
 };
