@@ -111,6 +111,14 @@ export const metadata = {
     "Sri Balaji Homes",
   ],
 
+  // Author & Publisher Info
+  authors: [{ name: "Sri Balaji Homes", url: "https://www.sribalajihomes.in" }],
+  publisher: "Sri Balaji Homes",
+  other: {
+    author: "Sri Balaji Homes",
+    publisher: "Sri Balaji Homes",
+  },
+
   icons: {
     icon: "/favicon.ico",
     apple: "/favicon.ico",

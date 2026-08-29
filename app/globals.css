@@ -13,6 +13,26 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Accessibility Tap Target Optimization for Mobile */
+button,
+a,
+input[type="submit"],
+input[type="button"] {
+  touch-action: manipulation;
+}
+
+@media (max-width: 767px) {
+  .nav-link,
+  .btn,
+  .menu-toggle {
+    min-width: 48px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .countdown-gradient {
   background: radial-gradient(
       circle at top,

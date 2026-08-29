@@ -86,8 +86,28 @@ const nextConfig = {
         ],
       },
       {
+        // Next.js Static JS/CSS Bundle Caching Header
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
         // Next.js Optimized Image Caching Header
         source: '/_next/image/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        // Public images, webp, fonts caching header
+        source: '/:path*.{webp,jpg,jpeg,png,gif,svg,ico,woff2}',
         headers: [
           {
             key: 'Cache-Control',

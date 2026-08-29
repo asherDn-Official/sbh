@@ -143,6 +143,7 @@ export default function Properties() {
                 <Image
                   src={property.image}
                   alt={property.alt}
+                  title={property.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover p-3 rounded-3xl"
@@ -161,7 +162,8 @@ export default function Properties() {
             <div className="p-5 pt-0">
               <Link
                 href={property.link}
-                className="block w-full py-2.5 bg-green-800 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition cursor-pointer text-center"
+                title={property.title}
+                className="block w-full py-3 min-h-[44px] inline-flex items-center justify-center bg-green-800 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition cursor-pointer text-center"
               >
                 {property.anchorText}
               </Link>
@@ -174,7 +176,8 @@ export default function Properties() {
       <div className="flex justify-center mt-8">
         <Link
           href="/properties"
-          className="text-gray-700 border-b border-gray-400 hover:text-black cursor-pointer font-medium"
+          title="View all CMDA & DTCP approved resale plots in Chennai"
+          className="text-gray-700 border-b border-gray-400 hover:text-black cursor-pointer font-medium py-2 min-h-[44px] inline-flex items-center"
         >
           View All Approved Resale Plots in Chennai →
         </Link>
