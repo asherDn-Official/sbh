@@ -1,9 +1,9 @@
 import React from 'react'
 
 export const metadata = {
-  title: "Privacy policy | Sri Balaji Homes",
-  description: "Learn more about Sri Balaji Homes, our mission, vision, and values.",
-   alternates: {
+  title: "Privacy Policy | Sri Balaji Homes",
+  description: "Read the Privacy Policy of Sri Balaji Homes to understand how we collect, use, and protect your personal information when inquiring about resale plots in Chennai.",
+  alternates: {
     canonical: "https://www.sribalajihomes.in/privacy",
   },
 };

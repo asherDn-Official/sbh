@@ -113,16 +113,16 @@ import Reveal from "./components/Reveal";
 
 // EXPLICIT METADATA FOR HOMEPAGE
 export const metadata = {
-  title: "CMDA & DTCP Approved Resale Plots in Chennai – Zero Brokerage | Sri Balaji Homes",
+  title: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
   description:
-    "Buy CMDA & DTCP approved resale plots in Chennai with clear title & zero brokerage. Katrambakkam, Nandhambakkam & Thaiyur OMR. Get a free site visit.",
+    "Looking for verified land in Chennai? Explore CMDA/DTCP resale plots in Katrambakkam, Nandambakkam & Thaiyur (OMR) with clear titles. Book a free site visit today!",
   alternates: {
     canonical: "https://www.sribalajihomes.in",
   },
   openGraph: {
-    title: "Approved Resale Plots in Chennai — Sri Balaji Homes",
+    title: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots with clear title and zero brokerage, across Katrambakkam, Nandhambakkam and Thaiyur OMR.",
+      "Looking for verified land in Chennai? Explore CMDA/DTCP resale plots in Katrambakkam, Nandambakkam & Thaiyur (OMR) with clear titles. Book a free site visit today!",
     url: "https://www.sribalajihomes.in",
     siteName: "Sri Balaji Homes",
     locale: "en_IN",
@@ -132,15 +132,15 @@ export const metadata = {
         url: "https://www.sribalajihomes.in/android-chrome-512x512.png",
         width: 512,
         height: 512,
-        alt: "Sri Balaji Homes - Approved Resale Plots in Chennai",
+        alt: "Sri Balaji Homes - CMDA & DTCP Approved Resale Plots in Chennai",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Approved Resale Plots in Chennai — Sri Balaji Homes",
+    title: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots with clear title and zero brokerage in Katrambakkam, Nandhambakkam and Thaiyur OMR.",
+      "Looking for verified land in Chennai? Explore CMDA/DTCP resale plots in Katrambakkam, Nandambakkam & Thaiyur (OMR) with clear titles. Book a free site visit today!",
     images: ["https://www.sribalajihomes.in/android-chrome-512x512.png"],
   },
 };

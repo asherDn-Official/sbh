@@ -1,14 +1,14 @@
 import ContactPageClient from "./contactPage";
 
 export const metadata = {
-  title: "Contact Us | Sri Balaji Homes | Plot Developers in Chennai",
-  description: "Contact Sri Balaji Homes today to schedule a free site visit. Buy CMDA & DTCP approved resale plots directly from the developer in Chennai. Get in touch!.",
+  title: "Contact Us | Schedule Free Site Visit | Sri Balaji Homes",
+  description: "Get in touch to schedule a free site visit for CMDA/DTCP plots in Katrambakkam, Nandambakkam, or Thaiyur OMR. Call or message us for instant property details!",
   alternates: {
     canonical: "https://www.sribalajihomes.in/contact-us"
   },
   openGraph: {
-    title: "Contact Sri Balaji Homes | Book a Free Site Visit",
-    description: "Get in touch to view layout maps, schedule site visits, or check document verification records.",
+    title: "Contact Sri Balaji Homes | Schedule Free Site Visit",
+    description: "Get in touch to schedule a free site visit for CMDA/DTCP plots in Katrambakkam, Nandambakkam, or Thaiyur OMR. Call or message us for instant property details!",
     url: "https://www.sribalajihomes.in/contact-us",
     images: [
       {

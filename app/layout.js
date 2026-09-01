@@ -91,14 +91,14 @@ export const metadata = {
     },
   },
 
-  // Exact Title (53 chars) & Description (156 chars) as per spec
+  // Exact Title & Description as per spec
   title: {
-    default: "Approved Resale Plots in Chennai | Sri Balaji Homes",
+    default: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
     template: "%s | Sri Balaji Homes", // Appends "| Sri Balaji Homes" to child titles
   },
   
   description:
-    "Buy CMDA & DTCP approved resale plots in Chennai with clear title & zero brokerage. Kattrambakkam, Nandhambakkam & Thaiyur. Book your free site visit today! 📞",
+    "Looking for verified land in Chennai? Explore CMDA/DTCP resale plots in Katrambakkam, Nandambakkam & Thaiyur (OMR) with clear titles. Book a free site visit today!",
 
   // Primary Focus Keywords
   keywords: [
@@ -140,9 +140,9 @@ export const metadata = {
 
   // OpenGraph (Social Sharing) Metadata
   openGraph: {
-    title: "Approved Resale Plots in Chennai — Sri Balaji Homes",
+    title: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots with clear title and zero brokerage in Kattrambakkam, Nandhambakkam & Thaiyur. Book your free site visit today! 📞",
+      "Looking for verified land in Chennai? Explore CMDA/DTCP resale plots in Katrambakkam, Nandambakkam & Thaiyur (OMR) with clear titles. Book a free site visit today!",
     url: "https://www.sribalajihomes.in",
     siteName: "Sri Balaji Homes",
     locale: "en_IN",
@@ -152,7 +152,7 @@ export const metadata = {
         url: "https://www.sribalajihomes.in/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CMDA & DTCP Approved Resale Plots in Chennai | Zero Brokerage | Sri Balaji Homes",
+        alt: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
       },
     ],
   },
@@ -160,9 +160,9 @@ export const metadata = {
   // Twitter Card Metadata
   twitter: {
     card: "summary_large_image",
-    title: "Approved Resale Plots in Chennai — Sri Balaji Homes",
+    title: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
     description:
-      "CMDA & DTCP approved resale plots with clear title and zero brokerage in Kattrambakkam, Nandhambakkam & Thaiyur. Book your free site visit today! 📞",
+      "Looking for verified land in Chennai? Explore CMDA/DTCP resale plots in Katrambakkam, Nandambakkam & Thaiyur (OMR) with clear titles. Book a free site visit today!",
     images: ["https://www.sribalajihomes.in/og-image.jpg"],
   },
 };

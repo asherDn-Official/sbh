@@ -20,7 +20,7 @@ export const metadata = {
         url: "https://www.sribalajihomes.in/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CMDA & DTCP Approved Resale Plots in Chennai | Zero Brokerage | Sri Balaji Homes",
+        alt: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
       },
     ],
   },

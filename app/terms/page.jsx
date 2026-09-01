@@ -2,9 +2,9 @@ import React from 'react'
 
 
 export const metadata = {
-  title: "Terms and condition | Sri Balaji Homes",
-  description: "Learn more about Sri Balaji Homes, our mission, vision, and values.",
-   alternates: {
+  title: "Terms & Conditions | Sri Balaji Homes",
+  description: "Read the Terms of Use and Conditions for Sri Balaji Homes regarding CMDA & DTCP approved resale plot listings and property advisory services in Chennai.",
+  alternates: {
     canonical: "https://www.sribalajihomes.in/terms",
   },
 };

@@ -67,7 +67,7 @@ async function createOgImage() {
 
       <!-- Features Row -->
       <rect x="100" y="390" width="220" height="48" rx="8" fill="#ffffff" fill-opacity="0.1"/>
-      <text x="210" y="421" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4ade80" text-anchor="middle">Zero Brokerage</text>
+      <text x="210" y="421" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4ade80" text-anchor="middle">Clear Titles</text>
 
       <rect x="340" y="390" width="240" height="48" rx="8" fill="#ffffff" fill-opacity="0.1"/>
       <text x="460" y="421" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4ade80" text-anchor="middle">Up to 90% Bank Loan</text>
