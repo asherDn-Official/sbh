@@ -679,19 +679,22 @@ export const thaiyurOmrPlots = [
 const allLocations = [
   {
     key: "approved-resale-plots-kattrambakkam-chennai",
-    name: "Kattrambakkam resale plots",
+    name: "DTCP Approved Plots in Kattrambakkam",
+    title: "DTCP Approved Resale Plots in Kattrambakkam",
     href: "/properties/approved-resale-plots-kattrambakkam-chennai",
     desc: "DTCP & CMDA approved plots near the Sriperumbudur industrial belt.",
   },
   {
     key: "cmda-approved-plots-nandhambakkam",
-    name: "Nandhambakkam resale plots",
+    name: "CMDA Approved Plots in Nandhambakkam",
+    title: "CMDA Approved Plots in Nandhambakkam",
     href: "/properties/cmda-approved-plots-nandhambakkam",
     desc: "Verified CMDA approved plots near Kundrathur and Porur.",
   },
   {
     key: "dtcp-resale-plots-thaiyur-omr",
-    name: "Thaiyur OMR resale plots",
+    name: "Resale Plots in Thaiyur (OMR)",
+    title: "Residential Resale Plots in Thaiyur, OMR",
     href: "/properties/dtcp-resale-plots-thaiyur-omr",
     desc: "Ready-to-build plots located near Siruseri IT Park on OMR.",
   },
@@ -1153,6 +1156,7 @@ export default function PropertyPageClient() {
           <h3 className="text-lg font-bold text-gray-900 mb-2">
             <Link
               href={loc.href}
+              title={loc.title}
               className="text-green-800 underline hover:text-green-900 transition"
             >
               {loc.name}
@@ -1163,6 +1167,7 @@ export default function PropertyPageClient() {
         <div className="mt-4">
           <Link
             href={loc.href}
+            title={loc.title}
             className="text-xs font-bold text-green-800 uppercase tracking-wider hover:underline"
           >
             View Layout →

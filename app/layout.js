@@ -94,7 +94,7 @@ export const metadata = {
   // Exact Title & Description as per spec
   title: {
     default: "CMDA & DTCP Approved Resale Plots in Chennai | Sri Balaji Homes",
-    template: "%s | Sri Balaji Homes", // Appends "| Sri Balaji Homes" to child titles
+    template: "%s", // Keep child titles exact as specified
   },
   
   description:
@@ -105,14 +105,12 @@ export const metadata = {
     "Approved Resale Plots Chennai",
     "CMDA approved plots Chennai",
     "DTCP approved plots Chennai",
-    "resale plots Katrambakkam",
-    "plots in Nandhambakkam",
-    "plots in Thaiyur OMR",
     "Sri Balaji Homes",
   ],
 
   // Author & Publisher Info
   authors: [{ name: "Sri Balaji Homes", url: "https://www.sribalajihomes.in" }],
+  creator: "Sri Balaji Homes",
   publisher: "Sri Balaji Homes",
   other: {
     author: "Sri Balaji Homes",

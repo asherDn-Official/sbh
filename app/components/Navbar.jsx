@@ -72,18 +72,18 @@ function Navbar() {
         >
           <div className="flex items-center gap-2">
             <BsTelephone aria-hidden="true" />
-            <a href="tel:+917200940777" title="Call Sri Balaji Homes at +91 72009 40777" className="hover:underline py-1">
+            <a href="tel:+917200940777" title="Call Sri Balaji Homes at +91 72009 40777" rel="nofollow" className="hover:underline py-1">
               +91 72009 40777
             </a>
             <span>,</span>
-            <a href="tel:+916384000006" title="Call Sri Balaji Homes at +91 63840 00006" className="hover:underline py-1">
+            <a href="tel:+916384000006" title="Call Sri Balaji Homes at +91 63840 00006" rel="nofollow" className="hover:underline py-1">
               +91 63840 00006
             </a>
           </div>
 
           <div className="flex items-center gap-2">
             <MdEmail aria-hidden="true" />
-            <a href="mailto:info.sribalajihomes@gmail.com" title="Email Sri Balaji Homes" className="hover:underline py-1">
+            <a href="mailto:info.sribalajihomes@gmail.com" title="Email Sri Balaji Homes Support" rel="nofollow" className="hover:underline py-1">
               info.sribalajihomes@gmail.com
             </a>
           </div>
@@ -115,7 +115,7 @@ function Navbar() {
                 : "/assets/home/sri-balaji-homes-logo-dark.webp"
             }
             alt="Sri Balaji Homes – Resale Plots in Chennai"
-            title="Sri Balaji Homes - Approved Resale Plots in Chennai"
+            title="Sri Balaji Homes - Verified Resale Plots in Chennai"
             width={73}
             height={53}
             className="w-12 h-auto sm:w-[100px]"
@@ -158,27 +158,27 @@ function Navbar() {
                 </Link>
                 <Link
                   href="/properties/approved-resale-plots-kattrambakkam-chennai"
-                  title="Approved Resale Plots in Katrambakkam - Sri Balaji Homes"
+                  title="DTCP Approved Resale Plots in Kattrambakkam"
                   onClick={() => setDropdownOpen(false)}
                   className="block px-4 py-2.5 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
-                  Katrambakkam
+                  DTCP Approved Plots in Kattrambakkam
                 </Link>
                 <Link
                   href="/properties/cmda-approved-plots-nandhambakkam"
-                  title="CMDA Approved Plots in Nandhambakkam - Sri Balaji Homes"
+                  title="CMDA Approved Plots in Nandhambakkam"
                   onClick={() => setDropdownOpen(false)}
                   className="block px-4 py-2.5 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
-                  Nandhambakkam
+                  CMDA Approved Plots in Nandhambakkam
                 </Link>
                 <Link
                   href="/properties/dtcp-resale-plots-thaiyur-omr"
-                  title="DTCP Approved Resale Plots in Thaiyur OMR - Sri Balaji Homes"
+                  title="Residential Resale Plots in Thaiyur, OMR"
                   onClick={() => setDropdownOpen(false)}
                   className="block px-4 py-2.5 text-white hover:bg-[#024b12] hover:text-[#91eda5]"
                 >
-                  Thaiyur (OMR)
+                  Resale Plots in Thaiyur (OMR)
                 </Link>
               </div>
             )}
@@ -278,38 +278,38 @@ function Navbar() {
                 </Link>
                 <Link
                   href="/properties/approved-resale-plots-kattrambakkam-chennai"
-                  title="Resale plots in Katrambakkam"
+                  title="DTCP Approved Resale Plots in Kattrambakkam"
                   className="w-full text-start px-4 py-3 min-h-[48px] flex items-center text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
                     setMobileDropdownOpen(false);
                   }}
                 >
-                  Katrambakkam
+                  DTCP Approved Plots in Kattrambakkam
                 </Link>
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
                   href="/properties/cmda-approved-plots-nandhambakkam"
-                  title="Resale plots in Nandhambakkam"
+                  title="CMDA Approved Plots in Nandhambakkam"
                   className="w-full text-start px-4 py-3 min-h-[48px] flex items-center text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
                     setMobileDropdownOpen(false);
                   }}
                 >
-                  Nandhambakkam
+                  CMDA Approved Plots in Nandhambakkam
                 </Link>
                 <div className="h-px w-full bg-gray-200"></div>
                 <Link
                   href="/properties/dtcp-resale-plots-thaiyur-omr"
-                  title="Resale plots in Thaiyur OMR"
+                  title="Residential Resale Plots in Thaiyur, OMR"
                   className="w-full text-start px-4 py-3 min-h-[48px] flex items-center text-[#024b12] font-medium hover:bg-[#024b12] hover:text-white transition-colors duration-300"
                   onClick={() => {
                     setMenuOpen(false);
                     setMobileDropdownOpen(false);
                   }}
                 >
-                  Thaiyur (OMR)
+                  Resale Plots in Thaiyur (OMR)
                 </Link>
               </div>
             )}

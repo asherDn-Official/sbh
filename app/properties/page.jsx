@@ -3,37 +3,52 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Approved Resale Plots in Chennai | Kattrambakkam, Nandhambakkam & Thaiyur",
+  title: "CMDA & DTCP Approved Plots for Sale in Chennai | Resale",
   description:
-    "Explore CMDA & DTCP approved resale plots in Chennai across Kattrambakkam, Nandhambakkam & Thaiyur. Book a free site visit today!",
+    "Explore top resale residential plots in Chennai. Verified CMDA & DTCP-approved land in prime locations with 100% legal clearance and bank loan support.",
   alternates: {
     canonical: "https://www.sribalajihomes.in/properties",
+  },
+  openGraph: {
+    title: "CMDA & DTCP Approved Plots for Sale in Chennai | Resale",
+    description:
+      "Explore top resale residential plots in Chennai. Verified CMDA & DTCP-approved land in prime locations with 100% legal clearance and bank loan support.",
+    url: "https://www.sribalajihomes.in/properties",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CMDA & DTCP Approved Plots for Sale in Chennai | Resale",
+    description:
+      "Explore top resale residential plots in Chennai. Verified CMDA & DTCP-approved land in prime locations with 100% legal clearance and bank loan support.",
   },
 };
 
 const locations = [
   {
-    title: "DTCP Approved Resale Plots in Kattrambakkam",
+    title: "DTCP Approved Plots in Kattrambakkam",
+    linkTitle: "DTCP Approved Resale Plots in Kattrambakkam",
     slug: "approved-resale-plots-kattrambakkam-chennai",
     image: "/assets/home/dtcp-approved-resale-plot-kattrambakkam-aerial.webp",
     alt: "DTCP approved resale plot in Kattrambakkam Chennai – Sri Balaji Homes",
-    anchorText: "DTCP Approved Resale Plots in Kattrambakkam →",
+    anchorText: "DTCP Approved Plots in Kattrambakkam",
     desc: "CMDA & DTCP approved plots near Sriperumbudur industrial corridor with high appreciation value.",
   },
   {
     title: "CMDA Approved Plots in Nandhambakkam",
+    linkTitle: "CMDA Approved Plots in Nandhambakkam",
     slug: "cmda-approved-plots-nandhambakkam",
     image: "/assets/home/cmda-plot-nandhambakkam-road-view.webp",
     alt: "CMDA approved resale plot in Nandhambakkam Chennai – Sri Balaji Homes",
-    anchorText: "CMDA Resale Plots Nandhambakkam →",
+    anchorText: "CMDA Approved Plots in Nandhambakkam",
     desc: "Ready-to-build approved plots in a rapidly growing residential hub.",
   },
   {
-    title: "Residential Resale Plots in Thaiyur, OMR",
+    title: "Resale Plots in Thaiyur (OMR)",
+    linkTitle: "Residential Resale Plots in Thaiyur, OMR",
     slug: "dtcp-resale-plots-thaiyur-omr",
     image: "/assets/home/thaiyur-omr-residential-plot-sale.webp",
     alt: "DTCP approved resale plot in Thaiyur OMR Chennai – Sri Balaji Homes",
-    anchorText: "Residential Resale Plots in Thaiyur →",
+    anchorText: "Resale Plots in Thaiyur (OMR)",
     desc: "Prime investment land along the IT corridor on OMR Kelambakkam.",
   },
 ];
@@ -67,6 +82,7 @@ export default function PropertiesHubPage() {
             <div className="p-6 pt-0">
               <Link
                 href={`/properties/${item.slug}`}
+                title={item.linkTitle || item.title}
                 className="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-neutral-800 transition-colors font-medium text-sm"
               >
                 {item.anchorText}

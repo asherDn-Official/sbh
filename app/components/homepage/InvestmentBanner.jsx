@@ -55,6 +55,7 @@ export default function InvestmentBanner() {
           <Image
             src={Banner}
             alt="Book a free site visit - Sri Balaji Homes"
+            title="Schedule a Free Site Visit with Sri Balaji Homes"
             fill
             className="object-cover"
             priority

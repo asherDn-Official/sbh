@@ -65,7 +65,7 @@ function Footer() {
               width={150}
               height={100}
               alt="Sri Balaji Homes – Resale Plots in Chennai"
-              title="Sri Balaji Homes - CMDA & DTCP Approved Resale Plots"
+              title="Sri Balaji Homes - Verified Resale Plots in Chennai"
               className="mb-4"
             />
           </Link>
@@ -103,10 +103,10 @@ function Footer() {
               <li>
                 <Link 
                   href="/testimonials" 
-                  title="Read customer reviews and testimonials"
+                  title="Read Sri Balaji Homes customer reviews"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1.5 min-h-[44px] inline-flex items-center"
                 >
-                  Testimonials
+                  Customer Reviews
                 </Link>
               </li>
             </ul>
@@ -119,28 +119,28 @@ function Footer() {
               <li>
                 <Link
                   href="/properties/approved-resale-plots-kattrambakkam-chennai"
-                  title="Approved Resale Plots in Katrambakkam - Sri Balaji Homes"
+                  title="DTCP Approved Resale Plots in Kattrambakkam"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1.5 min-h-[44px] inline-flex items-center"
                 >
-                  Plots in Katrambakkam
+                  DTCP Approved Plots in Kattrambakkam
                 </Link>
               </li>
               <li>
                 <Link
                   href="/properties/cmda-approved-plots-nandhambakkam"
-                  title="CMDA Approved Plots in Nandhambakkam - Sri Balaji Homes"
+                  title="CMDA Approved Plots in Nandhambakkam"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1.5 min-h-[44px] inline-flex items-center"
                 >
-                  Plots in Nandhambakkam
+                  CMDA Approved Plots in Nandhambakkam
                 </Link>
               </li>
               <li>
                 <Link
                   href="/properties/dtcp-resale-plots-thaiyur-omr"
-                  title="DTCP Approved Resale Plots in Thaiyur OMR - Sri Balaji Homes"
+                  title="Residential Resale Plots in Thaiyur, OMR"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1.5 min-h-[44px] inline-flex items-center"
                 >
-                  Plots in Thaiyur OMR
+                  Resale Plots in Thaiyur (OMR)
                 </Link>
               </li>
             </ul>
@@ -165,7 +165,7 @@ function Footer() {
                   title="Sri Balaji Homes Terms of Use"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1.5 min-h-[44px] inline-flex items-center"
                 >
-                  Terms of Use
+                  Terms &amp; Conditions
                 </Link>
               </li>
               <li>
@@ -174,7 +174,7 @@ function Footer() {
                   title="Frequently Asked Questions about Resale Plots"
                   className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1.5 min-h-[44px] inline-flex items-center"
                 >
-                  FAQ
+                  FAQs
                 </Link>
               </li>
               <li>
@@ -199,6 +199,7 @@ function Footer() {
                   <a
                     href="tel:+917200940777"
                     title="Call Sri Balaji Homes at +91 72009 40777"
+                    rel="nofollow"
                     className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1 min-h-[44px] inline-flex items-center"
                     aria-label="Call +91 72009 40777"
                   >
@@ -207,6 +208,7 @@ function Footer() {
                   <a
                     href="tel:+916384000006"
                     title="Call Sri Balaji Homes at +91 63840 00006"
+                    rel="nofollow"
                     className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1 min-h-[44px] inline-flex items-center"
                     aria-label="Call +91 63840 00006"
                   >
@@ -220,14 +222,16 @@ function Footer() {
                 <div className="flex flex-col">
                   <a
                     href="mailto:info.sribalajihomes@gmail.com"
-                    title="Email info.sribalajihomes@gmail.com"
+                    title="Email Sri Balaji Homes Support"
+                    rel="nofollow"
                     className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1 min-h-[44px] inline-flex items-center"
                   >
                     info.sribalajihomes@gmail.com
                   </a>
                   <a
                     href="mailto:sales@sribalajihomes.in"
-                    title="Email sales@sribalajihomes.in"
+                    title="Email Sri Balaji Homes Sales Team"
+                    rel="nofollow"
                     className="text-gray-300 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 rounded-sm py-1 min-h-[44px] inline-flex items-center"
                   >
                     sales@sribalajihomes.in

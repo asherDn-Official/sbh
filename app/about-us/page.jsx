@@ -5,14 +5,16 @@ import MissionVision from '../components/about/MissionVision'
 import FAQ from '../components/about/Faq'
 
 export const metadata = {
-  title: "About Us | Sri Balaji Homes",
-  description: "Learn more about Sri Balaji Homes, our mission, vision, and values.",
-   alternates: {
+  title: "About Us | Trusted Property & Plot Advisors in Chennai",
+  description:
+    "Learn more about our mission to provide verified, clear-title CMDA & DTCP plots in Chennai. We ensure secure land investments and seamless registration.",
+  alternates: {
     canonical: "https://www.sribalajihomes.in/about-us",
   },
   openGraph: {
-    title: "About Sri Balaji Homes | Verified Land in Chennai",
-    description: "Serving plot buyers since 2005 with transparent pricing and zero brokerage.",
+    title: "About Us | Trusted Property & Plot Advisors in Chennai",
+    description:
+      "Learn more about our mission to provide verified, clear-title CMDA & DTCP plots in Chennai. We ensure secure land investments and seamless registration.",
     url: "https://www.sribalajihomes.in/about-us",
     images: [
       {
@@ -22,6 +24,13 @@ export const metadata = {
         alt: "About Sri Balaji Homes",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Trusted Property & Plot Advisors in Chennai",
+    description:
+      "Learn more about our mission to provide verified, clear-title CMDA & DTCP plots in Chennai. We ensure secure land investments and seamless registration.",
+    images: ["/assets/home/katrambakkamvilla1.webp"],
   },
 };
 

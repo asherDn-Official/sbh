@@ -1,23 +1,32 @@
 import TestimonialsPageClient from "./testimonialPage";
 
 export const metadata = {
-  title: "Client Reviews & Testimonials | Sri Balaji Homes Chennai",
-  description: "Read reviews from our happy customers. See why buyers trust Sri Balaji Homes for CMDA & DTCP approved resale plots in Chennai with transparent registration.",
+  title: "Client Reviews & Testimonials | Plots in Chennai",
+  description:
+    "Read real reviews from satisfied property buyers who purchased verified CMDA & DTCP plots across Chennai. Discover their hassle-free buying experiences.",
   alternates: {
-    canonical: "https://www.sribalajihomes.in/testimonials"
+    canonical: "https://www.sribalajihomes.in/testimonials",
   },
   openGraph: {
-    title: "Customer Testimonials | Sri Balaji Homes",
-    description: "Read genuine reviews and legal verification FAQs from plot buyers across Chennai.",
+    title: "Client Reviews & Testimonials | Plots in Chennai",
+    description:
+      "Read real reviews from satisfied property buyers who purchased verified CMDA & DTCP plots across Chennai. Discover their hassle-free buying experiences.",
     url: "https://www.sribalajihomes.in/testimonials",
     images: [
       {
-        url: "/assets/home/katrambakkamvilla1.webp", // Unique preview image for social sharing
+        url: "/assets/home/katrambakkamvilla1.webp",
         width: 1200,
         height: 630,
         alt: "Sri Balaji Homes Customer Testimonials",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Client Reviews & Testimonials | Plots in Chennai",
+    description:
+      "Read real reviews from satisfied property buyers who purchased verified CMDA & DTCP plots across Chennai. Discover their hassle-free buying experiences.",
+    images: ["/assets/home/katrambakkamvilla1.webp"],
   },
 };
 

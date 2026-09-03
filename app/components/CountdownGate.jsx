@@ -95,6 +95,7 @@ export function CountdownContent({ timeLeft }) {
         <Image
           src="/assets/home/sri-balaji-homes-logo-white.webp"
           alt="Sri Balaji Homes – Resale Plots in Chennai"
+          title="Sri Balaji Homes - Verified Resale Plots in Chennai"
           width={200}
           height={200}
           className="w-48 h-auto"
@@ -170,6 +171,8 @@ export function CountdownContent({ timeLeft }) {
               <a
                 className="contact-item"
                 href="mailto:info.sribalajihomes@gmail.com"
+                title="Email Sri Balaji Homes Support"
+                rel="nofollow"
                 aria-label="Email info.sribalajihomes@gmail.com"
               >
                 <span className="contact-icon" aria-hidden="true">
@@ -183,14 +186,16 @@ export function CountdownContent({ timeLeft }) {
               <a
                 className="contact-item"
                 href="tel:+917200940777"
-                aria-label="Call  +91 7200940777"
+                title="Call Sri Balaji Homes at +91 72009 40777"
+                rel="nofollow"
+                aria-label="Call +91 72009 40777"
               >
                 <span className="contact-icon" aria-hidden="true">
                   <FaPhoneAlt />
                 </span>
                 <div>
                   <p className="contact-label">Phone</p>
-                  <p className="contact-value"> +91 7200940777</p>
+                  <p className="contact-value">+91 72009 40777</p>
                 </div>
               </a>
               <div className="contact-item" role="group" aria-label="Address">

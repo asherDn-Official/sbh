@@ -414,10 +414,12 @@ export default function ContactPageClient() {
                 <p className="text-lg font-semibold text-gray-900">
                   <a
                     href="tel:+917200940777"
+                    title="Call Sri Balaji Homes at +91 72009 40777"
+                    rel="nofollow"
                     className="hover:text-green-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
                     aria-label="Call +91 72009 40777"
                   >
-                    +91 7200940777
+                    +91 72009 40777
                   </a>
                 </p>
               </div>
@@ -433,6 +435,8 @@ export default function ContactPageClient() {
                 <p className="text-lg font-semibold text-gray-900">
                   <a
                     href="mailto:info.sribalajihomes@gmail.com"
+                    title="Email Sri Balaji Homes Support"
+                    rel="nofollow"
                     className="hover:text-green-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
                   >
                     info.sribalajihomes@gmail.com

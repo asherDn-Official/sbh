@@ -230,6 +230,7 @@ const WhyChooseUs = () => {
           <Image
             src={sbhLgog}
             alt="Sri Balaji Homes – Resale Plots in Chennai"
+            title="Sri Balaji Homes - Verified Resale Plots in Chennai"
             width={93}
             height={73}
             className="w-22 h-auto sm:w-[93px] lg:w-[130px]"
@@ -254,6 +255,7 @@ const WhyChooseUs = () => {
             <Image
               src={park}
               alt="Verification and Why Choose Sri Balaji Homes"
+              title="Why Choose Sri Balaji Homes for Verified Plot Purchases"
               fill
               className="rounded-xl object-cover"
               priority

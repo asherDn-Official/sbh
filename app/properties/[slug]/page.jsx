@@ -59,94 +59,94 @@ import PropertyPageClient from "./propertiesPage";
 // Metadata Dictionary mapped to exact SEO specs
 const seoData = {
   "approved-resale-plots-kattrambakkam-chennai": {
-    title: "DTCP Approved Resale Plots in Kattrambakkam | Sri Balaji Homes",
+    title: "CMDA Plots in Katrambakkam Chennai | Resale Land for Sale",
     description:
-      "CMDA & DTCP approved resale plots in Kattrambakkam, near Sriperumbudur. Clear titles. Book a free site visit today!",
-    ogTitle: "DTCP Approved Resale Plots in Kattrambakkam — Sri Balaji Homes",
+      "Verified CMDA-approved resale plots in Katrambakkam, Chennai. Ready for immediate house construction with clear legal titles. Book your free site visit today!",
+    ogTitle: "CMDA Plots in Katrambakkam Chennai | Resale Land for Sale",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Kattrambakkam, near Sriperumbudur, with clear titles. Book a free site visit today!",
+      "Verified CMDA-approved resale plots in Katrambakkam, Chennai. Ready for immediate house construction with clear legal titles. Book your free site visit today!",
     canonicalSlug: "approved-resale-plots-kattrambakkam-chennai",
-    locationName: "Kattrambakkam",
+    locationName: "Katrambakkam",
   },
   "plots-in-katrambakkam": {
-    title: "DTCP Approved Resale Plots in Kattrambakkam | Sri Balaji Homes",
+    title: "CMDA Plots in Katrambakkam Chennai | Resale Land for Sale",
     description:
-      "CMDA & DTCP approved resale plots in Kattrambakkam, near Sriperumbudur. Clear titles. Book a free site visit today!",
-    ogTitle: "DTCP Approved Resale Plots in Kattrambakkam — Sri Balaji Homes",
+      "Verified CMDA-approved resale plots in Katrambakkam, Chennai. Ready for immediate house construction with clear legal titles. Book your free site visit today!",
+    ogTitle: "CMDA Plots in Katrambakkam Chennai | Resale Land for Sale",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Kattrambakkam, near Sriperumbudur, with clear titles. Book a free site visit today!",
+      "Verified CMDA-approved resale plots in Katrambakkam, Chennai. Ready for immediate house construction with clear legal titles. Book your free site visit today!",
     canonicalSlug: "approved-resale-plots-kattrambakkam-chennai",
-    locationName: "Kattrambakkam",
+    locationName: "Katrambakkam",
   },
   "resale-plots-katrambakkam": {
-    title: "DTCP Approved Resale Plots in Kattrambakkam | Sri Balaji Homes",
+    title: "CMDA Plots in Katrambakkam Chennai | Resale Land for Sale",
     description:
-      "CMDA & DTCP approved resale plots in Kattrambakkam, near Sriperumbudur. Clear titles. Book a free site visit today!",
-    ogTitle: "DTCP Approved Resale Plots in Kattrambakkam — Sri Balaji Homes",
+      "Verified CMDA-approved resale plots in Katrambakkam, Chennai. Ready for immediate house construction with clear legal titles. Book your free site visit today!",
+    ogTitle: "CMDA Plots in Katrambakkam Chennai | Resale Land for Sale",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Kattrambakkam, near Sriperumbudur, with clear titles. Book a free site visit today!",
+      "Verified CMDA-approved resale plots in Katrambakkam, Chennai. Ready for immediate house construction with clear legal titles. Book your free site visit today!",
     canonicalSlug: "approved-resale-plots-kattrambakkam-chennai",
-    locationName: "Kattrambakkam",
+    locationName: "Katrambakkam",
   },
 
   "cmda-approved-plots-nandhambakkam": {
-    title: "CMDA Approved Plots in Nandhambakkam | Sri Balaji Homes",
+    title: "Resale Plots in Nandambakkam Chennai | CMDA Approved Land",
     description:
-      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear titles. Book a free site visit today!",
-    ogTitle: "CMDA Approved Plots in Nandhambakkam — Sri Balaji Homes",
+      "Find prime CMDA & DTCP-approved resale plots in Nandambakkam, Chennai. 100% clear documentation, ready to build & easy bank loans. Schedule a free visit now!",
+    ogTitle: "Resale Plots in Nandambakkam Chennai | CMDA Approved Land",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear titles. Book a free site visit today!",
+      "Find prime CMDA & DTCP-approved resale plots in Nandambakkam, Chennai. 100% clear documentation, ready to build & easy bank loans. Schedule a free visit now!",
     canonicalSlug: "cmda-approved-plots-nandhambakkam",
-    locationName: "Nandhambakkam",
+    locationName: "Nandambakkam",
   },
   "plots-in-nandhambakkam": {
-    title: "CMDA Approved Plots in Nandhambakkam | Sri Balaji Homes",
+    title: "Resale Plots in Nandambakkam Chennai | CMDA Approved Land",
     description:
-      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear titles. Book a free site visit today!",
-    ogTitle: "CMDA Approved Plots in Nandhambakkam — Sri Balaji Homes",
+      "Find prime CMDA & DTCP-approved resale plots in Nandambakkam, Chennai. 100% clear documentation, ready to build & easy bank loans. Schedule a free visit now!",
+    ogTitle: "Resale Plots in Nandambakkam Chennai | CMDA Approved Land",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear titles. Book a free site visit today!",
+      "Find prime CMDA & DTCP-approved resale plots in Nandambakkam, Chennai. 100% clear documentation, ready to build & easy bank loans. Schedule a free visit now!",
     canonicalSlug: "cmda-approved-plots-nandhambakkam",
-    locationName: "Nandhambakkam",
+    locationName: "Nandambakkam",
   },
   "resale-plots-nandhambakkam": {
-    title: "CMDA Approved Plots in Nandhambakkam | Sri Balaji Homes",
+    title: "Resale Plots in Nandambakkam Chennai | CMDA Approved Land",
     description:
-      "CMDA & DTCP approved resale plots in Nandhambakkam, near Kundrathur. Clear titles. Book a free site visit today!",
-    ogTitle: "CMDA Approved Plots in Nandhambakkam — Sri Balaji Homes",
+      "Find prime CMDA & DTCP-approved resale plots in Nandambakkam, Chennai. 100% clear documentation, ready to build & easy bank loans. Schedule a free visit now!",
+    ogTitle: "Resale Plots in Nandambakkam Chennai | CMDA Approved Land",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Nandhambakkam, near Kundrathur, with clear titles. Book a free site visit today!",
+      "Find prime CMDA & DTCP-approved resale plots in Nandambakkam, Chennai. 100% clear documentation, ready to build & easy bank loans. Schedule a free visit now!",
     canonicalSlug: "cmda-approved-plots-nandhambakkam",
-    locationName: "Nandhambakkam",
+    locationName: "Nandambakkam",
   },
 
   "dtcp-resale-plots-thaiyur-omr": {
-    title: "Residential Resale Plots in Thaiyur, OMR | Sri Balaji Homes",
+    title: "Plots for Sale in Thaiyur OMR | DTCP-Approved Resale Land",
     description:
-      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear titles. Book a free site visit today!",
-    ogTitle: "Residential Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
+      "Buy DTCP-approved resale plots in Thaiyur, OMR Chennai. High-growth IT corridor location, 100% clear legal titles & bank loan ready. Book a free site visit!",
+    ogTitle: "Plots for Sale in Thaiyur OMR | DTCP-Approved Resale Land",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear titles. Book a free site visit today!",
+      "Buy DTCP-approved resale plots in Thaiyur, OMR Chennai. High-growth IT corridor location, 100% clear legal titles & bank loan ready. Book a free site visit!",
     canonicalSlug: "dtcp-resale-plots-thaiyur-omr",
     locationName: "Thaiyur OMR",
   },
   "plots-in-thaiyur-omr": {
-    title: "Residential Resale Plots in Thaiyur, OMR | Sri Balaji Homes",
+    title: "Plots for Sale in Thaiyur OMR | DTCP-Approved Resale Land",
     description:
-      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear titles. Book a free site visit today!",
-    ogTitle: "Residential Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
+      "Buy DTCP-approved resale plots in Thaiyur, OMR Chennai. High-growth IT corridor location, 100% clear legal titles & bank loan ready. Book a free site visit!",
+    ogTitle: "Plots for Sale in Thaiyur OMR | DTCP-Approved Resale Land",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear titles. Book a free site visit today!",
+      "Buy DTCP-approved resale plots in Thaiyur, OMR Chennai. High-growth IT corridor location, 100% clear legal titles & bank loan ready. Book a free site visit!",
     canonicalSlug: "dtcp-resale-plots-thaiyur-omr",
     locationName: "Thaiyur OMR",
   },
   "resale-plots-thaiyur-omr": {
-    title: "Residential Resale Plots in Thaiyur, OMR | Sri Balaji Homes",
+    title: "Plots for Sale in Thaiyur OMR | DTCP-Approved Resale Land",
     description:
-      "CMDA & DTCP approved resale plots in Thaiyur, OMR, near Siruseri IT Park. Clear titles. Book a free site visit today!",
-    ogTitle: "Residential Resale Plots in Thaiyur, OMR — Sri Balaji Homes",
+      "Buy DTCP-approved resale plots in Thaiyur, OMR Chennai. High-growth IT corridor location, 100% clear legal titles & bank loan ready. Book a free site visit!",
+    ogTitle: "Plots for Sale in Thaiyur OMR | DTCP-Approved Resale Land",
     ogDescription:
-      "DTCP & CMDA approved resale plots in Thaiyur, OMR, near Siruseri IT Park, with clear titles. Book a free site visit today!",
+      "Buy DTCP-approved resale plots in Thaiyur, OMR Chennai. High-growth IT corridor location, 100% clear legal titles & bank loan ready. Book a free site visit!",
     canonicalSlug: "dtcp-resale-plots-thaiyur-omr",
     locationName: "Thaiyur OMR",
   },

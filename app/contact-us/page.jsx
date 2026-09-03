@@ -1,14 +1,16 @@
 import ContactPageClient from "./contactPage";
 
 export const metadata = {
-  title: "Contact Us | Schedule Free Site Visit | Sri Balaji Homes",
-  description: "Get in touch to schedule a free site visit for CMDA/DTCP plots in Katrambakkam, Nandambakkam, or Thaiyur OMR. Call or message us for instant property details!",
+  title: "Contact Us | Book a Free Site Visit in Chennai",
+  description:
+    "Get in touch to schedule a free site visit for CMDA/DTCP plots in Katrambakkam, Nandambakkam, or Thaiyur OMR. Call or message us for instant property details!",
   alternates: {
-    canonical: "https://www.sribalajihomes.in/contact-us"
+    canonical: "https://www.sribalajihomes.in/contact-us",
   },
   openGraph: {
-    title: "Contact Sri Balaji Homes | Schedule Free Site Visit",
-    description: "Get in touch to schedule a free site visit for CMDA/DTCP plots in Katrambakkam, Nandambakkam, or Thaiyur OMR. Call or message us for instant property details!",
+    title: "Contact Us | Book a Free Site Visit in Chennai",
+    description:
+      "Get in touch to schedule a free site visit for CMDA/DTCP plots in Katrambakkam, Nandambakkam, or Thaiyur OMR. Call or message us for instant property details!",
     url: "https://www.sribalajihomes.in/contact-us",
     images: [
       {
@@ -18,6 +20,13 @@ export const metadata = {
         alt: "Contact Sri Balaji Homes",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Book a Free Site Visit in Chennai",
+    description:
+      "Get in touch to schedule a free site visit for CMDA/DTCP plots in Katrambakkam, Nandambakkam, or Thaiyur OMR. Call or message us for instant property details!",
+    images: ["/assets/home/katrambakkamvilla1.webp"],
   },
 };
 

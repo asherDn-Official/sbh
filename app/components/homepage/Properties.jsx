@@ -92,29 +92,32 @@ import Link from "next/link";
 const properties = [
   {
     id: 1,
-    title: "DTCP Approved Resale Plots in Kattrambakkam",
+    title: "DTCP Approved Plots in Kattrambakkam",
+    linkTitle: "DTCP Approved Resale Plots in Kattrambakkam",
     desc: "Our original and most established location, close to the Sriperumbudur industrial belt. DTCP and CMDA approved plots with clear title, direct from owner.",
     image: "/assets/home/dtcp-approved-resale-plot-kattrambakkam-aerial.webp",
     alt: "DTCP approved resale plot in Kattrambakkam Chennai – Sri Balaji Homes",
-    anchorText: "DTCP Approved Resale Plots in Kattrambakkam →",
+    anchorText: "DTCP Approved Plots in Kattrambakkam",
     link: "/properties/approved-resale-plots-kattrambakkam-chennai",
   },
   {
     id: 2,
     title: "CMDA Approved Plots in Nandhambakkam",
+    linkTitle: "CMDA Approved Plots in Nandhambakkam",
     desc: "Positioned near Kundrathur and Porur, with growing connectivity to Chennai's western industrial corridor.",
     image: "/assets/home/cmda-plot-nandhambakkam-road-view.webp",
     alt: "CMDA approved resale plot in Nandhambakkam Chennai – Sri Balaji Homes",
-    anchorText: "CMDA Resale Plots Nandhambakkam →",
+    anchorText: "CMDA Approved Plots in Nandhambakkam",
     link: "/properties/cmda-approved-plots-nandhambakkam",
   },
   {
     id: 3,
-    title: "Residential Resale Plots in Thaiyur, OMR",
+    title: "Resale Plots in Thaiyur (OMR)",
+    linkTitle: "Residential Resale Plots in Thaiyur, OMR",
     desc: "Our OMR location benefits from proximity to Siruseri IT Park and the broader IT corridor, making it a strong choice for buyers prioritizing long-term rental or resale demand.",
     image: "/assets/home/thaiyur-omr-residential-plot-sale.webp",
     alt: "DTCP approved resale plot in Thaiyur OMR Chennai – Sri Balaji Homes",
-    anchorText: "Residential Resale Plots in Thaiyur →",
+    anchorText: "Resale Plots in Thaiyur (OMR)",
     link: "/properties/dtcp-resale-plots-thaiyur-omr",
   },
 ];
@@ -162,7 +165,7 @@ export default function Properties() {
             <div className="p-5 pt-0">
               <Link
                 href={property.link}
-                title={property.title}
+                title={property.linkTitle || property.title}
                 className="block w-full py-3 min-h-[44px] inline-flex items-center justify-center bg-green-800 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition cursor-pointer text-center"
               >
                 {property.anchorText}

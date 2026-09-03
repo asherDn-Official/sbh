@@ -105,6 +105,7 @@ const PropertySection = () => {
             <Image
               src={katrambakkan}
               alt="Katrambakkam approved resale plots"
+              title="Approved Resale Plots for Sale in Katrambakkam Chennai"
               fill
               className="rounded-2xl object-cover"
             />
@@ -113,6 +114,7 @@ const PropertySection = () => {
             <Image
               src={nandhambakkam}
               alt="Nandhambakkam clear title plots"
+              title="Clear Title CMDA/DTCP Approved Plots in Nandhambakkam"
               fill
               className="rounded-2xl object-cover"
             />
@@ -121,6 +123,7 @@ const PropertySection = () => {
             <Image
               src={thaiyur}
               alt="Thaiyur OMR resale plots near Siruseri"
+              title="Resale Plots in Thaiyur OMR near Siruseri IT Park"
               fill
               className="rounded-2xl object-cover"
               priority
