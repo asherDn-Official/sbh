@@ -76,7 +76,7 @@ export default function BudgetGrid() {
               </div>
 
               <Link
-                href={tier.slug}
+                href="#contact"
                 className="w-full py-2.5 px-4 rounded-full bg-white hover:bg-[#024b12] text-slate-800 hover:text-white border border-slate-300 hover:border-[#024b12] font-semibold text-xs text-center transition duration-200 cursor-pointer shadow-xs"
               >
                 View Plots in this Budget →
@@ -103,7 +103,7 @@ export default function BudgetGrid() {
         {/* Section Action CTA */}
         <div className="text-center">
           <Link
-            href="/approved-resale-plots-chennai"
+            href="#contact"
             className="inline-flex items-center justify-center px-8 py-3.5 bg-[#024b12] hover:bg-[#01380d] text-white font-semibold text-sm rounded-full transition transform active:scale-95 shadow-md border border-[#024b12] cursor-pointer"
           >
             Explore Budget-Friendly Plots

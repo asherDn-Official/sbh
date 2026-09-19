@@ -88,7 +88,7 @@ export default function TrustProof() {
           </div>
           <div className="shrink-0">
             <a
-              href="/plot-verification"
+              href="#contact"
               className="inline-block px-6 py-3.5 bg-[#024b12] hover:bg-[#01380d] text-white font-semibold text-sm rounded-full transition transform active:scale-95 shadow-md border border-[#024b12] cursor-pointer"
             >
               Our Verification Process

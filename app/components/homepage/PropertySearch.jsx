@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function PropertySearch() {
-  const router = useRouter();
   const [location, setLocation] = useState("");
   const [budget, setBudget] = useState("");
   const [size, setSize] = useState("");
@@ -12,14 +10,17 @@ export default function PropertySearch() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    const queryParams = new URLSearchParams();
-    if (location) queryParams.set("location", location);
-    if (budget) queryParams.set("budget", budget);
-    if (size) queryParams.set("size", size);
-    if (approval) queryParams.set("approval", approval);
 
-    const searchUrl = `/approved-resale-plots-chennai?${queryParams.toString()}`;
-    router.push(searchUrl);
+    // 1. Find the #contact section on the page
+    const contactSection = document.getElementById("contact");
+
+    if (contactSection) {
+      // 2. Smoothly scroll to the section
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Fallback anchor routing if element isn't found immediately
+      window.location.hash = "#contact";
+    }
   };
 
   return (
@@ -30,7 +31,7 @@ export default function PropertySearch() {
             Find Your Ideal Plot in Chennai
           </h2>
           <p className="text-sm sm:text-base text-slate-600">
-            Search available properties based on the location, budget, plot size, and approval status that matter most to you.
+            Search available properties based on location, budget, plot size, and approval status.
           </p>
         </div>
 
@@ -113,13 +114,13 @@ export default function PropertySearch() {
             </select>
           </div>
 
-          {/* Search Button matching Brand Green (#024b12) styling */}
+          {/* Search Button */}
           <div className="sm:col-span-2 lg:col-span-4 flex justify-center pt-2">
             <button
               type="submit"
               className="w-full sm:w-auto px-10 py-3.5 bg-[#024b12] hover:bg-[#01380d] text-white font-semibold rounded-full shadow-md transition transform active:scale-95 text-center cursor-pointer border border-[#024b12]"
             >
-              Search Approved Plots
+              Enquire About Matching Plots
             </button>
           </div>
         </form>

@@ -162,13 +162,13 @@ export default function ApprovalLegal() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link
-              href="/download-document-checklist"
+              href="#contact"
               className="w-full sm:w-auto text-center px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm rounded-full transition shadow-md border border-slate-900 cursor-pointer"
             >
               Download Plot Document Checklist
             </Link>
             <Link
-              href="/cmda-vs-dtcp-guide"
+              href="#contact"
               className="w-full sm:w-auto text-center px-8 py-3.5 bg-[#024b12] hover:bg-[#01380d] text-white font-semibold text-sm rounded-full transition shadow-md border border-[#024b12] cursor-pointer"
             >
               Understand CMDA vs DTCP Approvals →

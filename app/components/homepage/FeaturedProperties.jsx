@@ -173,7 +173,7 @@ export default function FeaturedProperties() {
         {/* Section Bottom CTA */}
         <div className="text-center pt-4">
           <Link
-            href="/approved-resale-plots-chennai"
+            href="#contact"
             className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#024b12] hover:bg-[#01380d] text-white font-semibold text-sm transition transform active:scale-95 shadow-md border border-[#024b12] cursor-pointer"
           >
             Explore All Resale Plots in Chennai

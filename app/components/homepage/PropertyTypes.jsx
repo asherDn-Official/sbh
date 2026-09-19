@@ -93,7 +93,7 @@ export default function PropertyTypes() {
               </div>
 
               <Link
-                href={`/approved-resale-plots-chennai?type=${type.query}`}
+                href="#contact"
                 className="inline-flex items-center text-xs font-bold text-[#024b12] hover:text-[#01380d] gap-1.5 pt-2 group-hover:translate-x-1 transition-transform cursor-pointer"
               >
                 Browse {type.title} <span className="text-sm">→</span>

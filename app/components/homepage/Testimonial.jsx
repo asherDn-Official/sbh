@@ -182,7 +182,7 @@ export default function TestimonialsPage() {
         <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
           Read authentic feedback from real plot buyers across Katrambakkam, Nandhambakkam, and Thaiyur OMR on our{" "}
           <Link
-            href="/testimonials"
+            href="#contact"
             className="text-green-800 font-semibold underline hover:text-green-900 transition"
           >
             customer testimonials

@@ -127,7 +127,7 @@ export default function PricingProcess() {
 
           <div className="text-center pt-2">
             <Link
-              href="/book-site-visit"
+              href="#contact"
               className="inline-flex items-center justify-center px-8 py-3.5 bg-[#024b12] hover:bg-[#01380d] text-white font-semibold text-sm rounded-full transition transform active:scale-95 shadow-md border border-[#024b12] cursor-pointer"
             >
               Start Your Plot Verification Journey

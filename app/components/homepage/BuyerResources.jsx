@@ -46,13 +46,13 @@ export default function BuyerResources() {
             </p>
             <div className="flex flex-wrap gap-4 pt-3">
               <Link
-                href="/site-photos"
+                href="#contact"
                 className="px-6 py-3 bg-[#024b12] hover:bg-[#01380d] text-white font-semibold text-xs rounded-full transition shadow-md border border-[#024b12] cursor-pointer"
               >
                 View Property Gallery
               </Link>
               <Link
-                href="/site-videos"
+                href="#contact"
                 className="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold rounded-full transition shadow-xs cursor-pointer"
               >
                 Watch Site Tour Videos
@@ -79,7 +79,7 @@ export default function BuyerResources() {
             {guides.map((guide, idx) => (
               <Link
                 key={idx}
-                href={guide.slug}
+                href="#contact"
                 className="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#024b12]/40 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between space-y-4 group cursor-pointer"
               >
                 <div className="space-y-2.5">
