@@ -193,7 +193,7 @@ export default function TestimonialsPageClient() {
             </div>
 
             {/* Feedback */}
-            <p className="text-gray-700 text-md  mt-4 flex-1 ">"{t.text}"</p>
+            <p className="text-gray-700 text-md  mt-4 flex-1 ">{t.text}</p>
             <span className="font-semibold text-gray-800 text-lg">
               - &nbsp;{t.name}
             </span>

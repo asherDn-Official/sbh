@@ -1149,15 +1149,15 @@ const canonicalSlugMap = {
   "plots-in-katrambakkam": "approved-resale-plots-kattrambakkam-chennai",
   "resale-plots-katrambakkam": "approved-resale-plots-kattrambakkam-chennai",
 
-  "approved-resale-plots-nandhambakkam-chennai": "approved-resale-plots-nandhambakkam-chennai",
-  "cmda-approved-plots-nandhambakkam": "approved-resale-plots-nandhambakkam-chennai",
-  "plots-in-nandhambakkam": "approved-resale-plots-nandhambakkam-chennai",
-  "resale-plots-nandhambakkam": "approved-resale-plots-nandhambakkam-chennai",
+"approved-resale-plots-nandhambakkam-chennai": "cmda-approved-plots-nandhambakkam",
+"cmda-approved-plots-nandhambakkam": "cmda-approved-plots-nandhambakkam",
+"plots-in-nandhambakkam": "cmda-approved-plots-nandhambakkam",
+"resale-plots-nandhambakkam": "cmda-approved-plots-nandhambakkam",
 
-  "approved-resale-plots-thaiyur-omr-chennai": "approved-resale-plots-thaiyur-omr-chennai",
-  "dtcp-resale-plots-thaiyur-omr": "approved-resale-plots-thaiyur-omr-chennai",
-  "plots-in-thaiyur-omr": "approved-resale-plots-thaiyur-omr-chennai",
-  "resale-plots-thaiyur-omr": "approved-resale-plots-thaiyur-omr-chennai",
+"approved-resale-plots-thaiyur-omr-chennai": "dtcp-resale-plots-thaiyur-omr",
+"dtcp-resale-plots-thaiyur-omr": "dtcp-resale-plots-thaiyur-omr",
+"plots-in-thaiyur-omr": "dtcp-resale-plots-thaiyur-omr",
+"resale-plots-thaiyur-omr": "dtcp-resale-plots-thaiyur-omr",
 };
 
 export async function generateStaticParams() {

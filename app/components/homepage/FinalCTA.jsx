@@ -171,22 +171,22 @@ export default function FinalCTA() {
             </h4>
             <ul className="space-y-2 font-medium">
               <li>
-                <Link href="#contact" className="hover:text-[#024b12] transition">
+                <Link href="/properties/approved-resale-plots-kattrambakkam-chennai" className="hover:text-[#024b12] transition">
                   Plots in Katrambakkam
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-[#024b12] transition">
+                <Link href="/properties/cmda-approved-plots-nandhambakkam" className="hover:text-[#024b12] transition">
                   Plots in Nandhambakkam
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-[#024b12] transition">
+                <Link href="/properties/dtcp-resale-plots-thaiyur-omr" className="hover:text-[#024b12] transition">
                   Plots in Thaiyur OMR
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-[#024b12] transition">
+                <Link href="/properties" className="hover:text-[#024b12] transition">
                   All Resale Plots
                 </Link>
               </li>
